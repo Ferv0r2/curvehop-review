@@ -11,7 +11,7 @@
     {
       "path": ".agents/skills/verify-change/SKILL.md",
       "kind": "generated",
-      "exportSha256": "a042e37d644b53944ff8935b937b9db1c6f6c442dce1f344c131aff4853c0c57"
+      "exportSha256": "8777a7dc00b8833e2fd459a6bcf0a65be627150f973fbffc9672a5a489583537"
     },
     {
       "path": ".env.example",
@@ -61,7 +61,7 @@
       "path": "README.md",
       "kind": "adapter",
       "sourceSha256": "f69525e104c99f732ab15ef2a80ba07aa4df556d36d3b5e6615ef48618a8b099",
-      "exportSha256": "d3417885851bae1f29c9d173b33cc5cc3b1319683e9c2e6fec4137659e877160"
+      "exportSha256": "aedf48ed9023578ba7384feeeaab066495a162d65f8a0628e24f900450cdd116"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
