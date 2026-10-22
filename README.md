@@ -1,14 +1,14 @@
 # Curvehop · Public Review Edition
 
-Curvehop's web application, with fictional data for hiring review. No API keys required.
+[Curvehop](https://curvehop.net)'s web application, with fictional data for hiring review. No API keys required.
 
-공고만 읽어서는 회사가 무엇을 만들고 어떻게 일하는지 알기 어렵습니다. 커브홉은 공고에서 회사 설명과 근거가 있는 읽을거리로 이동하며 지원할 회사를 알아보는 서비스입니다. 이 저장소에서는 운영 소스에서 가져온 웹 앱을 가상 데이터로 실행할 수 있습니다.
+공고만 읽어서는 회사가 무엇을 만들고 어떻게 일하는지 알기 어렵습니다. [커브홉](https://curvehop.net)은 공고에서 회사 설명과 근거가 있는 읽을거리로 이동하며 지원할 회사를 알아보는 서비스입니다. 이 저장소에서는 운영 소스에서 가져온 웹 앱을 가상 데이터로 실행할 수 있습니다.
 
 [운영 서비스](https://curvehop.net) · [5분 검토 동선](docs/review-guide.md) · [아키텍처](docs/architecture.md) · [설계 결정 3가지](docs/design-decisions.md)
 
 ## 무엇을 확인할 수 있나요?
 
-공고의 기술 목록을 읽은 다음, **“이 회사는 무엇으로 돈을 벌고, 나는 어떤 팀에서 일하게 될까?”**를 이어서 확인하는 흐름입니다. 회사 설명과 읽을거리에는 출처를 연결하고, 확인된 사실과 답이 부족한 항목을 구분합니다.
+공고의 기술 목록을 읽은 다음, “**이 회사는 무엇으로 돈을 벌고, 나는 어떤 팀에서 일하게 될까?**”를 이어서 확인하는 흐름입니다. 회사 설명과 읽을거리에는 출처를 연결하고, 확인된 사실과 답이 부족한 항목을 구분합니다.
 
 ```mermaid
 flowchart LR
