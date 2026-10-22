@@ -29,7 +29,7 @@ try {
     if (overflow > 0) throw new Error(`${width}px에서 가로 넘침 ${overflow}px`);
     await narrow.close();
   }
-  console.log("overview.png, request.png 갱신 · 390/1280px 가로 넘침 없음");
+  console.log("overview.png, request.png 갱신, 390/1280px 가로 넘침 없음");
 } finally {
   await browser.close();
 }
