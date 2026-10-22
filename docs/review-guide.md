@@ -35,6 +35,7 @@ HTTP 검사 전에 `pnpm build`를 실행합니다. 데이터 변경 검사는 �
 
 - FE 관점: [`render-data.ts`](../lib/render-data.ts) → [`repository.ts`](../lib/repository.ts) → [`app/api/jobs/route.ts`](../app/api/jobs/route.ts). 캐시 수명과 요청별 조건이 만나는 위치를 보세요.
 - 제품 모델 관점: [`research-questions.ts`](../lib/research-questions.ts) → [`question-assessment.ts`](../lib/question-assessment.ts) → [`question-view.ts`](../lib/question-view.ts). 자료 보유와 답변 충분성이 어떻게 구분되는지 보세요.
+- 구조 관점: [전체 구조 그림](architecture.md#운영-전체-구조). 운영 전체에서 이 저장소가 맡은 범위와 다섯 가지 판단의 위치를 먼저 보세요.
 - 신뢰성 관점: [설계 결정](design-decisions.md). 캐시 경쟁 상태, 계측 양성 대조, 평가의 권한 제한을 각각 실패 조건과 연결했습니다.
 
 출처 비교는 [SOURCE_MANIFEST.json](../SOURCE_MANIFEST.json)에서 시작합니다. `exact`는 원본과 바이트가 같은 파일, `adapter`는 공개판에 맞게 변경한 파일, `generated`는 새로 만든 파일입니다.
