@@ -1,0 +1,2166 @@
+{
+  "version": 1,
+  "companies": [
+    {
+      "id": "demo-orbit",
+      "summary": "여러 팀의 제품 출시 일정과 변경 이유를 한곳에서 기록하는 협업 소프트웨어를 만드는 회사예요.",
+      "identityEvidence": [
+        "demo-orbit-identity"
+      ],
+      "evidence": [
+        {
+          "id": "demo-orbit-source-product",
+          "title": "[가상 자료] 오빗 보드는 일정이 바뀐 이유를 어떻게 남길까요?",
+          "url": "https://demo-orbit.example/product",
+          "publisher": "오빗 스튜디오 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "오빗 보드는 제품 담당자와 개발팀이 출시 날짜뿐 아니라 변경의 이유를 함께 확인하도록 설계한 협업 도구예요. 일정 카드에는 담당자, 선행 작업, 결정 기록이 붙어요. 날짜를 옮기면 관련 팀에 바뀐 내용을 알리지만 일정을 자동으로 약속하지는 않아요. 구직자는 화면 구현과 함께 변경 이력의 정확성을 다루는 제품이라는 점을 읽을 수 있어요."
+        },
+        {
+          "id": "demo-orbit-source-work",
+          "title": "[가상 자료] 오빗 팀은 작은 출시와 회고를 어떻게 연결할까요?",
+          "url": "https://demo-orbit.example/work",
+          "publisher": "오빗 스튜디오 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "오빗의 팀은 작은 변경을 먼저 출시하고 그 결과를 결정 문서에 덧붙이는 방식이에요. 작성자는 해결하려는 사용자 문제와 되돌릴 조건을 적고 동료는 예외 상황을 검토해요. 회고에서는 개인의 속도보다 놓친 가정을 찾아요. 문서가 많다는 사실만으로 협업이 좋다고 판단할 수는 없어서, 실제 역할을 정할 때 검토 대기 시간과 의사결정 권한을 확인해야 해요."
+        },
+        {
+          "id": "demo-orbit-source-hiring",
+          "title": "[가상 자료] 오빗 개발직 면접에서는 어떤 선택의 근거를 이야기할까요?",
+          "url": "https://demo-orbit.example/hiring",
+          "publisher": "오빗 스튜디오 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "오빗의 전형은 서류 검토, 실무 대화, 협업 대화로 이어져요. 실무 대화에서는 지원자가 직접 참여한 변경 하나를 골라 제약과 검증 방법을 설명해요. 협업 대화는 일정이나 요구가 달라졌을 때 의사결정을 조율한 경험을 다뤄요. 공고는 직무별 경력 조건을 따로 적으며, 급여와 결과 통보 기한은 모두 명시하지 않은 상태예요."
+        },
+        {
+          "id": "demo-orbit-source-business",
+          "title": "[가상 자료] 오빗의 구독 모델은 어떤 제품 선택으로 이어질까요?",
+          "url": "https://demo-orbit.example/business",
+          "publisher": "오빗 스튜디오 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "오빗은 팀 단위 구독을 주된 사업 방식으로 삼은 회사예요. 기본 제품에는 일정과 결정 기록을 제공하고 별도 도입 지원에서는 기존 기록을 옮기는 일을 도와요. 계약을 맺는 사람과 매일 사용하는 사람이 다를 수 있어 관리자 설정과 일상 화면을 함께 설계해야 해요. 매출, 투자금, 수익성은 자료에 없으므로 사업 방식 설명을 재무 건전성 판단으로 확장할 수는 없어요."
+        },
+        {
+          "id": "demo-orbit-identity",
+          "title": "[가상 자료] 오빗 스튜디오 소개",
+          "url": "https://demo-orbit.example/about",
+          "publisher": "오빗 스튜디오 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": null,
+          "checkedOn": "2026-10-22",
+          "excerpt": "오빗 스튜디오은 채용 검토용 데모에만 등장하는 회사예요. 여러 팀의 제품 출시 일정과 변경 이유를 한곳에서 기록하는 협업 소프트웨어를 만드는 회사예요. 사업자번호와 실제 주소는 없어요."
+        },
+        {
+          "id": "demo-orbit-source-headcount",
+          "title": "[가상 자료] 인원 비교 예시",
+          "url": "https://demo-orbit.example/headcount",
+          "publisher": "오빗 스튜디오 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "가상 법인 인원: 2026-03-31 40명, 2026-09-30 46명. 같은 법인·집계 방식의 비교 예시이며 실제 관측이 아니에요."
+        }
+      ],
+      "facts": [
+        {
+          "id": "demo-orbit-domain",
+          "kind": "context",
+          "text": "여러 팀의 제품 출시 일정과 변경 이유를 한곳에서 기록하는 협업 소프트웨어를 만드는 회사예요.",
+          "referenceOn": "2026-10-22",
+          "evidenceIds": [
+            "demo-orbit-source-product"
+          ]
+        }
+      ],
+      "headcount": [
+        {
+          "id": "demo-orbit-headcount-early",
+          "entityId": "demo-orbit",
+          "scope": "legal-entity",
+          "measurement": "reported-headcount",
+          "unit": "people",
+          "value": 40,
+          "approximate": false,
+          "referenceOn": "2026-03-31",
+          "referenceBasis": "observation",
+          "evidenceIds": [
+            "demo-orbit-source-headcount"
+          ]
+        },
+        {
+          "id": "demo-orbit-headcount-late",
+          "entityId": "demo-orbit",
+          "scope": "legal-entity",
+          "measurement": "reported-headcount",
+          "unit": "people",
+          "value": 46,
+          "approximate": false,
+          "referenceOn": "2026-09-30",
+          "referenceBasis": "observation",
+          "evidenceIds": [
+            "demo-orbit-source-headcount"
+          ]
+        }
+      ],
+      "guides": [
+        {
+          "id": "demo-orbit-product",
+          "question": "오빗 보드는 일정이 바뀐 이유를 어떻게 남길까요?",
+          "answer": "오빗 보드는 제품 담당자와 개발팀이 출시 날짜뿐 아니라 변경의 이유를 함께 확인하도록 설계한 협업 도구예요. 일정 카드에는 담당자, 선행 작업, 결정 기록이 붙어요. 날짜를 옮기면 관련 팀에 바뀐 내용을 알리지만 일정을 자동으로 약속하지는 않아요. 구직자는 화면 구현과 함께 변경 이력의 정확성을 다루는 제품이라는 점을 읽을 수 있어요.",
+          "limitation": "직접 작성한 가상 제품 설명이에요. 실제 고객 사용량이나 업무 개선 효과를 나타내지 않아요.",
+          "evidenceIds": [
+            "demo-orbit-source-product"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "일정표에 없는 맥락",
+              "text": "작은 제품팀은 같은 변경을 회의와 메시지에서 반복 설명해요. 오빗 보드는 날짜 옆에 누가 어떤 조건으로 결정을 바꿨는지 남겨 이 설명을 다시 찾게 해요. 따라서 완료율 하나보다 선행 작업의 변경이 어디에 영향을 주는지 보여주는 경험이 중요해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-product"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "제품이 책임지는 경계",
+              "text": "알림을 보냈다는 기록은 상대 팀이 새 일정을 수락했다는 뜻이 아니에요. 제품은 제안과 합의를 분리하고, 담당자가 확인해야 약속 상태로 바뀌게 해요. 프론트엔드와 백엔드 지원자는 이러한 상태 차이를 어떻게 표현하고 보존할지 면접에서 물어볼 수 있어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-product"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "vision",
+            "preview": "일정표와 결정 기록을 연결하는 제품에서 사용자와 해결하려는 문제를 살펴봐요.",
+            "relatedIds": [
+              "demo-orbit-work",
+              "demo-orbit-hiring"
+            ]
+          }
+        },
+        {
+          "id": "demo-orbit-work",
+          "question": "오빗 팀은 작은 출시와 회고를 어떻게 연결할까요?",
+          "answer": "오빗의 팀은 작은 변경을 먼저 출시하고 그 결과를 결정 문서에 덧붙이는 방식이에요. 작성자는 해결하려는 사용자 문제와 되돌릴 조건을 적고 동료는 예외 상황을 검토해요. 회고에서는 개인의 속도보다 놓친 가정을 찾아요. 문서가 많다는 사실만으로 협업이 좋다고 판단할 수는 없어서, 실제 역할을 정할 때 검토 대기 시간과 의사결정 권한을 확인해야 해요.",
+          "limitation": "가상 팀 운영 예시이며 실제 구성원 인터뷰가 아니에요. 평가 제도와 업무량은 설정하지 않았어요.",
+          "evidenceIds": [
+            "demo-orbit-source-work"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "검토 전에 적는 것",
+              "text": "작업을 시작할 때 문제, 선택한 접근, 배포 뒤 확인할 신호를 짧게 적어요. 완성된 보고서를 만드는 절차가 아니라 다른 동료가 변경 이유를 검토할 수 있게 하는 약속이에요. 디자인 변경도 사용자가 되돌아갈 경로를 설명해야 해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-work"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "회고가 다음 작업에 남는 방식",
+              "text": "회고에서는 예상과 다른 결과를 기록하고 후속 작업의 담당자를 정해요. 평가 제도와 승진 기준은 자료에 없으므로 이 작업 방식만으로 조직 전체의 문화를 단정하지 않아요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-work"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "work",
+            "preview": "결정 문서, 동료 검토, 출시 후 회고가 이어지는 팀의 작업 방식을 읽어요.",
+            "relatedIds": [
+              "demo-orbit-hiring",
+              "demo-orbit-business"
+            ]
+          }
+        },
+        {
+          "id": "demo-orbit-hiring",
+          "question": "오빗 개발직 면접에서는 어떤 선택의 근거를 이야기할까요?",
+          "answer": "오빗의 전형은 서류 검토, 실무 대화, 협업 대화로 이어져요. 실무 대화에서는 지원자가 직접 참여한 변경 하나를 골라 제약과 검증 방법을 설명해요. 협업 대화는 일정이나 요구가 달라졌을 때 의사결정을 조율한 경험을 다뤄요. 공고는 직무별 경력 조건을 따로 적으며, 급여와 결과 통보 기한은 모두 명시하지 않은 상태예요.",
+          "limitation": "실제로 지원할 수 없는 가상 채용 전형이에요. 과제 비용, 급여, 통보 기한은 미기재예요.",
+          "evidenceIds": [
+            "demo-orbit-source-hiring"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "결과보다 선택을 설명하기",
+              "text": "완성 화면만 보여주기보다 무엇을 먼저 해결했고 무엇을 미뤘는지 설명하는 포트폴리오가 이 전형의 목적에 맞아요. 변경을 되돌린 경험도 검증 과정과 함께 이야기할 수 있어요. 회사의 기밀이나 이전 직장의 비공개 자료를 제출하라는 조건은 없어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-hiring"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "지원 전에 남는 질문",
+              "text": "같은 개발직이라도 프론트엔드와 백엔드의 책임은 달라요. 공개된 공고의 담당 업무를 읽고 첫 과제, 검토 동료, 배포 책임 범위를 구체적으로 확인할 수 있어요. 전형 단계는 합격 가능성이나 소요 시간을 예측하는 지표가 아니에요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-hiring"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "process",
+            "preview": "서류, 실무 대화, 협업 대화의 목적과 아직 정하지 않은 조건을 구분해요.",
+            "relatedIds": [
+              "demo-orbit-business",
+              "demo-orbit-product"
+            ]
+          }
+        },
+        {
+          "id": "demo-orbit-business",
+          "question": "오빗의 구독 모델은 어떤 제품 선택으로 이어질까요?",
+          "answer": "오빗은 팀 단위 구독을 주된 사업 방식으로 삼은 회사예요. 기본 제품에는 일정과 결정 기록을 제공하고 별도 도입 지원에서는 기존 기록을 옮기는 일을 도와요. 계약을 맺는 사람과 매일 사용하는 사람이 다를 수 있어 관리자 설정과 일상 화면을 함께 설계해야 해요. 매출, 투자금, 수익성은 자료에 없으므로 사업 방식 설명을 재무 건전성 판단으로 확장할 수는 없어요.",
+          "limitation": "가상 사업 모델이며 매출·투자·고객 수를 만들지 않았어요. 실제 기업의 전망을 설명하지 않아요.",
+          "evidenceIds": [
+            "demo-orbit-source-business"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "구매자와 사용자의 다른 질문",
+              "text": "팀 관리자는 권한과 기록 보존을 궁금해하고 사용자는 빠르게 일정을 고치고 싶어 해요. 제품팀은 두 요구를 한 화면에 모두 넣기보다 관리자 설정과 일상 작업을 나눠요. 지원자는 이 구분이 맡을 기능과 어떻게 연결되는지 확인할 수 있어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-business"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "사업 설명으로 알 수 없는 것",
+              "text": "구독 모델이라는 설명에는 고객 수, 계약 규모, 갱신률이 들어 있지 않아요. 도입 지원이 있다는 사실도 서비스 매출의 비중을 알려주지 않아요. 계약 방식과 재무 실적은 다른 정보이므로 재무 항목은 별도 자료로 확인해야 해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-orbit-source-business"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "business",
+            "preview": "팀 단위 구독과 도입 지원을 구분하고, 확인되지 않은 재무 수치는 구분해요.",
+            "relatedIds": [
+              "demo-orbit-product",
+              "demo-orbit-work"
+            ]
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "field": "salary",
+          "reason": "공고에 급여 범위가 명시되지 않았어요.",
+          "question": "제시할 수 있는 급여 범위와 보상 구성은 무엇인가요?"
+        },
+        {
+          "field": "funding",
+          "reason": "투자 이력에 관한 자료가 없어요.",
+          "question": "사업의 재원과 투자 이력을 확인할 수 있나요?"
+        }
+      ],
+      "questionAssessment": {
+        "jobsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "boundJobsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "jobs": [],
+        "contract": {
+          "version": 1,
+          "contractHash": "0451946a149dea6653d3251de60e2ade72d416dacb42266f32f65ee2d1d5d273",
+          "questions": [
+            {
+              "questionId": "company.identity",
+              "facets": [
+                {
+                  "facetId": "identity.entity",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "identity.product",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "business",
+                  "claim": "오빗 보드는 제품 담당자와 개발팀이 출시 날짜뿐 아니라 변경의 이유를 함께 확인하도록 설계한 협업 도구예요. 일정 카드에는 담당자, 선행 작업, 결정 기록이 붙어요.",
+                  "limitation": "직접 작성한 가상 제품 설명이에요. 실제 고객 사용량이나 업무 개선 효과를 나타내지 않아요.",
+                  "evidenceIds": [
+                    "demo-orbit-source-product"
+                  ],
+                  "scope": {
+                    "entity": "demo-orbit",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-orbit-product",
+                  "publicCaveat": "직접 작성한 가상 제품 설명이에요. 실제 고객 사용량이나 업무 개선 효과를 나타내지 않아요."
+                },
+                {
+                  "facetId": "identity.revenue",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "business",
+                  "claim": "오빗은 팀 단위 구독을 주된 사업 방식으로 삼은 회사예요. 기본 제품에는 일정과 결정 기록을 제공하고 별도 도입 지원에서는 기존 기록을 옮기는 일을 도와요.",
+                  "limitation": "가상 사업 모델이며 매출·투자·고객 수를 만들지 않았어요. 실제 기업의 전망을 설명하지 않아요.",
+                  "evidenceIds": [
+                    "demo-orbit-source-business"
+                  ],
+                  "scope": {
+                    "entity": "demo-orbit",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-orbit-business",
+                  "publicCaveat": "가상 사업 모델이며 매출·투자·고객 수를 만들지 않았어요. 실제 기업의 전망을 설명하지 않아요."
+                }
+              ]
+            },
+            {
+              "questionId": "company.history",
+              "facets": [
+                {
+                  "facetId": "history.turning-points",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "history.sequence",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.direction",
+              "facets": [
+                {
+                  "facetId": "direction.intent",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "direction.execution",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "direction.hiring",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.changes",
+              "facets": [
+                {
+                  "facetId": "changes.workforce",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "changes.financials",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "changes.events",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "role.work",
+              "facets": [
+                {
+                  "facetId": "work.problem",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "work.responsibility",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "team.culture",
+              "facets": [
+                {
+                  "facetId": "culture.values",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "culture.practice",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "talent",
+                  "claim": "오빗의 팀은 작은 변경을 먼저 출시하고 그 결과를 결정 문서에 덧붙이는 방식이에요. 작성자는 해결하려는 사용자 문제와 되돌릴 조건을 적고 동료는 예외 상황을 검토해요.",
+                  "limitation": "가상 팀 운영 예시이며 실제 구성원 인터뷰가 아니에요. 평가 제도와 업무량은 설정하지 않았어요.",
+                  "evidenceIds": [
+                    "demo-orbit-source-work"
+                  ],
+                  "scope": {
+                    "entity": "demo-orbit",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-orbit-work",
+                  "publicCaveat": "가상 팀 운영 예시이며 실제 구성원 인터뷰가 아니에요. 평가 제도와 업무량은 설정하지 않았어요."
+                }
+              ]
+            },
+            {
+              "questionId": "employment.conditions",
+              "facets": [
+                {
+                  "facetId": "conditions.pay",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "conditions.workplace",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "hiring.process",
+              "facets": [
+                {
+                  "facetId": "process.stages",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "conditions",
+                  "claim": "오빗의 전형은 서류 검토, 실무 대화, 협업 대화로 이어져요. 실무 대화에서는 지원자가 직접 참여한 변경 하나를 골라 제약과 검증 방법을 설명해요.",
+                  "limitation": "실제로 지원할 수 없는 가상 채용 전형이에요. 과제 비용, 급여, 통보 기한은 미기재예요.",
+                  "evidenceIds": [
+                    "demo-orbit-source-hiring"
+                  ],
+                  "scope": {
+                    "entity": "demo-orbit",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-orbit-hiring",
+                  "publicCaveat": "실제로 지원할 수 없는 가상 채용 전형이에요. 과제 비용, 급여, 통보 기한은 미기재예요."
+                },
+                {
+                  "facetId": "process.preparation",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.alternatives",
+              "facets": [
+                {
+                  "facetId": "alternatives.problem",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "alternatives.difference",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "draftHash": "971331d35e6a4e80abaf0dc1cdfebf444fcff7e524818995db2f080afab64428",
+        "recordedAt": "2026-10-22T00:00:00.000Z",
+        "bindings": {
+          "identity.entity": "5f36f381d5813a57280a3b75d23df966a3b3b2fba3fd503881e9f5a28e7fcfec",
+          "identity.product": "0180c72f4ae457a3b04dedcefa0c12d8babc858aae23fb8bdf961736eea07048",
+          "identity.revenue": "8614e6c07d728240228cdf60029a83f44827621e5dd98fd990d8132a2c30534e",
+          "history.turning-points": "af2b2fe9fb0765d3e0ff344d4d2a66b1e5b995dd68335b973b6d0aecb25658cb",
+          "history.sequence": "7bdbbd6be0d562898080bc17b99068663502ada9dafc5868bdcd5ae051884305",
+          "direction.intent": "77238733c81b5c5f35dd3fcedc52ac6cebd8aec42b6804dc15b83faec5ba67d4",
+          "direction.execution": "4371e5061d9f7e4b7533b6f65926030eb78b60970fb21774d5dee5cb2a855530",
+          "direction.hiring": "c84cfaad08a0376fef90009d7a25650bac19ac95095e64c2e5faf1fa34d53b3a",
+          "changes.workforce": "3ba2186b9d402e9e0871896d18cbc852c3a7cd9b21f7fc15bb2710245a5f2224",
+          "changes.financials": "6b019f56ed721a70c13d6a0371cc644d3ca6c2e9150b993682b49a5825fcbf60",
+          "changes.events": "4315bbb057a775ec41b6a84925992b900752e30d48cd700447c4b3947194be9d",
+          "work.problem": "3faf36e0697a241bf4d8537750c186062a2b7959a73ff2557e09ebe05aaf5674",
+          "work.responsibility": "7130410a218a44085ea166ee2c20542c7d2f6b97cd1c61f60424e34bf982747a",
+          "culture.values": "35b9ff2084fc68926f5c4c47b14f9a6c6b15bf943e5fd140e16eabad4b63ea73",
+          "culture.practice": "df4b114db32fe0f4086c0b30d370154a353c0d378b3f5c85f3258bf00c4bcff1",
+          "conditions.pay": "a1552f09a772bf144e24d701260f1e54e97556a7ae497b93df7cb7422c7059a4",
+          "conditions.workplace": "9ac79823b25f7c0e305b420cc9426712f7d84edfd8c6f301323e9ca8c926ac1d",
+          "process.stages": "754f0c5b8870299aa177a40d5297bbc700e31c35ce52b58a8c3f03fe02cb7f64",
+          "process.preparation": "83a83d961e5b87cae804769a7c5e8375d06a08ec40dfcf911e92ae56b40fcb31",
+          "alternatives.problem": "cc9d333d539ff153e5d0c1279534019e1acdc0b6805f13f7a8dd40cc607e4cda",
+          "alternatives.difference": "6ce23f4e6d8ed7d57fd00517e39bbd4933c0dd10e31a388b4757325bb6e0399a"
+        }
+      }
+    },
+    {
+      "id": "demo-loom",
+      "summary": "소규모 제작팀이 샘플의 변경 사항과 검수 의견을 함께 관리하는 제작 협업 서비스를 만들어요.",
+      "identityEvidence": [
+        "demo-loom-identity"
+      ],
+      "evidence": [
+        {
+          "id": "demo-loom-source-product",
+          "title": "[가상 자료] 루움 샘플은 파일과 검수 의견을 어떻게 묶을까요?",
+          "url": "https://demo-loom.example/product",
+          "publisher": "루움 워크스 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "루움 샘플은 제작팀과 외부 검수자가 같은 버전의 파일을 보며 의견을 남기는 서비스예요. 댓글은 파일 이름이 아니라 버전에 연결되고, 새 파일을 올려도 이전 판단을 보존해요. 변경 사항을 승인한 사람과 단순히 확인한 사람을 나눠 보여주는 것이 제품의 핵심이에요. 제작 자체를 수행하거나 결과물의 품질을 보증하지는 않아요."
+        },
+        {
+          "id": "demo-loom-source-work",
+          "title": "[가상 자료] 루움은 디자인과 개발의 검토 시간을 어떻게 맞출까요?",
+          "url": "https://demo-loom.example/work",
+          "publisher": "루움 워크스 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "루움의 조직은 디자인과 개발이 시제품을 함께 검토하고 해결되지 않은 질문을 다음 작업에 연결해요. 화면마다 사용 목적과 예외 상태를 적어 담당자가 없는 의견이 쌓이지 않게 해요. 최종 결정은 기능 담당자가 내리되 변경 이유를 남겨요. 이 방식이 실제로 잘 작동하는지 보려면 의견이 충돌했을 때의 구체적인 사례를 더 확인해야 해요."
+        },
+        {
+          "id": "demo-loom-source-hiring",
+          "title": "[가상 자료] 루움의 사례 대화에서는 어떻게 협업을 설명할까요?",
+          "url": "https://demo-loom.example/hiring",
+          "publisher": "루움 워크스 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "루움의 채용은 서류 확인 뒤 직무 사례 대화와 팀 대화를 진행해요. 사례 대화에서는 수정 요청이 서로 충돌했던 상황과 우선순위를 정한 근거를 설명해요. 개발자는 데이터와 화면의 상태를, 디자이너는 검수자의 이해와 다음 행동을 중심으로 이야기할 수 있어요. 일부 공고는 경력 연수를 적지 않았으며 이것을 신입 채용이라는 의미로 해석하지 않아요."
+        },
+        {
+          "id": "demo-loom-source-business",
+          "title": "[가상 자료] 루움의 협업 서비스에서 저장 공간과 프로젝트는 어떤 관계일까요?",
+          "url": "https://demo-loom.example/business",
+          "publisher": "루움 워크스 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "루움은 프로젝트 단위 사용과 파일 보관 기능을 묶는 사업 모델이에요. 프로젝트가 끝나도 승인 기록을 확인할 필요가 있어 보관과 삭제의 경계를 제품에서 설명해야 해요. 회사 자료의 인원 관측은 국내와 연결 조직으로 범위가 달라 증가율을 계산할 수 없어요. 가격, 매출, 고객 수는 자료에 없고 인원 자료를 사업 성과의 지표로 사용하지 않아요."
+        },
+        {
+          "id": "demo-loom-identity",
+          "title": "[가상 자료] 루움 워크스 소개",
+          "url": "https://demo-loom.example/about",
+          "publisher": "루움 워크스 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": null,
+          "checkedOn": "2026-10-22",
+          "excerpt": "루움 워크스은 채용 검토용 데모에만 등장하는 회사예요. 소규모 제작팀이 샘플의 변경 사항과 검수 의견을 함께 관리하는 제작 협업 서비스를 만들어요. 사업자번호와 실제 주소는 없어요."
+        },
+        {
+          "id": "demo-loom-source-headcount",
+          "title": "[가상 자료] 인원 비교 예시",
+          "url": "https://demo-loom.example/headcount",
+          "publisher": "루움 워크스 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "가상 인원: 2026-03-31 국내 조직 28명, 2026-09-30 연결 조직 52명. 범위가 달라 비교할 수 없고 실제 관측이 아니에요."
+        }
+      ],
+      "facts": [
+        {
+          "id": "demo-loom-domain",
+          "kind": "context",
+          "text": "소규모 제작팀이 샘플의 변경 사항과 검수 의견을 함께 관리하는 제작 협업 서비스를 만들어요.",
+          "referenceOn": "2026-10-22",
+          "evidenceIds": [
+            "demo-loom-source-product"
+          ]
+        }
+      ],
+      "headcount": [
+        {
+          "id": "demo-loom-headcount-early",
+          "entityId": "demo-loom",
+          "scope": "domestic",
+          "measurement": "reported-headcount",
+          "unit": "people",
+          "value": 28,
+          "approximate": false,
+          "referenceOn": "2026-03-31",
+          "referenceBasis": "observation",
+          "evidenceIds": [
+            "demo-loom-source-headcount"
+          ]
+        },
+        {
+          "id": "demo-loom-headcount-late",
+          "entityId": "demo-loom",
+          "scope": "consolidated",
+          "measurement": "reported-headcount",
+          "unit": "people",
+          "value": 52,
+          "approximate": false,
+          "referenceOn": "2026-09-30",
+          "referenceBasis": "observation",
+          "evidenceIds": [
+            "demo-loom-source-headcount"
+          ]
+        }
+      ],
+      "guides": [
+        {
+          "id": "demo-loom-product",
+          "question": "루움 샘플은 파일과 검수 의견을 어떻게 묶을까요?",
+          "answer": "루움 샘플은 제작팀과 외부 검수자가 같은 버전의 파일을 보며 의견을 남기는 서비스예요. 댓글은 파일 이름이 아니라 버전에 연결되고, 새 파일을 올려도 이전 판단을 보존해요. 변경 사항을 승인한 사람과 단순히 확인한 사람을 나눠 보여주는 것이 제품의 핵심이에요. 제작 자체를 수행하거나 결과물의 품질을 보증하지는 않아요.",
+          "limitation": "직접 만든 가상 제품 시나리오예요. 실제 제작 품질이나 고객 사례를 증명하지 않아요.",
+          "evidenceIds": [
+            "demo-loom-source-product"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "파일 이름이 같아도 다른 버전",
+              "text": "제작 과정에서 같은 이름의 파일이 다시 올라오면 이전 의견이 어느 상태를 가리키는지 모호해져요. 서비스는 업로드마다 버전을 부여하고 댓글에 당시 화면을 연결해요. 수정이 끝난 의견도 삭제하지 않고 해결 상태로 남겨 판단 경로를 다시 확인할 수 있어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-product"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "확인과 승인 나누기",
+              "text": "파일을 열어 본 기록은 품질을 승인한 기록과 달라요. 루움의 화면은 읽음, 수정 요청, 승인 상태를 분리해요. 이 제품을 개발한다면 권한 변경 뒤 과거 승인 이력을 어떻게 설명할지까지 생각해야 해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-product"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "vision",
+            "preview": "제작 파일의 버전과 의견이 엇갈리는 문제를 푸는 서비스예요.",
+            "relatedIds": [
+              "demo-loom-work",
+              "demo-loom-hiring"
+            ]
+          }
+        },
+        {
+          "id": "demo-loom-work",
+          "question": "루움은 디자인과 개발의 검토 시간을 어떻게 맞출까요?",
+          "answer": "루움의 조직은 디자인과 개발이 시제품을 함께 검토하고 해결되지 않은 질문을 다음 작업에 연결해요. 화면마다 사용 목적과 예외 상태를 적어 담당자가 없는 의견이 쌓이지 않게 해요. 최종 결정은 기능 담당자가 내리되 변경 이유를 남겨요. 이 방식이 실제로 잘 작동하는지 보려면 의견이 충돌했을 때의 구체적인 사례를 더 확인해야 해요.",
+          "limitation": "가상 작업 규칙이에요. 실제 근무 만족도, 승진 제도, 회의 부담은 알 수 없어요.",
+          "evidenceIds": [
+            "demo-loom-source-work"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "시제품에서 함께 확인하는 것",
+              "text": "검토 대상은 보기 좋은 기본 화면뿐 아니라 빈 목록, 업로드 실패, 권한이 없는 상황이에요. 디자이너는 사용자가 다음에 할 일을 설명하고 개발자는 실패 이후 데이터가 어떤 상태인지 설명해요. 함께 보는 대상이 있어야 추상적인 선호가 실행 가능한 작업으로 바뀌어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-work"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "결정 이후의 책임",
+              "text": "기능 담당자는 선택과 보류한 의견을 기록하고 다음 검토에서 결과를 보여줘요. 모든 의견이 반영된다는 뜻은 아니에요. 입사 후 맡을 권한을 알고 싶다면 어떤 결정을 독립적으로 내리는지, 다른 팀 동의가 필요한 경우가 무엇인지 확인하는 것이 좋아요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-work"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "work",
+            "preview": "매주 시제품을 함께 보되 결정권과 남은 질문을 문서에 남기는 협업을 살펴봐요.",
+            "relatedIds": [
+              "demo-loom-hiring",
+              "demo-loom-business"
+            ]
+          }
+        },
+        {
+          "id": "demo-loom-hiring",
+          "question": "루움의 사례 대화에서는 어떻게 협업을 설명할까요?",
+          "answer": "루움의 채용은 서류 확인 뒤 직무 사례 대화와 팀 대화를 진행해요. 사례 대화에서는 수정 요청이 서로 충돌했던 상황과 우선순위를 정한 근거를 설명해요. 개발자는 데이터와 화면의 상태를, 디자이너는 검수자의 이해와 다음 행동을 중심으로 이야기할 수 있어요. 일부 공고는 경력 연수를 적지 않았으며 이것을 신입 채용이라는 의미로 해석하지 않아요.",
+          "limitation": "가상 전형이며 실제 모집이 아니에요. 경력 미기재는 신입 가능이나 경력 무관을 뜻하지 않아요.",
+          "evidenceIds": [
+            "demo-loom-source-hiring"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "같은 사례를 직무에 맞게 읽기",
+              "text": "검수 의견을 반영한 경험은 여러 직무에서 말할 수 있지만 책임은 달라요. 개발자는 변경이 기존 데이터에 미친 영향을 설명하고 디자이너는 서로 다른 요구가 화면에서 어떻게 정리됐는지 설명해요. 제출 자료에서 본인의 기여를 구분할 수 있어야 대화가 구체적이 돼요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-hiring"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "표시되지 않은 조건",
+              "text": "공고는 급여 범위를 모두 제공하지 않아요. 경력 값이 비어 있는 공고도 있고 전형 일정도 정하지 않았어요. 비어 있는 항목은 좋은 조건이나 제한 없는 모집을 뜻하지 않아요. 지원 전에 담당자에게 확인할 질문으로 남겨 둘 수 있어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-hiring"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "process",
+            "preview": "기존 작업을 바탕으로 검수 의견을 다룬 경험을 이야기하는 전형이에요.",
+            "relatedIds": [
+              "demo-loom-business",
+              "demo-loom-product"
+            ]
+          }
+        },
+        {
+          "id": "demo-loom-business",
+          "question": "루움의 협업 서비스에서 저장 공간과 프로젝트는 어떤 관계일까요?",
+          "answer": "루움은 프로젝트 단위 사용과 파일 보관 기능을 묶는 사업 모델이에요. 프로젝트가 끝나도 승인 기록을 확인할 필요가 있어 보관과 삭제의 경계를 제품에서 설명해야 해요. 회사 자료의 인원 관측은 국내와 연결 조직으로 범위가 달라 증가율을 계산할 수 없어요. 가격, 매출, 고객 수는 자료에 없고 인원 자료를 사업 성과의 지표로 사용하지 않아요.",
+          "limitation": "가상 사업·인원 예시예요. 서로 다른 집계 범위의 인원은 성장률이나 채용 속도 계산에 쓰지 않아요.",
+          "evidenceIds": [
+            "demo-loom-source-business"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "프로젝트가 끝난 뒤 남는 기록",
+              "text": "검수가 끝나도 누가 어떤 버전을 승인했는지 확인하는 일이 남아요. 사업 소개는 현재 협업과 종료 프로젝트의 기록 보관을 구분해요. 제품 개발자는 삭제 요청을 처리할 때 파일과 승인 기록의 관계, 사용자에게 설명할 범위를 함께 다뤄야 해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-business"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "다른 범위의 수치 읽기",
+              "text": "인원 자료에는 2026년 3월 국내 조직 28명과 9월 연결 조직 52명이 있어요. 숫자가 커졌어도 범위가 다르므로 증원으로 단정하지 않아요. 변화를 확인하려면 같은 범위를 같은 방식으로 집계한 두 시점의 기록이 필요해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-loom-source-business"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "business",
+            "preview": "프로젝트 단위 이용과 보관 정책의 관계를 읽고 서로 다른 인원 집계는 합치지 않아요.",
+            "relatedIds": [
+              "demo-loom-product",
+              "demo-loom-work"
+            ]
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "field": "salary",
+          "reason": "공고에 급여 범위가 명시되지 않았어요.",
+          "question": "제시할 수 있는 급여 범위와 보상 구성은 무엇인가요?"
+        },
+        {
+          "field": "funding",
+          "reason": "투자 이력에 관한 자료가 없어요.",
+          "question": "사업의 재원과 투자 이력을 확인할 수 있나요?"
+        }
+      ],
+      "questionAssessment": {
+        "jobsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "boundJobsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "jobs": [],
+        "contract": {
+          "version": 1,
+          "contractHash": "0451946a149dea6653d3251de60e2ade72d416dacb42266f32f65ee2d1d5d273",
+          "questions": [
+            {
+              "questionId": "company.identity",
+              "facets": [
+                {
+                  "facetId": "identity.entity",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "identity.product",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "business",
+                  "claim": "루움 샘플은 제작팀과 외부 검수자가 같은 버전의 파일을 보며 의견을 남기는 서비스예요. 댓글은 파일 이름이 아니라 버전에 연결되고, 새 파일을 올려도 이전 판단을 보존해요.",
+                  "limitation": "직접 만든 가상 제품 시나리오예요. 실제 제작 품질이나 고객 사례를 증명하지 않아요.",
+                  "evidenceIds": [
+                    "demo-loom-source-product"
+                  ],
+                  "scope": {
+                    "entity": "demo-loom",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-loom-product",
+                  "publicCaveat": "직접 만든 가상 제품 시나리오예요. 실제 제작 품질이나 고객 사례를 증명하지 않아요."
+                },
+                {
+                  "facetId": "identity.revenue",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "business",
+                  "claim": "루움은 프로젝트 단위 사용과 파일 보관 기능을 묶는 사업 모델이에요. 프로젝트가 끝나도 승인 기록을 확인할 필요가 있어 보관과 삭제의 경계를 제품에서 설명해야 해요.",
+                  "limitation": "가상 사업·인원 예시예요. 서로 다른 집계 범위의 인원은 성장률이나 채용 속도 계산에 쓰지 않아요.",
+                  "evidenceIds": [
+                    "demo-loom-source-business"
+                  ],
+                  "scope": {
+                    "entity": "demo-loom",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-loom-business",
+                  "publicCaveat": "가상 사업·인원 예시예요. 서로 다른 집계 범위의 인원은 성장률이나 채용 속도 계산에 쓰지 않아요."
+                }
+              ]
+            },
+            {
+              "questionId": "company.history",
+              "facets": [
+                {
+                  "facetId": "history.turning-points",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "history.sequence",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.direction",
+              "facets": [
+                {
+                  "facetId": "direction.intent",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "direction.execution",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "direction.hiring",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.changes",
+              "facets": [
+                {
+                  "facetId": "changes.workforce",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "changes.financials",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "changes.events",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "role.work",
+              "facets": [
+                {
+                  "facetId": "work.problem",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "work.responsibility",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "team.culture",
+              "facets": [
+                {
+                  "facetId": "culture.values",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "culture.practice",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "talent",
+                  "claim": "루움의 조직은 디자인과 개발이 시제품을 함께 검토하고 해결되지 않은 질문을 다음 작업에 연결해요. 화면마다 사용 목적과 예외 상태를 적어 담당자가 없는 의견이 쌓이지 않게 해요.",
+                  "limitation": "가상 작업 규칙이에요. 실제 근무 만족도, 승진 제도, 회의 부담은 알 수 없어요.",
+                  "evidenceIds": [
+                    "demo-loom-source-work"
+                  ],
+                  "scope": {
+                    "entity": "demo-loom",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-loom-work",
+                  "publicCaveat": "가상 작업 규칙이에요. 실제 근무 만족도, 승진 제도, 회의 부담은 알 수 없어요."
+                }
+              ]
+            },
+            {
+              "questionId": "employment.conditions",
+              "facets": [
+                {
+                  "facetId": "conditions.pay",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "conditions.workplace",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "hiring.process",
+              "facets": [
+                {
+                  "facetId": "process.stages",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "conditions",
+                  "claim": "루움의 채용은 서류 확인 뒤 직무 사례 대화와 팀 대화를 진행해요. 사례 대화에서는 수정 요청이 서로 충돌했던 상황과 우선순위를 정한 근거를 설명해요.",
+                  "limitation": "가상 전형이며 실제 모집이 아니에요. 경력 미기재는 신입 가능이나 경력 무관을 뜻하지 않아요.",
+                  "evidenceIds": [
+                    "demo-loom-source-hiring"
+                  ],
+                  "scope": {
+                    "entity": "demo-loom",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-loom-hiring",
+                  "publicCaveat": "가상 전형이며 실제 모집이 아니에요. 경력 미기재는 신입 가능이나 경력 무관을 뜻하지 않아요."
+                },
+                {
+                  "facetId": "process.preparation",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.alternatives",
+              "facets": [
+                {
+                  "facetId": "alternatives.problem",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "alternatives.difference",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "draftHash": "0b910d86c935f2405e4b56f41e4516862bf30595b355e5154fff58930273bcd8",
+        "recordedAt": "2026-10-22T00:00:00.000Z",
+        "bindings": {
+          "identity.entity": "5f36f381d5813a57280a3b75d23df966a3b3b2fba3fd503881e9f5a28e7fcfec",
+          "identity.product": "6d74128bfa6e3f92f7ce320a24e77d519f91c451cc9ed917e6d69a623f2e2513",
+          "identity.revenue": "278a61ae49458e537eb8156722db3a031670d288142d53e882b5f8d8103ffb8f",
+          "history.turning-points": "af2b2fe9fb0765d3e0ff344d4d2a66b1e5b995dd68335b973b6d0aecb25658cb",
+          "history.sequence": "7bdbbd6be0d562898080bc17b99068663502ada9dafc5868bdcd5ae051884305",
+          "direction.intent": "77238733c81b5c5f35dd3fcedc52ac6cebd8aec42b6804dc15b83faec5ba67d4",
+          "direction.execution": "4371e5061d9f7e4b7533b6f65926030eb78b60970fb21774d5dee5cb2a855530",
+          "direction.hiring": "c84cfaad08a0376fef90009d7a25650bac19ac95095e64c2e5faf1fa34d53b3a",
+          "changes.workforce": "3ba2186b9d402e9e0871896d18cbc852c3a7cd9b21f7fc15bb2710245a5f2224",
+          "changes.financials": "6b019f56ed721a70c13d6a0371cc644d3ca6c2e9150b993682b49a5825fcbf60",
+          "changes.events": "4315bbb057a775ec41b6a84925992b900752e30d48cd700447c4b3947194be9d",
+          "work.problem": "3faf36e0697a241bf4d8537750c186062a2b7959a73ff2557e09ebe05aaf5674",
+          "work.responsibility": "7130410a218a44085ea166ee2c20542c7d2f6b97cd1c61f60424e34bf982747a",
+          "culture.values": "35b9ff2084fc68926f5c4c47b14f9a6c6b15bf943e5fd140e16eabad4b63ea73",
+          "culture.practice": "c02b06a91a6a46eac97b3b7a86d52e29cc76fc1d205753eb80478d8e86075d4b",
+          "conditions.pay": "a1552f09a772bf144e24d701260f1e54e97556a7ae497b93df7cb7422c7059a4",
+          "conditions.workplace": "9ac79823b25f7c0e305b420cc9426712f7d84edfd8c6f301323e9ca8c926ac1d",
+          "process.stages": "0f6aab9f056824678227d7d7f4321e8fab3059dc23efb73f849ca8e2665dea05",
+          "process.preparation": "83a83d961e5b87cae804769a7c5e8375d06a08ec40dfcf911e92ae56b40fcb31",
+          "alternatives.problem": "cc9d333d539ff153e5d0c1279534019e1acdc0b6805f13f7a8dd40cc607e4cda",
+          "alternatives.difference": "6ce23f4e6d8ed7d57fd00517e39bbd4933c0dd10e31a388b4757325bb6e0399a"
+        }
+      }
+    },
+    {
+      "id": "demo-harbor",
+      "summary": "지역 공유공간의 예약 요청과 현장 준비 업무를 연결하는 운영 소프트웨어를 만들어요.",
+      "identityEvidence": [
+        "demo-harbor-identity"
+      ],
+      "evidence": [
+        {
+          "id": "demo-harbor-source-product",
+          "title": "[가상 자료] 하버 큐는 예약과 현장 준비를 어떻게 연결할까요?",
+          "url": "https://demo-harbor.example/product",
+          "publisher": "하버 랩 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "하버 큐는 공유공간의 예약 요청이 확정되면 현장 담당자에게 준비 목록을 전달하는 서비스예요. 예약자는 이용 조건을 확인하고 운영자는 장비와 공간의 준비 상태를 관리해요. 결제나 실제 출입 장치 제어는 제품에 포함하지 않아요. 운영자의 예외 처리를 화면과 기록으로 연결하는 역할을 이해하기 위한 사례예요."
+        },
+        {
+          "id": "demo-harbor-source-work",
+          "title": "[가상 자료] 하버 팀은 현장 문의를 제품 변경으로 어떻게 이어갈까요?",
+          "url": "https://demo-harbor.example/work",
+          "publisher": "하버 랩 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "하버의 팀은 현장 문의를 받은 상황, 임시 해결, 후속 개선으로 나눠 기록해요. 제품팀은 문의 횟수만 보고 우선순위를 정하지 않고 업무가 멈추는 정도와 대체 방법을 함께 봐요. 운영 담당자와 개발자가 같은 사례를 읽을 수 있게 하는 것이 협업의 출발점이에요. 지원 시간이나 당직 제도는 공개되지 않아 문의 대응을 상시 근무로 해석할 수는 없어요."
+        },
+        {
+          "id": "demo-harbor-source-hiring",
+          "title": "[가상 자료] 하버 채용에서 운영 문제를 어떻게 설명하면 좋을까요?",
+          "url": "https://demo-harbor.example/hiring",
+          "publisher": "하버 랩 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "하버의 채용 절차는 서류 검토와 직무 대화, 협업 대화로 구성돼요. 직무 대화에서는 문제를 발견한 경로, 영향을 확인한 방법, 해결 뒤 남긴 기록을 설명하는 사례를 다뤄요. 모든 공고가 같은 경력이나 근무 형태를 갖는 것은 아니에요. 급여와 전형 기간은 공고에 명시되지 않아 담당자에게 확인해야 해요."
+        },
+        {
+          "id": "demo-harbor-source-business",
+          "title": "[가상 자료] 하버의 운영 도구는 공간 운영자에게 무엇을 제공할까요?",
+          "url": "https://demo-harbor.example/business",
+          "publisher": "하버 랩 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": "2026-10-22",
+          "checkedOn": "2026-10-22",
+          "excerpt": "하버는 공간 운영자에게 예약과 준비 업무를 함께 관리하는 도구를 제공하는 사업이에요. 공간별 이용 계약을 맺지만 가격과 계약 기간은 공개 자료에 없어요. 회사 규모와 투자 이력도 공개되지 않아 해당 항목은 미확인으로 보여요. 정보가 없다는 이유로 작은 회사, 투자받지 않은 회사, 위험한 회사라고 판단하는 것은 이 자료의 범위를 벗어나요."
+        },
+        {
+          "id": "demo-harbor-identity",
+          "title": "[가상 자료] 하버 랩 소개",
+          "url": "https://demo-harbor.example/about",
+          "publisher": "하버 랩 · 가상 설정",
+          "kind": "official",
+          "access": "page",
+          "publishedOn": null,
+          "checkedOn": "2026-10-22",
+          "excerpt": "하버 랩은 채용 검토용 데모에만 등장하는 회사예요. 지역 공유공간의 예약 요청과 현장 준비 업무를 연결하는 운영 소프트웨어를 만들어요. 사업자번호와 실제 주소는 없어요."
+        }
+      ],
+      "facts": [
+        {
+          "id": "demo-harbor-domain",
+          "kind": "context",
+          "text": "지역 공유공간의 예약 요청과 현장 준비 업무를 연결하는 운영 소프트웨어를 만들어요.",
+          "referenceOn": "2026-10-22",
+          "evidenceIds": [
+            "demo-harbor-source-product"
+          ]
+        }
+      ],
+      "headcount": [],
+      "guides": [
+        {
+          "id": "demo-harbor-product",
+          "question": "하버 큐는 예약과 현장 준비를 어떻게 연결할까요?",
+          "answer": "하버 큐는 공유공간의 예약 요청이 확정되면 현장 담당자에게 준비 목록을 전달하는 서비스예요. 예약자는 이용 조건을 확인하고 운영자는 장비와 공간의 준비 상태를 관리해요. 결제나 실제 출입 장치 제어는 제품에 포함하지 않아요. 운영자의 예외 처리를 화면과 기록으로 연결하는 역할을 이해하기 위한 사례예요.",
+          "limitation": "가상 제품 설명이에요. 실제 시설 운영·안전·결제 서비스를 제공하거나 보장하지 않아요.",
+          "evidenceIds": [
+            "demo-harbor-source-product"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "예약 확정이 업무 완료는 아니에요",
+              "text": "예약 시간이 정해져도 장비 점검과 공간 배치 같은 일이 남아요. 서비스는 예약 상태와 준비 상태를 별도로 보여줘요. 따라서 예약 취소가 발생했을 때 준비 업무가 자동으로 끝나는지, 현장 담당자의 확인이 필요한지 구체적으로 정해야 해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-product"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "제품 바깥의 책임",
+              "text": "제품에는 결제, 현장 안전 검사, 출입 장치 제어가 없어요. 연결하지 않은 기능을 이미 제공하는 것처럼 소개하지 않아요. 지원자는 공고에서 맡을 업무가 운영 화면인지 외부 시스템 연결인지 확인하고 장애가 발생했을 때 안내 책임을 물어볼 수 있어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-product"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "vision",
+            "preview": "예약 확정 뒤 남는 준비 업무를 담당자에게 전달하는 제품의 범위를 읽어요.",
+            "relatedIds": [
+              "demo-harbor-work",
+              "demo-harbor-hiring"
+            ]
+          }
+        },
+        {
+          "id": "demo-harbor-work",
+          "question": "하버 팀은 현장 문의를 제품 변경으로 어떻게 이어갈까요?",
+          "answer": "하버의 팀은 현장 문의를 받은 상황, 임시 해결, 후속 개선으로 나눠 기록해요. 제품팀은 문의 횟수만 보고 우선순위를 정하지 않고 업무가 멈추는 정도와 대체 방법을 함께 봐요. 운영 담당자와 개발자가 같은 사례를 읽을 수 있게 하는 것이 협업의 출발점이에요. 지원 시간이나 당직 제도는 공개되지 않아 문의 대응을 상시 근무로 해석할 수는 없어요.",
+          "limitation": "직접 작성한 가상 팀 사례예요. 당직, 지원 시간, 초과근무 여부는 미기재예요.",
+          "evidenceIds": [
+            "demo-harbor-source-work"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "문의 건수보다 막힌 작업",
+              "text": "예약 하나를 수정하지 못한 상황과 준비 업무 전체를 확인하지 못한 상황은 영향이 달라요. 팀은 사용자에게 남아 있는 대체 경로를 기록해 문제의 범위를 판단해요. 단순히 많이 들어온 요청이 항상 먼저 개발되는 것은 아니에요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-work"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "임시 해결과 제품 개선",
+              "text": "운영자가 수동으로 해결한 기록에는 다시 발생할 조건을 적어요. 개발자는 제품 수정으로 해결할지 안내를 바꿀지 검토해요. 문의 처리 흐름만으로 대응 시간이나 업무 강도까지 알 수는 없어요. 지원 시간과 담당자 간 인계 기준을 별도로 확인해야 해요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-work"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "work",
+            "preview": "문의 기록의 맥락을 남기고 반복되는 문제를 분류하는 팀의 업무를 살펴봐요.",
+            "relatedIds": [
+              "demo-harbor-hiring",
+              "demo-harbor-business"
+            ]
+          }
+        },
+        {
+          "id": "demo-harbor-hiring",
+          "question": "하버 채용에서 운영 문제를 어떻게 설명하면 좋을까요?",
+          "answer": "하버의 채용 절차는 서류 검토와 직무 대화, 협업 대화로 구성돼요. 직무 대화에서는 문제를 발견한 경로, 영향을 확인한 방법, 해결 뒤 남긴 기록을 설명하는 사례를 다뤄요. 모든 공고가 같은 경력이나 근무 형태를 갖는 것은 아니에요. 급여와 전형 기간은 공고에 명시되지 않아 담당자에게 확인해야 해요.",
+          "limitation": "실제 지원 경로가 없는 가상 채용이에요. 급여·전형 기간·수습 조건은 설정하지 않았어요.",
+          "evidenceIds": [
+            "demo-harbor-source-hiring"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "잘 해결한 결과에 맥락 더하기",
+              "text": "운영 문제를 해결했다는 결론만으로는 맡은 역할을 알기 어려워요. 영향받은 사용자와 확인한 조건, 다른 동료에게 넘긴 정보까지 설명하면 기여가 드러나요. 전형에서는 이 과정을 대화하며 실제 업무 자료나 고객 정보를 제출할 필요는 없어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-hiring"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "역할별 책임 확인하기",
+              "text": "운영 공고는 문의 분류와 안내 개선을, 개발 공고는 상태 변경과 기록의 일관성을 다뤄요. 지원자는 직무 이름이 같아도 실제 담당 업무가 다를 수 있다는 점을 상세 페이지에서 확인할 수 있어요. 수습 기간과 평가 방식은 이 자료로 알 수 없어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-hiring"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "process",
+            "preview": "서류와 직무 대화에서 문제의 영향과 확인 과정을 다루는 전형이에요.",
+            "relatedIds": [
+              "demo-harbor-business",
+              "demo-harbor-product"
+            ]
+          }
+        },
+        {
+          "id": "demo-harbor-business",
+          "question": "하버의 운영 도구는 공간 운영자에게 무엇을 제공할까요?",
+          "answer": "하버는 공간 운영자에게 예약과 준비 업무를 함께 관리하는 도구를 제공하는 사업이에요. 공간별 이용 계약을 맺지만 가격과 계약 기간은 공개 자료에 없어요. 회사 규모와 투자 이력도 공개되지 않아 해당 항목은 미확인으로 보여요. 정보가 없다는 이유로 작은 회사, 투자받지 않은 회사, 위험한 회사라고 판단하는 것은 이 자료의 범위를 벗어나요.",
+          "limitation": "가상 사업 설정이에요. 인원과 투자 정보의 누락은 실제 규모나 투자 부재를 뜻하지 않아요.",
+          "evidenceIds": [
+            "demo-harbor-source-business"
+          ],
+          "sections": [
+            {
+              "id": "section-1",
+              "title": "운영 도구가 다루는 가치",
+              "text": "현장 준비의 담당자와 완료 상태를 예약 옆에서 볼 수 있게 하는 것이 제품의 제공 가치예요. 운영을 대신 수행하거나 시설의 수익을 보장한다는 뜻은 아니에요. 소프트웨어 기능과 운영자의 책임을 나눠야 실제로 맡게 될 제품 업무를 이해할 수 있어요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-business"
+              ]
+            },
+            {
+              "id": "section-2",
+              "title": "빈 항목을 그대로 읽기",
+              "text": "하버의 자료에는 인원 관측이나 재무 사실이 없어요. 인원 변화나 투자 단계를 판단할 근거가 부족해요. 미확인은 확인된 부재와 다르며, 공고 수만으로 전체 직원 수를 추정해서도 안 돼요.",
+              "kind": "context",
+              "evidenceIds": [
+                "demo-harbor-source-business"
+              ]
+            }
+          ],
+          "publication": {
+            "topic": "business",
+            "preview": "공간별 이용 모델의 책임 범위를 읽고 인원·투자 정보가 없는 상태를 확인해요.",
+            "relatedIds": [
+              "demo-harbor-product",
+              "demo-harbor-work"
+            ]
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "field": "salary",
+          "reason": "공고에 급여 범위가 명시되지 않았어요.",
+          "question": "제시할 수 있는 급여 범위와 보상 구성은 무엇인가요?"
+        },
+        {
+          "field": "funding",
+          "reason": "투자 이력에 관한 자료가 없어요.",
+          "question": "사업의 재원과 투자 이력을 확인할 수 있나요?"
+        },
+        {
+          "field": "headcount",
+          "reason": "인원의 집계 범위와 기준일을 확인할 자료가 없어요.",
+          "question": "어떤 범위와 기준일의 인원인지 확인할 수 있나요?"
+        }
+      ],
+      "questionAssessment": {
+        "jobsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "boundJobsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "jobs": [],
+        "contract": {
+          "version": 1,
+          "contractHash": "0451946a149dea6653d3251de60e2ade72d416dacb42266f32f65ee2d1d5d273",
+          "questions": [
+            {
+              "questionId": "company.identity",
+              "facets": [
+                {
+                  "facetId": "identity.entity",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "identity.product",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "business",
+                  "claim": "하버 큐는 공유공간의 예약 요청이 확정되면 현장 담당자에게 준비 목록을 전달하는 서비스예요. 예약자는 이용 조건을 확인하고 운영자는 장비와 공간의 준비 상태를 관리해요.",
+                  "limitation": "가상 제품 설명이에요. 실제 시설 운영·안전·결제 서비스를 제공하거나 보장하지 않아요.",
+                  "evidenceIds": [
+                    "demo-harbor-source-product"
+                  ],
+                  "scope": {
+                    "entity": "demo-harbor",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-harbor-product",
+                  "publicCaveat": "가상 제품 설명이에요. 실제 시설 운영·안전·결제 서비스를 제공하거나 보장하지 않아요."
+                },
+                {
+                  "facetId": "identity.revenue",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "business",
+                  "claim": "하버는 공간 운영자에게 예약과 준비 업무를 함께 관리하는 도구를 제공하는 사업이에요. 공간별 이용 계약을 맺지만 가격과 계약 기간은 공개 자료에 없어요.",
+                  "limitation": "가상 사업 설정이에요. 인원과 투자 정보의 누락은 실제 규모나 투자 부재를 뜻하지 않아요.",
+                  "evidenceIds": [
+                    "demo-harbor-source-business"
+                  ],
+                  "scope": {
+                    "entity": "demo-harbor",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-harbor-business",
+                  "publicCaveat": "가상 사업 설정이에요. 인원과 투자 정보의 누락은 실제 규모나 투자 부재를 뜻하지 않아요."
+                }
+              ]
+            },
+            {
+              "questionId": "company.history",
+              "facets": [
+                {
+                  "facetId": "history.turning-points",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "history.sequence",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.direction",
+              "facets": [
+                {
+                  "facetId": "direction.intent",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "direction.execution",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "direction.hiring",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.changes",
+              "facets": [
+                {
+                  "facetId": "changes.workforce",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "changes.financials",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "changes.events",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "role.work",
+              "facets": [
+                {
+                  "facetId": "work.problem",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "work.responsibility",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "team.culture",
+              "facets": [
+                {
+                  "facetId": "culture.values",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "culture.practice",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "talent",
+                  "claim": "하버의 팀은 현장 문의를 받은 상황, 임시 해결, 후속 개선으로 나눠 기록해요. 제품팀은 문의 횟수만 보고 우선순위를 정하지 않고 업무가 멈추는 정도와 대체 방법을 함께 봐요.",
+                  "limitation": "직접 작성한 가상 팀 사례예요. 당직, 지원 시간, 초과근무 여부는 미기재예요.",
+                  "evidenceIds": [
+                    "demo-harbor-source-work"
+                  ],
+                  "scope": {
+                    "entity": "demo-harbor",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-harbor-work",
+                  "publicCaveat": "직접 작성한 가상 팀 사례예요. 당직, 지원 시간, 초과근무 여부는 미기재예요."
+                }
+              ]
+            },
+            {
+              "questionId": "employment.conditions",
+              "facets": [
+                {
+                  "facetId": "conditions.pay",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "conditions.workplace",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "hiring.process",
+              "facets": [
+                {
+                  "facetId": "process.stages",
+                  "status": "partial",
+                  "researchStatus": "completed",
+                  "evidenceOutcome": "found",
+                  "topic": "conditions",
+                  "claim": "하버의 채용 절차는 서류 검토와 직무 대화, 협업 대화로 구성돼요. 직무 대화에서는 문제를 발견한 경로, 영향을 확인한 방법, 해결 뒤 남긴 기록을 설명하는 사례를 다뤄요.",
+                  "limitation": "실제 지원 경로가 없는 가상 채용이에요. 급여·전형 기간·수습 조건은 설정하지 않았어요.",
+                  "evidenceIds": [
+                    "demo-harbor-source-hiring"
+                  ],
+                  "scope": {
+                    "entity": "demo-harbor",
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": "2026-10-22"
+                  },
+                  "guideId": "demo-harbor-hiring",
+                  "publicCaveat": "실제 지원 경로가 없는 가상 채용이에요. 급여·전형 기간·수습 조건은 설정하지 않았어요."
+                },
+                {
+                  "facetId": "process.preparation",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            },
+            {
+              "questionId": "company.alternatives",
+              "facets": [
+                {
+                  "facetId": "alternatives.problem",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                },
+                {
+                  "facetId": "alternatives.difference",
+                  "status": "not_assessed",
+                  "researchStatus": "not_recorded",
+                  "evidenceOutcome": "not_checked",
+                  "topic": null,
+                  "claim": "",
+                  "limitation": "해당 질문의 답변 범위를 아직 검토하지 않았어요.",
+                  "evidenceIds": [],
+                  "scope": {
+                    "entity": null,
+                    "geography": null,
+                    "role": null,
+                    "jobId": null,
+                    "referenceOn": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "draftHash": "e4c852d10be4229b6a87cb81217bb103a50485567f8fa9dce50d25cfa956a029",
+        "recordedAt": "2026-10-22T00:00:00.000Z",
+        "bindings": {
+          "identity.entity": "5f36f381d5813a57280a3b75d23df966a3b3b2fba3fd503881e9f5a28e7fcfec",
+          "identity.product": "04dc16b76d26567dea97431670f58ee7c73bb1503e05b1f9b66f84fc2e89acab",
+          "identity.revenue": "aed9b441ada8501e070ac9f08740df3427a74bb29744003f4ba68928b59da434",
+          "history.turning-points": "af2b2fe9fb0765d3e0ff344d4d2a66b1e5b995dd68335b973b6d0aecb25658cb",
+          "history.sequence": "7bdbbd6be0d562898080bc17b99068663502ada9dafc5868bdcd5ae051884305",
+          "direction.intent": "77238733c81b5c5f35dd3fcedc52ac6cebd8aec42b6804dc15b83faec5ba67d4",
+          "direction.execution": "4371e5061d9f7e4b7533b6f65926030eb78b60970fb21774d5dee5cb2a855530",
+          "direction.hiring": "c84cfaad08a0376fef90009d7a25650bac19ac95095e64c2e5faf1fa34d53b3a",
+          "changes.workforce": "3ba2186b9d402e9e0871896d18cbc852c3a7cd9b21f7fc15bb2710245a5f2224",
+          "changes.financials": "6b019f56ed721a70c13d6a0371cc644d3ca6c2e9150b993682b49a5825fcbf60",
+          "changes.events": "4315bbb057a775ec41b6a84925992b900752e30d48cd700447c4b3947194be9d",
+          "work.problem": "3faf36e0697a241bf4d8537750c186062a2b7959a73ff2557e09ebe05aaf5674",
+          "work.responsibility": "7130410a218a44085ea166ee2c20542c7d2f6b97cd1c61f60424e34bf982747a",
+          "culture.values": "35b9ff2084fc68926f5c4c47b14f9a6c6b15bf943e5fd140e16eabad4b63ea73",
+          "culture.practice": "ad1e2be46c34b31f12cff63052cd2f0868c24b980e5eeedba0eedff3cd3e4e8b",
+          "conditions.pay": "a1552f09a772bf144e24d701260f1e54e97556a7ae497b93df7cb7422c7059a4",
+          "conditions.workplace": "9ac79823b25f7c0e305b420cc9426712f7d84edfd8c6f301323e9ca8c926ac1d",
+          "process.stages": "ebe4bcad6879aeec92ccba9b2481ab65850402ec73255c516c9dcd99e1e800eb",
+          "process.preparation": "83a83d961e5b87cae804769a7c5e8375d06a08ec40dfcf911e92ae56b40fcb31",
+          "alternatives.problem": "cc9d333d539ff153e5d0c1279534019e1acdc0b6805f13f7a8dd40cc607e4cda",
+          "alternatives.difference": "6ce23f4e6d8ed7d57fd00517e39bbd4933c0dd10e31a388b4757325bb6e0399a"
+        }
+      }
+    }
+  ]
+}

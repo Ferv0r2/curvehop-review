@@ -1,0 +1,251 @@
+/* Route-owned selectors; shared reading cards remain in globals.css. */
+
+.story-content-change {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: var(--text-small);
+  line-height: 1.7;
+}
+.story-content-change > span:first-child {
+  font-weight: 600;
+}
+.story-list .story-content-change {
+  grid-column: 2;
+}
+@media (max-width: 800px) {
+  .story-list .story-content-change { grid-column: 1; }
+}
+
+.discovery-page {
+  padding: 40px 0 56px;
+}
+.discovery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.discovery-heading h1 {
+  margin: 0;
+  font-size: var(--text-display);
+  line-height: 1.4;
+  letter-spacing: -1.2px;
+}
+.discovery-heading p:last-child {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.discovery-directory {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: var(--text-small);
+  min-height: 44px;
+  white-space: nowrap;
+}
+.discovery-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+.discovery-bar > p {
+  font-size: var(--text-small);
+  color: var(--muted);
+  margin: 0;
+}
+.topic-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.topic-tabs a {
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 24px;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.topic-tabs a[aria-current] {
+  background: var(--ink);
+  color: white;
+  font-weight: 600;
+}
+.discovery-companies {
+  margin-top: 40px;
+  padding: 32px 0 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  border-top: 1px solid var(--line);
+}
+.discovery-companies h2 {
+  font-size: var(--text-title);
+  margin: 0 0 8px;
+  word-break: keep-all;
+}
+.discovery-companies p {
+  font-size: var(--text-small);
+  color: var(--muted);
+  margin: 0;
+}
+.company-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.company-shortcuts a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-small);
+  min-height: 52px;
+  padding: 8px 14px;
+  background: var(--surface);
+  border-radius: 12px;
+  min-width: 0;
+}
+.company-shortcuts a > span:last-child {
+  min-width: 0;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 680px) {
+  .company-shortcuts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .company-shortcuts a {
+    padding: 10px;
+    gap: 8px;
+    font-size: var(--text-small);
+  }
+  .company-shortcuts .company-mark {
+    width: 32px;
+    height: 32px;
+  }
+}
+.discovery-footnote {
+  font-size: var(--text-small);
+  color: var(--muted);
+  margin-top: 24px;
+}
+@media (max-width: 800px) {
+  .discovery-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+@media (max-width: 680px) {
+  .discovery-page {
+    padding-top: 28px;
+  }
+  .discovery-heading {
+    margin-bottom: 20px;
+  }
+  .discovery-heading h1 {
+    font-size: var(--text-display);
+  }
+  .discovery-heading p:last-child {
+    font-size: var(--text-small);
+  }
+  .discovery-bar {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 16px;
+  }
+  .topic-tabs {
+    gap: 4px;
+  }
+  .topic-tabs a {
+    padding: 10px 13px;
+    font-size: var(--text-small);
+  }
+}
+.discovery-heading { margin-bottom: 24px; }
+.discovery-heading h1 { font-size: var(--text-display); }
+.discovery-bar { padding-bottom: 16px; margin-bottom: 0; }
+.discovery-companies { margin-top: 24px; }
+@media (max-width: 800px) {
+  .discovery-page { padding-top: 24px; }
+  .discovery-heading h1 { font-size: var(--text-display); }
+  .discovery-heading { gap: 8px; margin-bottom: 16px; }
+}
+.discovery-preference { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; font-size: var(--text-small); }
+.discovery-preference p { margin: 0; color: var(--muted); line-height: 1.8; }
+.discovery-preference strong { color: var(--ink); }
+.discovery-preference a { color: var(--blue); white-space: nowrap; min-height: 44px; display: flex; align-items: center; font-weight: 600; }
+@media (max-width: 800px) { .discovery-preference { display: block; } }
+@media (max-width: 680px) {
+  .discovery-heading .reading-kicker {
+    display: none;
+  }
+  .discovery-heading {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  .discovery-bar {
+    gap: 4px;
+  }
+  .topic-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    max-width: calc(100% + 40px);
+    margin: 0 -20px;
+    padding: 0 20px;
+    scrollbar-width: none;
+  }
+  .topic-tabs a {
+    flex: none;
+    white-space: nowrap;
+  }
+}
+
+/* Questions come first. Taxonomy is available inside each shelf and result page. */
+.discovery-actions, .shelf-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  font-size: var(--text-small);
+}
+.discovery-actions a, .shelf-topics a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue);
+}
+.discovery-actions { flex-shrink: 0; }
+.discovery-opening { margin: 32px 0 56px; }
+.discovery-page .discovery-opening .story-grid > .story-card { background: var(--surface); box-shadow: none; }
+.discovery-opening .story-card:hover { border-color: var(--blue); }
+.discovery-page .reading-shelf { margin: 48px 0; }
+.discovery-page .shelf-heading { align-items: center; }
+.shelf-topics { justify-content: flex-end; }
+.story-discovery-date {
+  margin: auto 0 0;
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 1.7;
+}
+.discovery-page .story-preview { margin-bottom: 8px; }
+@media (max-width: 800px) {
+  .discovery-actions { gap: 4px 20px; }
+  .discovery-page .shelf-heading { align-items: start; flex-direction: column; gap: 8px; }
+  .shelf-topics { justify-content: flex-start; }
+}
+@media (max-width: 680px) {
+  .discovery-opening { margin: 16px 0 40px; }
+  .discovery-opening .story-grid { grid-template-columns: minmax(0, 1fr); }
+  .discovery-page .reading-shelf { margin: 36px 0; }
+}

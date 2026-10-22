@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "demo-orbit-job-1",
+      "source": "greeting",
+      "sourceBoard": "demo-orbit",
+      "sourceJobId": "1",
+      "sourceUrl": "https://demo-orbit.example/careers/1",
+      "company": "오빗 스튜디오",
+      "initial": "O",
+      "color": "#e9edff",
+      "title": "프론트엔드 엔지니어 · 오빗 보드",
+      "role": "frontend",
+      "roleLabel": "프론트엔드",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [
+        "React",
+        "TypeScript"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n오빗 스튜디오의 오빗 보드 팀에서 프론트엔드 엔지니어 역할을 소개하는 가상 공고예요.\n\n담당 업무\n작업 상태와 변경 이력을 보여주는 웹 화면을 개발해요. 키보드 사용과 오류 복구 경로를 함께 검토해요. 일정 변경이 선행 작업과 담당자의 합의 상태에 미치는 영향을 다뤄요.\n\n자격 요건\nReact와 TypeScript로 화면 상태를 설계한 경험이 필요해요. 동료에게 변경 이유를 설명할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-22T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-orbit.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-orbit-job-2",
+      "source": "greeting",
+      "sourceBoard": "demo-orbit",
+      "sourceJobId": "2",
+      "sourceUrl": "https://demo-orbit.example/careers/2",
+      "company": "오빗 스튜디오",
+      "initial": "O",
+      "color": "#e9edff",
+      "title": "백엔드 엔지니어 · 오빗 보드",
+      "role": "backend",
+      "roleLabel": "백엔드",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "on-site",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [
+        "Python",
+        "PostgreSQL"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n오빗 스튜디오의 오빗 보드 팀에서 백엔드 엔지니어 역할을 소개하는 가상 공고예요.\n\n담당 업무\n변경 이력 API와 권한 검사를 개발해요. 중복 요청과 취소 이후 데이터의 일관성을 확인해요. 일정 변경이 선행 작업과 담당자의 합의 상태에 미치는 영향을 다뤄요.\n\n자격 요건\nPython과 PostgreSQL을 사용해 API를 운영한 경험이 필요해요. 데이터 변경의 실패 경계를 설명할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 현장 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-orbit.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-orbit-job-3",
+      "source": "greeting",
+      "sourceBoard": "demo-orbit",
+      "sourceJobId": "3",
+      "sourceUrl": "https://demo-orbit.example/careers/3",
+      "company": "오빗 스튜디오",
+      "initial": "O",
+      "color": "#e9edff",
+      "title": "프로덕트 디자이너 · 오빗 보드",
+      "role": "design",
+      "roleLabel": "디자인",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": null,
+      "salary": null,
+      "tags": [
+        "Figma"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n오빗 스튜디오의 오빗 보드 팀에서 프로덕트 디자이너 역할을 소개하는 가상 공고예요.\n\n담당 업무\n사용자 흐름과 예외 상태를 설계해요. 시제품으로 의견을 모으고 결정 이유를 기록해요. 일정 변경이 선행 작업과 담당자의 합의 상태에 미치는 영향을 다뤄요.\n\n자격 요건\n사용자 문제부터 화면 설계와 검증까지 맡은 경험이 필요해요. 본인의 기여를 구분한 작업 사례를 소개해 주세요.\n경력 연수는 미기재예요.\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": null,
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": null,
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-orbit.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-orbit-job-4",
+      "source": "greeting",
+      "sourceBoard": "demo-orbit",
+      "sourceJobId": "4",
+      "sourceUrl": "https://demo-orbit.example/careers/4",
+      "company": "오빗 스튜디오",
+      "initial": "O",
+      "color": "#e9edff",
+      "title": "프로덕트 매니저 · 오빗 보드",
+      "role": "product",
+      "roleLabel": "프로덕트·기획",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "on-site",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [],
+      "description": "[합성 데이터 · 실제 채용 아님]\n오빗 스튜디오의 오빗 보드 팀에서 프로덕트 매니저 역할을 소개하는 가상 공고예요.\n\n담당 업무\n사용자 문제와 우선순위를 정리해요. 출시 범위와 확인할 신호를 팀과 합의해요. 일정 변경이 선행 작업과 담당자의 합의 상태에 미치는 영향을 다뤄요.\n\n자격 요건\n요구가 바뀌는 상황에서 범위와 일정을 조율한 경험이 필요해요. 의사결정의 근거를 기록할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 현장 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-orbit.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-orbit-job-5",
+      "source": "greeting",
+      "sourceBoard": "demo-orbit",
+      "sourceJobId": "5",
+      "sourceUrl": "https://demo-orbit.example/careers/5",
+      "company": "오빗 스튜디오",
+      "initial": "O",
+      "color": "#e9edff",
+      "title": "서비스 운영 매니저 · 오빗 보드",
+      "role": "operations",
+      "roleLabel": "운영·CS",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": "경력 무관",
+      "salary": null,
+      "tags": [],
+      "description": "[합성 데이터 · 실제 채용 아님]\n오빗 스튜디오의 오빗 보드 팀에서 서비스 운영 매니저 역할을 소개하는 가상 공고예요.\n\n담당 업무\n문의의 영향과 해결 과정을 기록해요. 반복되는 문제를 제품팀과 공유하고 도움말을 개선해요. 일정 변경이 선행 작업과 담당자의 합의 상태에 미치는 영향을 다뤄요.\n\n자격 요건\n문의의 맥락을 파악하고 안내를 작성한 경험이 필요해요. 고객 정보와 내부 자료를 구분해 다룰 수 있어야 해요.\n경력 무관\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-orbit.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-loom-job-1",
+      "source": "greeting",
+      "sourceBoard": "demo-loom",
+      "sourceJobId": "1",
+      "sourceUrl": "https://demo-loom.example/careers/1",
+      "company": "루움 워크스",
+      "initial": "L",
+      "color": "#fff0dc",
+      "title": "프론트엔드 엔지니어 · 루움 샘플",
+      "role": "frontend",
+      "roleLabel": "프론트엔드",
+      "location": "pangyo",
+      "locationLabel": "판교 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [
+        "React",
+        "TypeScript"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n루움 워크스의 루움 샘플 팀에서 프론트엔드 엔지니어 역할을 소개하는 가상 공고예요.\n\n담당 업무\n작업 상태와 변경 이력을 보여주는 웹 화면을 개발해요. 키보드 사용과 오류 복구 경로를 함께 검토해요. 파일 버전과 검수 의견이 엇갈리지 않게 연결하고 승인 기록을 보존해요.\n\n자격 요건\nReact와 TypeScript로 화면 상태를 설계한 경험이 필요해요. 동료에게 변경 이유를 설명할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n판교의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-22T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-loom.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-loom-job-2",
+      "source": "greeting",
+      "sourceBoard": "demo-loom",
+      "sourceJobId": "2",
+      "sourceUrl": "https://demo-loom.example/careers/2",
+      "company": "루움 워크스",
+      "initial": "L",
+      "color": "#fff0dc",
+      "title": "백엔드 엔지니어 · 루움 샘플",
+      "role": "backend",
+      "roleLabel": "백엔드",
+      "location": "pangyo",
+      "locationLabel": "판교 · 가상 오피스",
+      "workplaceType": "on-site",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [
+        "Python",
+        "PostgreSQL"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n루움 워크스의 루움 샘플 팀에서 백엔드 엔지니어 역할을 소개하는 가상 공고예요.\n\n담당 업무\n변경 이력 API와 권한 검사를 개발해요. 중복 요청과 취소 이후 데이터의 일관성을 확인해요. 파일 버전과 검수 의견이 엇갈리지 않게 연결하고 승인 기록을 보존해요.\n\n자격 요건\nPython과 PostgreSQL을 사용해 API를 운영한 경험이 필요해요. 데이터 변경의 실패 경계를 설명할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n판교의 가상 오피스에서 현장 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-loom.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-loom-job-3",
+      "source": "greeting",
+      "sourceBoard": "demo-loom",
+      "sourceJobId": "3",
+      "sourceUrl": "https://demo-loom.example/careers/3",
+      "company": "루움 워크스",
+      "initial": "L",
+      "color": "#fff0dc",
+      "title": "프로덕트 디자이너 · 루움 샘플",
+      "role": "design",
+      "roleLabel": "디자인",
+      "location": "pangyo",
+      "locationLabel": "판교 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": null,
+      "salary": null,
+      "tags": [
+        "Figma"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n루움 워크스의 루움 샘플 팀에서 프로덕트 디자이너 역할을 소개하는 가상 공고예요.\n\n담당 업무\n사용자 흐름과 예외 상태를 설계해요. 시제품으로 의견을 모으고 결정 이유를 기록해요. 파일 버전과 검수 의견이 엇갈리지 않게 연결하고 승인 기록을 보존해요.\n\n자격 요건\n사용자 문제부터 화면 설계와 검증까지 맡은 경험이 필요해요. 본인의 기여를 구분한 작업 사례를 소개해 주세요.\n경력 연수는 미기재예요.\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n판교의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": null,
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": null,
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-loom.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-loom-job-4",
+      "source": "greeting",
+      "sourceBoard": "demo-loom",
+      "sourceJobId": "4",
+      "sourceUrl": "https://demo-loom.example/careers/4",
+      "company": "루움 워크스",
+      "initial": "L",
+      "color": "#fff0dc",
+      "title": "프로덕트 매니저 · 루움 샘플",
+      "role": "product",
+      "roleLabel": "프로덕트·기획",
+      "location": "pangyo",
+      "locationLabel": "판교 · 가상 오피스",
+      "workplaceType": "on-site",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [],
+      "description": "[합성 데이터 · 실제 채용 아님]\n루움 워크스의 루움 샘플 팀에서 프로덕트 매니저 역할을 소개하는 가상 공고예요.\n\n담당 업무\n사용자 문제와 우선순위를 정리해요. 출시 범위와 확인할 신호를 팀과 합의해요. 파일 버전과 검수 의견이 엇갈리지 않게 연결하고 승인 기록을 보존해요.\n\n자격 요건\n요구가 바뀌는 상황에서 범위와 일정을 조율한 경험이 필요해요. 의사결정의 근거를 기록할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n판교의 가상 오피스에서 현장 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-loom.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-loom-job-5",
+      "source": "greeting",
+      "sourceBoard": "demo-loom",
+      "sourceJobId": "5",
+      "sourceUrl": "https://demo-loom.example/careers/5",
+      "company": "루움 워크스",
+      "initial": "L",
+      "color": "#fff0dc",
+      "title": "서비스 운영 매니저 · 루움 샘플",
+      "role": "operations",
+      "roleLabel": "운영·CS",
+      "location": "pangyo",
+      "locationLabel": "판교 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": "경력 무관",
+      "salary": null,
+      "tags": [],
+      "description": "[합성 데이터 · 실제 채용 아님]\n루움 워크스의 루움 샘플 팀에서 서비스 운영 매니저 역할을 소개하는 가상 공고예요.\n\n담당 업무\n문의의 영향과 해결 과정을 기록해요. 반복되는 문제를 제품팀과 공유하고 도움말을 개선해요. 파일 버전과 검수 의견이 엇갈리지 않게 연결하고 승인 기록을 보존해요.\n\n자격 요건\n문의의 맥락을 파악하고 안내를 작성한 경험이 필요해요. 고객 정보와 내부 자료를 구분해 다룰 수 있어야 해요.\n경력 무관\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n판교의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-loom.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-harbor-job-1",
+      "source": "greeting",
+      "sourceBoard": "demo-harbor",
+      "sourceJobId": "1",
+      "sourceUrl": "https://demo-harbor.example/careers/1",
+      "company": "하버 랩",
+      "initial": "H",
+      "color": "#e2f3eb",
+      "title": "프론트엔드 엔지니어 · 하버 큐",
+      "role": "frontend",
+      "roleLabel": "프론트엔드",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [
+        "React",
+        "TypeScript"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n하버 랩의 하버 큐 팀에서 프론트엔드 엔지니어 역할을 소개하는 가상 공고예요.\n\n담당 업무\n작업 상태와 변경 이력을 보여주는 웹 화면을 개발해요. 키보드 사용과 오류 복구 경로를 함께 검토해요. 예약 변경과 현장 준비 목록을 연결하고 취소 뒤 남은 업무를 확인해요.\n\n자격 요건\nReact와 TypeScript로 화면 상태를 설계한 경험이 필요해요. 동료에게 변경 이유를 설명할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-22T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-harbor.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-harbor-job-2",
+      "source": "greeting",
+      "sourceBoard": "demo-harbor",
+      "sourceJobId": "2",
+      "sourceUrl": "https://demo-harbor.example/careers/2",
+      "company": "하버 랩",
+      "initial": "H",
+      "color": "#e2f3eb",
+      "title": "백엔드 엔지니어 · 하버 큐",
+      "role": "backend",
+      "roleLabel": "백엔드",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "on-site",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [
+        "Python",
+        "PostgreSQL"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n하버 랩의 하버 큐 팀에서 백엔드 엔지니어 역할을 소개하는 가상 공고예요.\n\n담당 업무\n변경 이력 API와 권한 검사를 개발해요. 중복 요청과 취소 이후 데이터의 일관성을 확인해요. 예약 변경과 현장 준비 목록을 연결하고 취소 뒤 남은 업무를 확인해요.\n\n자격 요건\nPython과 PostgreSQL을 사용해 API를 운영한 경험이 필요해요. 데이터 변경의 실패 경계를 설명할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 현장 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-harbor.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-harbor-job-3",
+      "source": "greeting",
+      "sourceBoard": "demo-harbor",
+      "sourceJobId": "3",
+      "sourceUrl": "https://demo-harbor.example/careers/3",
+      "company": "하버 랩",
+      "initial": "H",
+      "color": "#e2f3eb",
+      "title": "프로덕트 디자이너 · 하버 큐",
+      "role": "design",
+      "roleLabel": "디자인",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": null,
+      "salary": null,
+      "tags": [
+        "Figma"
+      ],
+      "description": "[합성 데이터 · 실제 채용 아님]\n하버 랩의 하버 큐 팀에서 프로덕트 디자이너 역할을 소개하는 가상 공고예요.\n\n담당 업무\n사용자 흐름과 예외 상태를 설계해요. 시제품으로 의견을 모으고 결정 이유를 기록해요. 예약 변경과 현장 준비 목록을 연결하고 취소 뒤 남은 업무를 확인해요.\n\n자격 요건\n사용자 문제부터 화면 설계와 검증까지 맡은 경험이 필요해요. 본인의 기여를 구분한 작업 사례를 소개해 주세요.\n경력 연수는 미기재예요.\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": null,
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": null,
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-harbor.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-harbor-job-4",
+      "source": "greeting",
+      "sourceBoard": "demo-harbor",
+      "sourceJobId": "4",
+      "sourceUrl": "https://demo-harbor.example/careers/4",
+      "company": "하버 랩",
+      "initial": "H",
+      "color": "#e2f3eb",
+      "title": "프로덕트 매니저 · 하버 큐",
+      "role": "product",
+      "roleLabel": "프로덕트·기획",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "on-site",
+      "experience": "3년 이상",
+      "salary": null,
+      "tags": [],
+      "description": "[합성 데이터 · 실제 채용 아님]\n하버 랩의 하버 큐 팀에서 프로덕트 매니저 역할을 소개하는 가상 공고예요.\n\n담당 업무\n사용자 문제와 우선순위를 정리해요. 출시 범위와 확인할 신호를 팀과 합의해요. 예약 변경과 현장 준비 목록을 연결하고 취소 뒤 남은 업무를 확인해요.\n\n자격 요건\n요구가 바뀌는 상황에서 범위와 일정을 조율한 경험이 필요해요. 의사결정의 근거를 기록할 수 있어야 해요.\n관련 업무 경력 3년 이상\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 현장 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-harbor.example/work"
+        }
+      ]
+    },
+    {
+      "id": "demo-harbor-job-5",
+      "source": "greeting",
+      "sourceBoard": "demo-harbor",
+      "sourceJobId": "5",
+      "sourceUrl": "https://demo-harbor.example/careers/5",
+      "company": "하버 랩",
+      "initial": "H",
+      "color": "#e2f3eb",
+      "title": "서비스 운영 매니저 · 하버 큐",
+      "role": "operations",
+      "roleLabel": "운영·CS",
+      "location": "seoul",
+      "locationLabel": "서울 · 가상 오피스",
+      "workplaceType": "hybrid",
+      "experience": "경력 무관",
+      "salary": null,
+      "tags": [],
+      "description": "[합성 데이터 · 실제 채용 아님]\n하버 랩의 하버 큐 팀에서 서비스 운영 매니저 역할을 소개하는 가상 공고예요.\n\n담당 업무\n문의의 영향과 해결 과정을 기록해요. 반복되는 문제를 제품팀과 공유하고 도움말을 개선해요. 예약 변경과 현장 준비 목록을 연결하고 취소 뒤 남은 업무를 확인해요.\n\n자격 요건\n문의의 맥락을 파악하고 안내를 작성한 경험이 필요해요. 고객 정보와 내부 자료를 구분해 다룰 수 있어야 해요.\n경력 무관\n\n우대 사항\n검토 의견을 기록하고 결과를 팀과 공유한 경험을 환영해요.\n\n근무 조건\n서울의 가상 오피스에서 하이브리드 근무를 해요. 급여 범위와 세부 근무 시간은 미기재예요.\n\n채용 절차\n서류 검토 → 직무 대화 → 협업 대화\n이 절차는 제품 검토용 예시이며 실제로 지원할 수 없어요.",
+      "updatedAt": "2026-10-22T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T00:00:00.000Z",
+      "firstSeenAt": "2026-10-15T00:00:00.000Z",
+      "links": [
+        {
+          "text": "가상 팀 소개",
+          "url": "https://demo-harbor.example/work"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "provider": "greeting",
+      "board": "demo-orbit",
+      "company": "오빗 스튜디오",
+      "status": "ok",
+      "checkedAt": "2026-10-22T00:00:00.000Z",
+      "lastSuccessAt": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "provider": "greeting",
+      "board": "demo-loom",
+      "company": "루움 워크스",
+      "status": "ok",
+      "checkedAt": "2026-10-22T00:00:00.000Z",
+      "lastSuccessAt": "2026-10-22T00:00:00.000Z"
+    },
+    {
+      "provider": "greeting",
+      "board": "demo-harbor",
+      "company": "하버 랩",
+      "status": "ok",
+      "checkedAt": "2026-10-22T00:00:00.000Z",
+      "lastSuccessAt": "2026-10-22T00:00:00.000Z"
+    }
+  ]
+}

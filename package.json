@@ -1,0 +1,43 @@
+{
+  "name": "curvehop-review",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.28.2",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3100",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3100",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts && node --test tests/instrumentation.test.mjs",
+    "test:http": "node --test tests/ssr-reads-http.test.mjs",
+    "verify:source": "node scripts/verify-source.mjs",
+    "demo:reset": "tsx scripts/demo-data.ts",
+    "test:sensitivity": "node scripts/check-test-sensitivity.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "undici": "^7.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "overrides": {
+      "source-map-js": "1.2.2"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "Executable hiring review edition of Curvehop, with synthetic data."
+}

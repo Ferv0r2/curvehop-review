@@ -1,0 +1,56 @@
+[
+  {
+    "id": "demo-orbit",
+    "name": "오빗 스튜디오",
+    "legalName": "주식회사 오빗 스튜디오 (가상)",
+    "brand": "오빗 스튜디오",
+    "color": "#e9edff",
+    "sourceKeys": [
+      "greeting:demo-orbit"
+    ],
+    "careerUrl": "https://demo-orbit.example/careers",
+    "homepage": "https://demo-orbit.example",
+    "aliases": [
+      "Orbit Studio"
+    ],
+    "products": [
+      "오빗 보드"
+    ]
+  },
+  {
+    "id": "demo-loom",
+    "name": "루움 워크스",
+    "legalName": "주식회사 루움 워크스 (가상)",
+    "brand": "루움 워크스",
+    "color": "#fff0dc",
+    "sourceKeys": [
+      "greeting:demo-loom"
+    ],
+    "careerUrl": "https://demo-loom.example/careers",
+    "homepage": "https://demo-loom.example",
+    "aliases": [
+      "Loom Works"
+    ],
+    "products": [
+      "루움 샘플"
+    ]
+  },
+  {
+    "id": "demo-harbor",
+    "name": "하버 랩",
+    "legalName": "주식회사 하버 랩 (가상)",
+    "brand": "하버 랩",
+    "color": "#e2f3eb",
+    "sourceKeys": [
+      "greeting:demo-harbor"
+    ],
+    "careerUrl": "https://demo-harbor.example/careers",
+    "homepage": "https://demo-harbor.example",
+    "aliases": [
+      "Harbor Lab"
+    ],
+    "products": [
+      "하버 큐"
+    ]
+  }
+]

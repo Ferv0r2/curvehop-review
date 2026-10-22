@@ -1,0 +1,4235 @@
+:root {
+  --font-suit: "Curvehop UI", "Curvehop UI Fallback";
+  --accent: #6263f1;
+  --blue: #4f50cc;
+  --accent-soft: #f2f2fd;
+  --accent-line: #dcdcf6;
+  --ink: #172033;
+  --muted: #596579;
+  --line: #e7e7f0;
+  --surface: #f7f7fb;
+  --base: #ffffff;
+  --radius: 14px;
+  /* Type scale (DESIGN.md Typography): one size per level of emphasis. */
+  --text-display: 32px;
+  --text-title: 22px;
+  --text-heading: 18px;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-caption: 12px;
+}
+@media (max-width: 680px) {
+  :root {
+    --text-display: 28px;
+    --text-title: 20px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font-family:
+    var(--font-suit),
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+button {
+  border: 0;
+}
+svg {
+  flex-shrink: 0;
+}
+.skip-link {
+  position: fixed;
+  top: -60px;
+  left: 16px;
+  z-index: 10;
+  background: var(--blue);
+  color: white;
+  padding: 12px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  height: 88px;
+}
+.header-inner {
+  max-width: 1192px;
+  margin: auto;
+  padding: 0 32px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.brand-wordmark {
+  display: block;
+  width: 180px;
+  height: 40px;
+}
+.header-inner nav {
+  display: flex;
+  gap: 32px;
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.header-inner nav a:hover {
+  color: var(--blue);
+}
+.header-inner nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.header-inner nav a[aria-current] {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.header-label {
+  margin-left: auto;
+  font-size: var(--text-caption);
+  letter-spacing: 1.7px;
+  color: #68748c;
+  border: 1px solid var(--line);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container {
+  max-width: 1192px;
+  margin: auto;
+  padding: 0 32px;
+}
+.page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 58px 0 44px;
+  gap: 28px;
+}
+.eyebrow {
+  font-size: var(--text-caption);
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0 0 10px;
+}
+.page-heading h1 {
+  font-size: var(--text-display);
+  line-height: 1.5;
+  letter-spacing: -1.8px;
+  margin: 0;
+  font-weight: 800;
+}
+.page-heading h1 > span {
+  color: var(--blue);
+}
+.intro {
+  color: var(--muted);
+  font-size: var(--text-small);
+  margin: 10px 0 0;
+}
+.edition {
+  font-size: var(--text-small);
+  font-weight: 600;
+  white-space: nowrap;
+  padding-top: 30px;
+}
+.edition-note {
+  display: block;
+  margin-top: 4px;
+  text-align: right;
+  font-size: var(--text-caption);
+  color: var(--muted);
+  font-weight: 400;
+}
+.live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--blue);
+  border-radius: 50%;
+  margin: 0 7px 2px 0;
+}
+.board-layout {
+  display: grid;
+  grid-template-columns: 248px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+.filter-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 23px 20px;
+}
+.filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+.filter-heading h2 {
+  font-size: var(--text-small);
+  margin: 0;
+  font-weight: 700;
+}
+.filter-heading a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-caption);
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.filter-panel label {
+  display: block;
+  margin: 20px 0 8px;
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.filter-panel label:first-child {
+  margin-top: 0;
+}
+.filter-panel select,
+.search-input {
+  height: 44px;
+  background: white;
+  border: 1px solid #dce1ea;
+  border-radius: 7px;
+  width: 100%;
+  font-size: var(--text-small);
+  color: var(--ink);
+}
+.filter-panel select {
+  padding: 0 10px;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+}
+.search-input > span {
+  font-size: var(--text-title);
+  color: var(--muted);
+  line-height: 1;
+}
+.search-input input {
+  width: 100%;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  font-size: var(--text-small);
+  padding: 7px 0;
+}
+.search-input input::placeholder {
+  color: #828b9c;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.primary {
+  background: var(--blue);
+  color: #fff;
+}
+.primary:hover {
+  background: #1744ca;
+}
+.filter-submit {
+  width: 100%;
+  margin-top: 24px;
+  justify-content: space-between;
+}
+.filter-note {
+  border-top: 1px solid #dde3ed;
+  margin-top: 28px;
+  padding-top: 25px;
+}
+.small-label {
+  font-size: var(--text-caption);
+  letter-spacing: 0.5px;
+  color: var(--muted);
+}
+.filter-note p {
+  font-size: var(--text-heading);
+  line-height: 1.75;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 10px 0 16px;
+}
+.note-line {
+  width: 24px;
+  height: 3px;
+  background: var(--blue);
+  display: block;
+}
+.results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 15px;
+  min-height: 30px;
+}
+.results-heading h2 {
+  font-size: var(--text-body);
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+.results-heading h2 span {
+  color: var(--blue);
+  padding-left: 7px;
+}
+.result-caption {
+  font-size: var(--text-caption);
+  color: var(--muted);
+}
+.job-list {
+  border-top: 1px solid var(--line);
+}
+.job-card {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 26px 6px;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.15s;
+}
+.job-card:hover {
+  background: var(--accent-soft);
+}
+.company-monogram {
+  width: 52px;
+  height: 52px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  font-size: var(--text-title);
+  font-weight: 800;
+  color: #26344b;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.job-card-main {
+  flex: 1;
+  min-width: 0;
+}
+.company-name {
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.company-name > span:last-child {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: var(--text-caption);
+}
+.company-dot {
+  padding: 0 7px;
+  color: #aeb5c2;
+}
+.job-card h3 {
+  font-size: var(--text-title);
+  letter-spacing: -0.4px;
+  line-height: 1.4;
+  margin: 5px 0 8px;
+}
+.job-card h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.job-card h3 a:hover {
+  color: var(--blue);
+}
+.job-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  color: var(--muted);
+  font-size: var(--text-small);
+  margin: 0;
+}
+.job-meta > span {
+  color: #b7becc;
+}
+.job-meta > .job-meta-source {
+  display: inline-flex;
+  gap: 9px;
+  color: inherit;
+  white-space: nowrap;
+}
+.job-meta-source > span {
+  color: #b7becc;
+}
+/* Meta rows: items wrap only when space runs out, and a wrapped line never
+   starts with "·" (each item draws its separator in its left padding; the
+   list is shifted left and the row clips it). */
+.meta-row {
+  overflow: hidden;
+}
+.job-meta.meta-row {
+  display: block;
+}
+.job-meta.meta-row > .meta-list {
+  color: inherit;
+}
+.meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -14px;
+}
+.meta-unit {
+  display: inline-block;
+  position: relative;
+  padding-left: 14px;
+}
+.meta-unit::before {
+  content: "·";
+  position: absolute;
+  left: 4px;
+  color: #b7becc;
+}
+@media (max-width: 680px) {
+  /* Logo beside the company line and chips, not stacked above them. */
+  .detail-heading {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 12px;
+    align-items: center;
+  }
+  .detail-heading > * {
+    grid-column: 1 / -1;
+  }
+  .detail-heading > .company-monogram.large {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+  }
+  .detail-heading > .detail-company {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .detail-heading > .company-chips {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 2px 0 0;
+  }
+}
+/* Verified company basics: text chips, never links, unknowns omitted. */
+.company-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.detail-section .company-chips {
+  padding: 0;
+  margin: 4px 0 12px;
+}
+.detail-section .company-chips li {
+  font-size: var(--text-caption);
+  line-height: 1.6;
+  margin: 0;
+}
+.company-chips li {
+  font-size: var(--text-caption);
+  line-height: 1.6;
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 13px;
+}
+.tags > span {
+  display: inline-block;
+  border-radius: 4px;
+  background: #f0f3f8;
+  color: #5c6880;
+  font-size: var(--text-caption);
+  padding: 3px 8px;
+}
+.bookmark-wrap {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.bookmark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #8791a3;
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 7px;
+  padding: 10px;
+  gap: 9px;
+}
+.bookmark:hover {
+  background: var(--accent-soft);
+  color: var(--blue);
+}
+.bookmark.is-saved {
+  color: var(--blue);
+}
+.storage-error {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 190px;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 8px;
+  border-radius: 7px;
+  color: #ae2935;
+  font-size: var(--text-caption);
+  box-shadow: 0 5px 15px #17203310;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin: 28px 0 0;
+}
+.pagination a {
+  width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  font-size: var(--text-small);
+  border-radius: 7px;
+  color: var(--muted);
+}
+.pagination a:hover {
+  background: var(--surface);
+}
+.pagination a[aria-current] {
+  background: var(--ink);
+  color: white;
+}
+.render-panel {
+  margin: 42px 0;
+  border: 1px solid #dce5fa;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  font-size: var(--text-small);
+}
+.render-panel summary {
+  padding: 17px 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  font-weight: 500;
+}
+.render-panel summary::-webkit-details-marker {
+  display: none;
+}
+.render-panel summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--muted);
+  font-size: var(--text-title);
+}
+.render-panel[open] summary::after {
+  content: "−";
+}
+.code-symbol {
+  color: var(--blue);
+  font-family: monospace;
+  margin-right: 3px;
+}
+.mode-badge {
+  font-family: monospace;
+  font-size: var(--text-caption);
+  background: #e5edff;
+  color: var(--blue);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.render-body {
+  padding: 0 24px 22px;
+  color: #53617b;
+  max-width: 840px;
+}
+.render-body p {
+  margin: 0 0 12px;
+}
+.render-time {
+  font-size: var(--text-caption);
+}
+.render-time time {
+  font-family: monospace;
+  margin-left: 7px;
+  overflow-wrap: anywhere;
+}
+.text-link {
+  color: var(--blue);
+  font-weight: 600;
+}
+.site-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 46px;
+}
+.site-footer > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px 32px;
+  max-width: 1192px;
+  padding: 24px 32px;
+  margin: auto;
+}
+.footer-company-logo {
+  filter: grayscale(1);
+  opacity: .6;
+  display: block;
+  width: 112px;
+  height: auto;
+}
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  width: fit-content;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.footer-contact-email {
+  color: var(--ink);
+  font-size: var(--text-body);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 5px;
+}
+.footer-contact:hover .footer-contact-email {
+  color: var(--blue);
+  text-decoration-color: currentColor;
+}
+.footer-business {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 20px;
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 1.85;
+}
+.footer-business > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
+.footer-business dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.footer-copyright {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 1.8;
+}
+.empty,
+.loading {
+  text-align: center;
+  padding: 90px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fafbfd;
+  min-height: 330px;
+}
+.empty h3 {
+  font-size: var(--text-title);
+  margin: 10px 0;
+}
+.empty p {
+  color: var(--muted);
+  font-size: var(--text-small);
+  margin-bottom: 25px;
+}
+.empty-symbol {
+  font-size: var(--text-display);
+  color: var(--blue);
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #dce3f1;
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.not-found {
+  margin-top: 70px;
+}
+.empty .button + .button {
+  margin-left: 8px;
+}
+.not-found h1 {
+  font-size: var(--text-display);
+  letter-spacing: -1px;
+}
+.detail-page {
+  padding-top: 36px;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--muted);
+  font-size: var(--text-small);
+  margin-bottom: 18px;
+}
+.back-link:hover {
+  color: var(--blue);
+}
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 70px;
+}
+.detail-heading {
+  padding-bottom: 8px;
+}
+/* The in-page nav's rule is the heading's one boundary. */
+.detail-heading .reading-nav {
+  margin-bottom: 0;
+}
+.company-monogram.large {
+  width: 64px;
+  height: 64px;
+  font-size: var(--text-display);
+  margin-bottom: 20px;
+}
+.detail-company {
+  font-weight: 600;
+  font-size: var(--text-body);
+  margin: 0;
+}
+.detail-company > span {
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 400;
+}
+.detail-heading h1 {
+  font-size: var(--text-display);
+  letter-spacing: -1.5px;
+  line-height: 1.3;
+  margin: 12px 0 18px;
+}
+.detail-heading .tags {
+  margin-top: 19px;
+}
+.detail-section {
+  margin: 33px 0;
+}
+.detail-section h2 {
+  font-size: var(--text-title);
+  letter-spacing: -0.6px;
+  margin: 0 0 14px;
+}
+.detail-section p,
+.detail-section li {
+  font-size: var(--text-body);
+  line-height: 1.95;
+  color: #546078;
+  word-break: keep-all;
+}
+.detail-section ul {
+  padding-left: 22px;
+}
+.detail-section li {
+  padding-left: 3px;
+  margin: 6px 0;
+}
+.detail-sidebar {
+  align-self: start;
+  position: sticky;
+  top: 28px;
+}
+.summary-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 26px;
+}
+.summary-card h2 {
+  font-size: var(--text-title);
+  line-height: 1.55;
+  letter-spacing: -0.8px;
+  margin: 12px 0 26px;
+}
+.summary-card dl {
+  margin: 0 0 28px;
+}
+/* Label column stays one line; long values wrap within their own column. */
+.summary-card dl > div {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 12px;
+  font-size: var(--text-small);
+  margin: 14px 0;
+}
+.summary-card dt {
+  color: var(--muted);
+  white-space: nowrap;
+}
+.summary-card dd {
+  margin: 0;
+  font-weight: 500;
+  text-align: right;
+  word-break: keep-all;
+}
+.summary-card dd a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  line-height: 1.5;
+}
+.expanded {
+  display: block;
+}
+/* Saving is secondary to applying: outlined, not a second primary button. */
+.bookmark.wide {
+  width: 100%;
+  background: #fff;
+  color: var(--blue);
+  border: 1px solid #b9c8f5;
+  font-size: var(--text-small);
+  font-weight: 600;
+  min-height: 48px;
+}
+.bookmark.wide:hover {
+  background: var(--accent-soft);
+}
+.bookmark.wide.is-saved {
+  background: var(--accent-soft);
+  color: var(--blue);
+}
+.local-note {
+  text-align: center;
+  font-size: var(--text-caption);
+  color: var(--muted);
+  margin: 9px 0 24px;
+}
+.source-note {
+  border-top: 1px solid var(--line);
+  padding-top: 19px;
+  font-size: var(--text-caption);
+  color: var(--muted);
+}
+@media (min-width: 1450px) {
+  .container,
+  .header-inner,
+  .site-footer > div {
+    max-width: 1260px;
+  }
+  .board-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 48px;
+  }
+  .page-heading {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 900px) {
+  .header-inner {
+    gap: 30px;
+  }
+  .header-label {
+    display: none;
+  }
+  .board-layout {
+    grid-template-columns: 215px minmax(0, 1fr);
+    gap: 23px;
+  }
+  .company-name > span {
+    display: none;
+  }
+  .edition {
+    display: none;
+  }
+  .detail-layout {
+    gap: 30px;
+    grid-template-columns: minmax(0, 1fr) 270px;
+  }
+  .job-card {
+    gap: 13px;
+  }
+  .job-card h3 {
+    font-size: var(--text-heading);
+  }
+  .job-meta {
+    font-size: var(--text-caption);
+    gap: 6px;
+  }
+  .company-monogram {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    font-size: var(--text-title);
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    padding: 0 20px;
+  }
+  .site-header {
+    height: 72px;
+  }
+  .header-inner {
+    padding: 0 20px;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .brand-wordmark {
+    width: 150px;
+    height: auto;
+  }
+  .header-inner nav {
+    gap: 17px;
+    font-size: var(--text-caption);
+  }
+  .page-heading {
+    padding: 35px 0 28px;
+  }
+  .page-heading h1 {
+    font-size: var(--text-display);
+    letter-spacing: -1.3px;
+  }
+  .eyebrow {
+    font-size: var(--text-caption);
+  }
+  .intro {
+    font-size: var(--text-small);
+  }
+  .board-layout {
+    display: block;
+  }
+  .filter-panel {
+    padding: 19px;
+    margin-bottom: 28px;
+  }
+  .filter-heading {
+    margin-bottom: 16px;
+  }
+  .filter-panel form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 9px 12px;
+  }
+  .filter-panel label {
+    margin: 0;
+    font-size: var(--text-caption);
+  }
+  .filter-panel label[for="q"],
+  .search-input,
+  .filter-submit {
+    grid-column: 1/-1;
+  }
+  .filter-panel label[for="location"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .filter-panel select {
+    grid-row: 4;
+    min-width: 0;
+  }
+  .filter-submit {
+    margin-top: 6px;
+  }
+  .filter-note {
+    display: none;
+  }
+  .job-card {
+    padding: 23px 0;
+    gap: 12px;
+  }
+  .job-card h3 {
+    font-size: var(--text-body);
+  }
+  .job-card .company-monogram {
+    width: 39px;
+    height: 39px;
+    font-size: var(--text-heading);
+    border-radius: 9px;
+  }
+  .job-meta {
+    font-size: var(--text-caption);
+    gap: 5px;
+  }
+  .job-card-main {
+    margin-right: -8px;
+  }
+  .bookmark {
+    padding: 8px;
+    min-width: 38px;
+  }
+  .job-card .bookmark-wrap {
+    margin-right: -8px;
+  }
+  .tags {
+    gap: 4px;
+  }
+  .tags > span {
+    font-size: var(--text-caption);
+    padding: 2px 6px;
+  }
+  .results-heading h2 {
+    font-size: var(--text-body);
+  }
+  .result-caption {
+    font-size: var(--text-caption);
+  }
+  .render-panel {
+    margin: 32px 0;
+  }
+  .render-panel summary {
+    font-size: var(--text-caption);
+    padding: 15px 12px;
+    gap: 7px;
+  }
+  .render-body {
+    font-size: var(--text-small);
+    padding: 0 16px 18px;
+  }
+  .site-footer {
+    margin-top: 32px;
+  }
+  .site-footer > div {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 20px;
+  }
+  .footer-contact {
+    flex-wrap: wrap;
+    gap: 2px 12px;
+  }
+  .footer-contact-email {
+    font-size: var(--text-small);
+  }
+  .footer-business {
+    column-gap: 16px;
+  }
+
+  .detail-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .detail-heading h1 {
+    font-size: var(--text-display);
+  }
+  .detail-sidebar {
+    position: static;
+    width: 100%;
+  }
+  .detail-section p,
+  .detail-section li {
+    font-size: var(--text-small);
+  }
+  .detail-section h2 {
+    font-size: var(--text-heading);
+  }
+  .detail-page {
+    padding-top: 24px;
+  }
+  .detail-heading .job-meta {
+    font-size: var(--text-small);
+  }
+  .summary-card {
+    padding: 24px;
+  }
+  .summary-card h2 br {
+    display: none;
+  }
+  .detail-section {
+    margin: 28px 0;
+  }
+  .empty,
+  .loading {
+    padding: 65px 15px;
+    min-height: 270px;
+  }
+  .empty h3 {
+    font-size: var(--text-heading);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.page-gap {
+  align-self: center;
+  color: var(--muted);
+}
+.pagination {
+  flex-wrap: wrap;
+}
+.job-description {
+  overflow-wrap: anywhere;
+}
+.source-link {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.job-meta {
+  overflow-wrap: anywhere;
+}
+.detail-heading h1 {
+  overflow-wrap: anywhere;
+}
+
+/* Company research reuses the board's type, color and row system. */
+.research-page {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow-wrap: anywhere;
+}
+.research-page .intro {
+  font-size: var(--text-body);
+}
+.research-page a:not(.button) {
+  text-underline-offset: 4px;
+}
+.research-page .back-link,
+.research-external {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.research-scope {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  border-top: 1px solid var(--ink);
+  padding: 20px 0;
+}
+.research-scope strong {
+  white-space: nowrap;
+}
+.research-scope p {
+  margin: 0;
+  color: #596579;
+}
+.research-scope a,
+.research-citations a,
+.research-evidence a,
+.research-external,
+.research-orientation a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.research-list,
+.research-jobs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.research-row {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.research-row > div {
+  min-width: 0;
+  flex: 1;
+}
+.research-row h2 {
+  font-size: var(--text-title);
+  margin: 0;
+}
+.research-row h2 a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+}
+.research-row h2 a:hover {
+  color: var(--blue);
+}
+.research-row p {
+  margin: 7px 0;
+}
+.research-legal,
+.research-caption,
+.research-citations {
+  font-size: var(--text-small);
+  color: #596579;
+}
+.research-status {
+  font-size: var(--text-small);
+  font-weight: 600;
+  margin: 10px 0;
+}
+.status-ok {
+  color: #24523d;
+}
+.status-error,
+.status-unavailable,
+.status-stale,
+.status-unobserved {
+  color: #93472b;
+}
+/* Freshness: a stale or failing source is always stated in words, near the data. */
+.live-dot.is-stale {
+  background: #93472b;
+}
+.freshness-banner {
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  font-size: var(--text-small);
+  line-height: 1.7;
+  color: #93472b;
+  background: var(--surface);
+  border-left: 3px solid #93472b;
+}
+.job-freshness {
+  margin: 2px 0 4px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: #93472b;
+}
+.research-method {
+  margin: 28px 0 50px;
+  padding: 24px 28px;
+  background: var(--surface);
+  border-left: 3px solid var(--blue);
+}
+.research-method h2 {
+  font-size: var(--text-title);
+  margin-top: 0;
+}
+.research-method p {
+  color: #596579;
+}
+.research-detail {
+  max-width: 820px;
+  padding-top: 26px;
+}
+.research-heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.research-heading .company-monogram {
+  margin: 0;
+}
+.research-heading h1 {
+  font-size: var(--text-display);
+  line-height: 1.3;
+  letter-spacing: -1.5px;
+  margin: 0 0 12px;
+}
+.research-heading p {
+  margin: 0;
+}
+.research-orientation {
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.research-orientation > p:first-child {
+  font-size: var(--text-heading);
+  font-weight: 600;
+  margin-top: 0;
+}
+.research-orientation > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.research-section {
+  margin: 44px 0;
+  scroll-margin-top: 20px;
+}
+.research-section > h2,
+.research-warning h2 {
+  font-size: var(--text-title);
+  letter-spacing: -0.5px;
+}
+.research-fact {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.research-fact h3 {
+  font-size: var(--text-title);
+  margin: 0 0 4px;
+}
+.research-fact h3 span {
+  font-size: var(--text-body);
+  font-weight: 500;
+}
+.research-fact p {
+  margin: 4px 0;
+}
+.research-citations > span {
+  display: block;
+  margin-top: 8px;
+}
+/* A fact's date and its sources read as one metadata row, wrapping as needed. */
+.fact-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 14px;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: var(--text-small);
+  line-height: 1.7;
+}
+.fact-meta .research-citations {
+  display: contents;
+}
+.fact-meta .research-citations > span {
+  display: inline;
+  margin: 0;
+}
+.fact-meta time,
+.fact-meta a {
+  white-space: nowrap;
+}
+/* The time meta breaks only between its '·' fragments, never inside one. */
+.fact-time-part {
+  white-space: nowrap;
+}
+.fact-time a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.research-citations a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.research-note {
+  padding: 16px 20px;
+  background: var(--surface);
+}
+.research-questions {
+  margin: 0;
+}
+.research-questions > div {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+.research-questions dt {
+  font-weight: 700;
+}
+.research-questions dd {
+  margin: 0;
+}
+.research-questions p {
+  margin: 8px 0;
+}
+.research-questions dd p:first-child {
+  color: #596579;
+}
+.research-question {
+  font-weight: 500;
+}
+.research-jobs li {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.research-jobs a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.research-jobs span {
+  display: block;
+  color: #596579;
+  font-size: var(--text-small);
+}
+.research-jobs-more summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--blue);
+}
+/* Other companies' postings on a shared board (lib/posting-company.ts): apart from the company's own. */
+.board-others {
+  margin: 20px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+.board-others > summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  color: var(--blue);
+}
+.board-others h3 {
+  margin: 16px 0 4px;
+  font-size: var(--text-small);
+}
+.research-evidence {
+  padding-left: 24px;
+}
+.research-evidence li {
+  padding: 16px 0 24px 8px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 20px;
+}
+.research-evidence h3 {
+  font-size: var(--text-heading);
+}
+.research-evidence h3 a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.research-warning {
+  padding: 20px 24px;
+  background: #fff6ed;
+  border-left: 3px solid #a95a2d;
+  margin: 24px 0;
+}
+.research-warning .button {
+  border: 1px solid currentColor;
+}
+@media (max-width: 680px) {
+  .site-header {
+    height: auto;
+    min-height: 72px;
+  }
+  .header-inner {
+    min-height: 72px;
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header-inner nav {
+    gap: 20px;
+    font-size: var(--text-small);
+  }
+  .research-scope {
+    display: block;
+  }
+  .research-scope p {
+    margin-top: 8px;
+  }
+  .research-row {
+    gap: 15px;
+  }
+  .research-row h2 {
+    font-size: var(--text-title);
+  }
+  .research-method {
+    padding: 20px;
+  }
+  .research-heading {
+    gap: 16px;
+  }
+  .research-heading h1 {
+    font-size: var(--text-display);
+  }
+  .research-heading .company-monogram {
+    width: 54px;
+    height: 54px;
+    font-size: var(--text-display);
+  }
+  .research-page .eyebrow {
+    font-size: var(--text-caption);
+  }
+  .research-section {
+    margin: 36px 0;
+  }
+}
+
+/* Company-led research journey */
+.company-search {
+  margin: 24px 0;
+  max-width: 560px;
+}
+.company-search label,
+.company-role-filter label {
+  display: block;
+  font-size: var(--text-small);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.company-search > div,
+.company-role-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.company-search input,
+.company-role-filter select {
+  min-width: 0;
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+}
+.company-role-filter {
+  margin: 24px 0 12px;
+}
+.company-role-filter label {
+  margin: 0;
+}
+.reading-guides {
+  display: grid;
+  gap: 18px;
+}
+.reading-guide {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  scroll-margin-top: 24px;
+}
+.reading-guide h3 {
+  margin-top: 0;
+  font-size: var(--text-heading);
+}
+.reading-guide p,
+.job-interpretation p {
+  line-height: 1.7;
+}
+.reading-guide li,
+.job-company-context li {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.reading-guide a,
+.job-company-context a,
+.detail-company a,
+.company-name a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.role-scope {
+  font-size: var(--text-small);
+  color: #315742;
+  margin: 8px 0;
+}
+.experience-evidence {
+  list-style: none;
+  padding: 0;
+}
+.experience-evidence li {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.experience-evidence li:last-child {
+  border-bottom: 0;
+}
+/* The kind reads as a short label beside the condition, not a heading above it. */
+.experience-kind {
+  flex: none;
+  min-width: 36px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: #24523d;
+}
+/* Label column + full-width quotes: long requirement sentences wrap once,
+   not three times in a narrow column. */
+.job-digest-role {
+  margin: 4px 0 12px;
+}
+.job-digest-brief {
+  color: var(--muted);
+}
+.job-digest-rows {
+  margin: 8px 0 4px;
+}
+.job-digest-rows > div {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.job-digest-rows dt {
+  font-size: var(--text-small);
+  font-weight: 650;
+  line-height: 1.8;
+}
+.job-digest-rows dd {
+  margin: 0;
+}
+.job-digest-rows ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.detail-section .job-digest-rows li {
+  font-size: var(--text-body);
+  line-height: 1.75;
+  margin: 2px 0;
+}
+.job-digest-subhead {
+  margin: 20px 0 4px;
+  font-size: var(--text-body);
+}
+@media (max-width: 680px) {
+  .job-digest-rows > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+/* Hiring status and its last check read as one line. */
+.hiring-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 14px;
+  margin: 4px 0 8px;
+}
+.hiring-line p {
+  margin: 0;
+}
+.tenure-bands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 4px;
+  padding: 0;
+  list-style: none;
+}
+.tenure-bands li {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: var(--text-small);
+}
+.research-job-experience {
+  font-weight: 600;
+  color: var(--ink);
+  word-break: keep-all;
+}
+/* Meta items wrap only when space runs out, and a wrapped line never starts
+   with "·": each item draws its separator in its left padding, the list is
+   shifted left by that padding, and the row clips what falls outside, so the
+   first item on every line loses its separator. */
+.research-jobs .research-job-meta {
+  display: block;
+  overflow: hidden;
+}
+.research-jobs .meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -14px;
+}
+.research-jobs .meta-unit {
+  display: inline-block;
+  position: relative;
+  padding-left: 14px;
+  white-space: nowrap;
+}
+.research-jobs .meta-unit::before {
+  content: "·";
+  position: absolute;
+  left: 4px;
+  color: var(--muted);
+}
+.research-jobs .research-job-experience.meta-unit {
+  white-space: normal;
+}
+.digest-tag {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: #eaf3ee;
+  color: #24523d;
+  font-size: var(--text-caption);
+  font-weight: 600;
+  line-height: 1.7;
+  vertical-align: 1px;
+}
+.job-digest-more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-small);
+  color: var(--blue);
+}
+.job-interpretation details {
+  margin-top: 16px;
+}
+.job-interpretation summary,
+.job-digest summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+.job-research-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.detail-quick {
+  display: none;
+}
+@media (max-width: 900px) {
+  .detail-quick .bookmark-wrap {
+    flex: 1 1 180px;
+  }
+  /* Save and freshness stay by the title when the sidebar drops below. */
+  .detail-quick {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+    margin-top: 12px;
+  }
+  .detail-quick p {
+    margin: 0;
+    font-size: var(--text-small);
+    color: var(--muted);
+  }
+}
+.job-interpretation li,
+.detail-section a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .reading-guide {
+    padding: 18px;
+  }
+  .company-role-filter label {
+    flex-basis: 100%;
+  }
+}
+
+/* Keep the company destination above the job card's stretched link. */
+.company-name a {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.reading-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  border-bottom: 1px solid var(--line);
+  margin-top: 24px;
+}
+.reading-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue);
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.job-original summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: var(--text-heading);
+}
+[id] {
+  scroll-margin-top: 24px;
+}
+@media (max-width: 900px) {
+  .detail-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-article {
+    width: 100%;
+    min-width: 0;
+  }
+  .detail-sidebar {
+    position: static;
+    width: 100%;
+  }
+}
+
+/* Questions read as an article, with evidence available at each answer. */
+.reading-guides {
+  gap: 0;
+}
+.reading-guide {
+  padding: 24px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+}
+.reading-guide h3 {
+  margin-top: 0;
+}
+.reading-guide .research-note {
+  padding: 12px 16px;
+  border-left: 2px solid var(--line);
+}
+.guide-provenance span {
+  display: block;
+}
+.guide-sources summary {
+  min-height: 44px;
+  padding: 10px 0;
+  cursor: pointer;
+  color: var(--blue);
+  font-size: var(--text-small);
+}
+.research-orientation {
+  margin: 24px 0;
+  padding: 16px 0;
+  border: 0;
+}
+.research-orientation > p:first-child {
+  font-size: var(--text-body);
+  font-weight: 400;
+}
+.research-fact h3 {
+  font-size: var(--text-heading);
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+/* Reading scale: 16px body, 14px evidence, 12px compact tags. */
+.detail-section p,
+.detail-section li {
+  font-size: var(--text-body);
+  line-height: 1.8;
+}
+.detail-section .research-caption,
+.research-caption,
+.research-citations {
+  font-size: var(--text-small);
+  line-height: 1.7;
+}
+.research-detail {
+  max-width: 760px;
+}
+.research-heading h1,
+.detail-heading h1 {
+  font-size: var(--text-display);
+  line-height: 1.35;
+  letter-spacing: -1px;
+  overflow-wrap: anywhere;
+}
+.research-section {
+  margin-top: 40px;
+}
+.research-section h2 {
+  font-size: var(--text-title);
+}
+.job-meta,
+.company-name > span:last-child,
+.result-caption {
+  font-size: var(--text-small);
+}
+.tags > span {
+  font-size: var(--text-caption);
+}
+@media (max-width: 680px) {
+  .research-heading h1,
+  .detail-heading h1 {
+    font-size: var(--text-display);
+  }
+  .research-section h2 {
+    font-size: var(--text-title);
+  }
+  .research-heading {
+    gap: 16px;
+  }
+  .research-section {
+    margin-top: 32px;
+  }
+  .reading-nav {
+    gap: 4px 16px;
+  }
+  .detail-actions .button {
+    flex: 1 1 auto;
+  }
+}
+
+.page-heading {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.page-heading h1 {
+  font-size: var(--text-display);
+  line-height: 1.4;
+  letter-spacing: -1px;
+}
+.page-heading .intro {
+  margin-top: 12px;
+  font-size: var(--text-body);
+}
+.research-row {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+@media (max-width: 680px) {
+  .page-heading {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .page-heading h1 {
+    font-size: var(--text-display);
+  }
+}
+
+/* Connected reading: one content graph, two responsive reading layouts. */
+.reading-kicker {
+  color: var(--blue);
+  font-size: var(--text-small);
+  font-weight: 650;
+  margin: 0 0 12px;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+.story-card {
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  text-decoration: none;
+  min-width: 0;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+.story-card:hover {
+  background: var(--accent-soft);
+  border-color: #afc2f5;
+}
+.story-grid > .story-card:first-child {
+  background: var(--accent-soft);
+  border-color: #e0e8fc;
+}
+.story-company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-small);
+  font-weight: 650;
+}
+.reading-company-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  flex-shrink: 0;
+  font-size: var(--text-heading);
+  font-weight: 800;
+  color: #25324c;
+}
+.story-topic {
+  font-size: var(--text-caption);
+  font-weight: 400;
+  margin-left: auto;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.story-card h3 {
+  margin: 24px 0 14px;
+  font-size: var(--text-title);
+  letter-spacing: -0.55px;
+  line-height: 1.55;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.story-preview {
+  font-size: var(--text-small);
+  line-height: 1.8;
+  color: #48546a;
+  margin: 0 0 24px;
+}
+.story-tail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  font-size: var(--text-caption);
+  color: var(--muted);
+  padding-top: 18px;
+}
+.story-reason {
+  color: var(--muted);
+  font-size: var(--text-small);
+  line-height: 1.7;
+  margin: 16px 0 0;
+}
+.story-card.compact h3 {
+  font-size: var(--text-heading);
+  line-height: 1.65;
+  margin: 12px 0 0;
+}
+.story-card.compact .story-tail {
+  padding-top: 12px;
+}
+.company-hub {
+  max-width: 1128px;
+}
+.company-hub .research-heading {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.company-hub .research-orientation {
+  margin: 0 0 32px;
+  padding: 16px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--surface);
+}
+.company-hub .research-orientation p {
+  margin: 8px 0;
+}
+.company-hub .reading-nav {
+  margin-top: 0;
+}
+.company-guide-section {
+  margin: 24px 0 32px;
+}
+.company-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.company-section-heading h2 {
+  font-size: var(--text-title);
+  margin: 0;
+}
+.company-section-heading > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-small);
+}
+.company-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.company-guide-grid > div {
+  min-width: 0;
+}
+.company-guide-grid > div:only-child { grid-column: 1 / -1; }
+.company-guide-grid .story-card {
+  height: 100%;
+  padding: 16px 20px;
+}
+/* On the company's page a question shows its first answer sentence, so
+   readers can pick without opening every card. */
+.company-guide-grid .story-card .story-answer {
+  margin: 6px 0 0;
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: var(--ink);
+  word-break: keep-all;
+}
+/* Korean caveats wrap by word, not mid-syllable ("…없어" / "요"). */
+.company-overview-caveat,
+.company-overview-date,
+.fact-meta,
+.research-fact p {
+  word-break: keep-all;
+}
+.company-guide-more {
+  margin-top: 12px;
+}
+.company-guide-more > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--blue);
+  cursor: pointer;
+  list-style: none;
+}
+.company-guide-more > summary::-webkit-details-marker {
+  display: none;
+}
+/* Open/closed is shown by the chevron, not only by what appears below. */
+.company-guide-more > summary::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.15s;
+}
+.company-guide-more[open] > summary::before {
+  transform: rotate(45deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .company-guide-more > summary::before {
+    transition: none;
+  }
+}
+.company-guide-more > .company-guide-grid {
+  margin-top: 8px;
+}
+.company-guide-grid .story-card .story-limit {
+  margin: 6px 0 0;
+  font-size: var(--text-small);
+  line-height: 1.7;
+  word-break: keep-all;
+  color: var(--muted);
+}
+.company-guide-grid .story-card.compact h3 {
+  margin-top: 6px;
+  font-size: var(--text-heading);
+  word-break: keep-all;
+}
+.company-guide-grid .story-card > .story-topic {
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.company-hub .story-card {
+  color: var(--ink) !important;
+}
+.company-dossier {
+  border-top: 1px solid var(--line);
+}
+.company-dossier > summary {
+  cursor: pointer;
+  padding: 22px 0;
+  font-size: var(--text-heading);
+  font-weight: 650;
+  min-height: 64px;
+}
+.company-dossier > summary span {
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 400;
+  margin-left: 20px;
+}
+.company-dossier > .research-section {
+  max-width: 760px;
+  margin: 0 0 32px;
+}
+/* The following dossier owns the section boundary, not the last data row. */
+.company-hub #company-facts > .research-fact:last-of-type,
+.company-hub .research-evidence > li:last-child {
+  border-bottom: 0;
+}
+.company-exit {
+  margin-top: 24px;
+  background: var(--accent-soft);
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.company-exit p {
+  margin: 0;
+  font-size: var(--text-small);
+}
+.company-exit a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-small);
+}
+.company-request {
+  margin: 32px 0 0;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.company-request a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue);
+  font-weight: 600;
+}
+.company-request + .company-exit {
+  margin-top: 8px;
+}
+.hiring-trend {
+  margin: 20px 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.hiring-trend h3 {
+  margin: 0 0 6px;
+  font-size: var(--text-small);
+}
+.hiring-trend p {
+  margin: 0 0 6px;
+}
+.hiring-trend .tabular {
+  font-variant-numeric: tabular-nums;
+}
+.hiring-trend .nowrap {
+  white-space: nowrap;
+}
+.hiring-trend-line {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  height: 40px;
+  margin: 8px 0;
+}
+.hiring-trend-line polyline {
+  stroke: var(--blue);
+  stroke-width: 2;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+/* Pension subscribers and dated facts on one month axis (DESIGN.md 인원·사건 시간축). */
+.headcount-timeline {
+  margin: 16px 0 24px;
+}
+.headcount-timeline h3 {
+  margin: 0 0 8px;
+  font-size: var(--text-small);
+}
+.headcount-chart {
+  container-type: inline-size;
+  margin: 0 0 12px;
+}
+.headcount-plot,
+.headcount-axis {
+  display: grid;
+  grid-template-columns: repeat(var(--months), minmax(0, 1fr));
+}
+.headcount-plot {
+  position: relative;
+  grid-template-rows: minmax(0, 1fr);
+  height: calc(161px + var(--lanes) * 24px);
+  padding-top: calc(var(--lanes) * 24px);
+  border-bottom: 1px solid var(--line);
+}
+.headcount-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  min-width: 0;
+}
+.headcount-value {
+  position: relative;
+  z-index: 1;
+  padding: 0 2px;
+  background: #fff;
+  font-size: var(--text-caption);
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.headcount-month:first-of-type .headcount-value {
+  align-self: flex-start;
+}
+.headcount-bar,
+.headcount-empty {
+  position: relative;
+  z-index: 1;
+  width: min(24px, 60%);
+}
+.headcount-bar {
+  height: calc((100% - 20px) * var(--ratio));
+  background: color-mix(in srgb, var(--muted) 55%, #fff);
+}
+.headcount-bar.last {
+  background: var(--ink);
+}
+.headcount-empty {
+  height: 6px;
+  border: 1px dashed var(--muted);
+  border-bottom: 0;
+}
+.headcount-marker {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: calc(var(--lane) * 24px);
+  bottom: 0;
+  left: calc(var(--x) * 100%);
+  width: 0;
+  border-left: 1px dashed var(--ink);
+  text-decoration: none;
+}
+.headcount-marker span,
+.headcount-event-number {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--ink);
+  color: #fff;
+  font-size: var(--text-caption);
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.headcount-marker span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+.headcount-marker.start span {
+  transform: translateX(-1px);
+}
+.headcount-marker.end span {
+  transform: translateX(-100%);
+}
+.headcount-axis {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 16px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.headcount-axis small {
+  display: block;
+  font-size: var(--text-caption);
+  text-align: left;
+  white-space: nowrap;
+}
+@container (max-width: 560px) {
+  .headcount-value.middle {
+    display: none;
+  }
+}
+.headcount-chart.dense .headcount-value.middle {
+  display: none;
+}
+.headcount-events {
+  max-height: min(360px, 40svh);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-small);
+}
+.headcount-events li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+.headcount-event-number {
+  flex: none;
+  margin-top: 2px;
+}
+.headcount-event-meta {
+  display: block;
+  color: var(--muted);
+  font-size: var(--text-caption);
+}
+.headcount-event-detail { min-width: 0; flex: 1; }
+.headcount-event-detail summary { cursor: pointer; list-style: none; min-height: 44px; }
+.headcount-event-detail summary::-webkit-details-marker { display: none; }
+.headcount-event-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.headcount-event-detail[open] .headcount-event-title { display: block; }
+.headcount-event-action { display: block; color: var(--blue); font-size: var(--text-caption); margin-top: 4px; }
+.headcount-event-detail .when-open, .headcount-event-detail[open] .when-closed { display: none; }
+.headcount-event-detail[open] .when-open { display: inline; }
+.headcount-event-sources { padding: 12px; margin-top: 8px; background: var(--surface); border-radius: 8px; }
+.headcount-event-sources p { margin: 0 0 8px; overflow-wrap: anywhere; }
+.headcount-event-sources > div + div { margin-top: 16px; }
+.headcount-event-sources a { display: inline-flex; align-items: center; min-height: 44px; color: var(--blue); font-size: var(--text-small); }
+.headcount-context-link { margin-top: 8px; }
+.company-age { color: var(--muted); font-weight: 400; font-size: var(--text-heading); white-space: nowrap; }
+.headcount-table {
+  font-size: var(--text-small);
+}
+.headcount-table summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue);
+  cursor: pointer;
+}
+.headcount-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.headcount-table th,
+.headcount-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+.headcount-table .tabular {
+  font-variant-numeric: tabular-nums;
+}
+.headcount-table td a + a::before {
+  content: "· ";
+  color: var(--muted);
+}
+.research-fact:target {
+  background: color-mix(in srgb, var(--blue) 6%, transparent);
+}
+/* 종속기업 지분 변화 (DESIGN.md): rows, not cards; one column at every width.
+   Anchors here take the 64px scroll margin of `.company-hub [id]`. */
+.company-relations {
+  margin: 8px 0 24px;
+}
+.company-relations h3 {
+  margin: 0 0 4px;
+  font-size: var(--text-heading);
+  line-height: 1.4;
+}
+.company-relations > .research-caption {
+  margin: 0;
+}
+.relation-filing {
+  padding-top: 12px;
+}
+.relation-filing:target {
+  background: color-mix(in srgb, var(--blue) 6%, transparent);
+}
+.relation-filing-meta strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+.relation-rows {
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.relation-rows li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.relation-org {
+  display: block;
+  color: var(--ink);
+  font-size: var(--text-body);
+  font-weight: 600;
+  line-height: 1.6;
+}
+.relation-stake {
+  margin: 2px 0 0;
+  font-size: var(--text-body);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.7;
+}
+.relation-value {
+  white-space: nowrap;
+}
+.relation-note {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-size: var(--text-small);
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.relation-anchor {
+  display: block;
+  height: 0;
+}
+.relation-older > summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue);
+  font-size: var(--text-small);
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .headcount-events {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 1020px) {
+  .story-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .company-guide-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 680px) {
+  .site-header {
+    height: auto;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 16px 20px 0;
+    gap: 8px;
+  }
+  .header-inner nav {
+    width: 100%;
+    gap: 24px;
+    font-size: var(--text-small);
+  }
+  .header-inner nav a {
+    min-height: 48px;
+  }
+  .header-inner nav a[aria-current] {
+    text-underline-offset: 10px;
+  }
+  .story-grid,
+  .company-guide-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .story-card {
+    padding: 22px;
+  }
+  .story-card h3 {
+    font-size: var(--text-title);
+    margin-top: 20px;
+  }
+  .story-preview {
+    font-size: var(--text-small);
+  }
+  .company-section-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .company-section-heading h2 {
+    font-size: var(--text-title);
+  }
+  .company-guide-grid .story-card .story-company {
+    display: none;
+  }
+  .company-guide-grid .story-card h3 {
+    margin-top: 0;
+  }
+  .company-dossier > summary span {
+    display: block;
+    margin-left: 20px;
+    margin-top: 4px;
+  }
+  .company-exit {
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-card {
+    transition: none;
+  }
+}
+
+/* Stories stay readable in place; citations and related companies remain internal. */
+.story-checked { color: var(--muted, #596579); font-size: var(--text-small); line-height: 1.7; margin: 14px 0 24px; }
+.story-contents { display: grid; gap: 2px; padding: 12px 16px; margin: 24px 0 32px; background: var(--surface); border-radius: 10px; }
+.story-contents a { display: flex; gap: 12px; align-items: baseline; padding: 9px 4px; font-size: var(--text-small); line-height: 1.65; color: #33425c; }
+.story-contents a span { color: var(--blue); font-size: var(--text-caption); font-variant-numeric: tabular-nums; }
+.story-section { padding: 8px 0 24px; scroll-margin-top: 100px; }
+.story-viewpoint { color: #596579; font-size: var(--text-caption); font-weight: 600; margin-bottom: 8px; }
+.story-section h2 { font-size: var(--text-title); line-height: 1.5; letter-spacing: -.5px; margin: 0 0 16px; }
+.story-paragraph { font-size: var(--text-body); line-height: 1.95; word-break: keep-all; overflow-wrap: anywhere; color: #29364b; }
+.story-citations { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 14px; }
+.story-citation { font-size: var(--text-caption); line-height: 1.8; color: #596579; }
+.story-citation a { display: inline-block; padding: 5px 0; color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+.story-bridge { background: var(--accent-soft); border: 1px solid var(--accent-line); padding: 24px; margin: 4px 0 32px; border-radius: 16px; }
+.bridge-company { display: flex; gap: 10px; align-items: center; margin: 12px 0 20px; }
+.bridge-company h2 { font-size: var(--text-heading); line-height: 1.5; margin: 0; }
+.story-bridge dl { display: grid; gap: 16px; margin: 0; }
+.story-bridge dt { font-size: var(--text-small); font-weight: 700; color: var(--blue); margin-bottom: 5px; }
+.story-bridge dd { margin: 0; font-size: var(--text-small); line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.bridge-basis { font-size: var(--text-caption); line-height: 1.7; color: #596579; margin: 18px 0 8px; }
+.bridge-evidence { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.bridge-evidence a { font-size: var(--text-caption); text-decoration: underline; text-underline-offset: 3px; padding: 6px 0; }
+.bridge-destination { display: block; font-size: var(--text-small); line-height: 1.7; font-weight: 700; color: var(--blue); border-top: 1px solid var(--accent-line); padding-top: 16px; margin-top: 12px; }
+/* Reading-loop pilot: "같은 문제를 ○○은 어떻게 풀고 있을까요?" (docs/reading-loop-pilot.md).
+   Same bridge box; the problem, all three rows and both sides' sources stay unclipped. */
+.same-problem .bridge-company h2, .same-problem .bridge-company h3 { font-size: var(--text-heading); line-height: 1.5; margin: 0; word-break: keep-all; overflow-wrap: anywhere; }
+.bridge-problem { font-size: var(--text-body); line-height: 1.8; font-weight: 600; color: var(--ink); margin: 0 0 20px; word-break: keep-all; overflow-wrap: anywhere; }
+.bridge-sources { display: grid; gap: 4px; }
+.bridge-source-company { font-size: var(--text-caption); font-weight: 700; color: var(--muted); margin: 8px 0 0; }
+.bridge-sources .story-citations { margin-top: 0; }
+.bridge-sources .story-citation a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; }
+.same-problem .bridge-destination { padding-bottom: 8px; }
+.source-original { display: inline-block; color: var(--blue); font-size: var(--text-small); padding: 10px 0; }
+@media (max-width: 800px) {
+  .story-section h2 { font-size: var(--text-title); }
+  .story-paragraph { font-size: var(--text-body); line-height: 1.9; }
+  .story-bridge { padding: 20px; }
+  .bridge-company h2 { font-size: var(--text-heading); }
+  .story-citation a, .bridge-evidence a { padding: 10px 0; }
+}
+
+/* Company identity and editorial hierarchy, shared by SSR and client job views. */
+.company-mark.has-logo { background: #fff; border: 1px solid var(--line); overflow: hidden; padding: 4px; }
+.company-mark.has-logo img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: 6px; }
+.company-mark.wordmark { padding: 5px; }
+.company-monogram.company-mark { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.research-heading .company-mark.large { width: 72px; height: 72px; border-radius: 16px; padding: 6px; }
+.story-company .company-mark { width: 40px; height: 40px; border-radius: 12px; }
+.story-company > span:not(.company-mark):not(.story-topic) { font-weight: 700; }
+.story-grid > .story-card:first-child { background: #fff; border-color: var(--line); }
+.story-card { box-shadow: 0 2px 4px #17203303; }
+.story-card:hover { background: var(--surface); border-color: #c5cfdf; }
+.story-card h3 { font-size: var(--text-title); line-height: 1.55; margin-top: 22px; }
+.story-preview { word-break: keep-all; overflow-wrap: anywhere; font-size: var(--text-small); margin-bottom: 16px; }
+.story-tail { margin-top: auto; padding-top: 16px; }
+.reading-shelf { margin: 30px 0 44px; }
+.shelf-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
+.shelf-heading h2 { font-size: var(--text-title); line-height: 1.45; letter-spacing: -.6px; margin: 0 0 5px; }
+.shelf-heading p { font-size: var(--text-small); color: var(--muted); margin: 0; }
+.shelf-heading > span { font-size: var(--text-caption); color: var(--muted); white-space: nowrap; }
+.story-list { display: grid; }
+.story-list .story-card { display: grid; grid-template-columns: 210px minmax(0,1fr); align-items: center; gap: 24px; padding: 20px 8px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; }
+.story-list .story-card:last-child { border-bottom: 0; }
+.story-list .story-topic { display: none; }
+.story-list .story-card h3 { font-size: var(--text-body); line-height: 1.65; margin: 0; }
+.story-list .story-tail { display: none; }
+.company-hub .research-heading { margin: 12px 0 20px; gap: 18px; }
+.company-hub .research-heading h1 { font-size: var(--text-display); margin: 0 0 4px; }
+.company-hub .research-heading .eyebrow { display: none; }
+.company-hub .research-heading p { font-size: var(--text-small); color: var(--muted); }
+.company-hub .research-orientation { padding: 12px 16px; background: var(--surface); border: 0; border-radius: 10px; }
+.company-hub .research-orientation > p:first-child { font-size: var(--text-small); font-weight: 600; }
+.company-hub .research-orientation p { font-size: var(--text-small); line-height: 1.75; }
+@media (max-width: 800px) {
+  .reading-shelf { margin: 24px 0 32px; }
+  .shelf-heading h2 { font-size: var(--text-title); }
+  .shelf-heading { gap: 8px; }
+  .shelf-heading p { font-size: var(--text-small); }
+  .shelf-heading > span { display: none; }
+  .story-grid { gap: 12px; }
+  .story-card { padding: 20px; }
+  .story-card h3 { margin: 16px 0 10px; font-size: var(--text-heading); }
+  .story-preview { margin-bottom: 12px; line-height: 1.75; }
+  .story-tail { padding-top: 12px; }
+  .story-list .story-card { grid-template-columns: minmax(0,1fr); gap: 8px 12px; padding: 16px 4px; }
+  .story-list .story-company { grid-column: 1 / -1; font-size: var(--text-small); }
+  .story-list .company-mark { width: 30px; height: 30px; border-radius: 8px; padding: 3px; }
+  .story-list .story-card h3 { font-size: var(--text-body); }
+  .company-hub { padding-top: 12px; }
+  .research-heading .company-mark.large { width: 60px; height: 60px; border-radius: 14px; }
+  .company-hub .research-heading h1 { font-size: var(--text-display); }
+  .company-hub .research-orientation { margin-bottom: 20px; padding: 10px 12px; }
+}
+
+/* Optional browsing preferences: one compact row, no blocking onboarding. */
+.preference-bar { margin: 20px 0 0; border: 1px solid var(--line); border-radius: 12px; background: var(--accent-soft); }
+.preference-bar > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 18px; cursor: pointer; list-style: none; min-height: 54px; }
+.preference-bar > summary::-webkit-details-marker { display: none; }
+.preference-bar > summary > span:first-child { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.preference-bar strong { font-size: var(--text-small); }
+.preference-value { font-size: var(--text-small); color: var(--muted); }
+.preference-edit { color: var(--blue); font-size: var(--text-small); font-weight: 700; white-space: nowrap; }
+.preference-bar[open] > summary { border-bottom: 1px solid var(--line); }
+.preference-bar form { padding: 20px; }
+.preference-fields { display: grid; grid-template-columns: 1fr 1fr; max-width: 620px; gap: 16px; }
+.preference-fields label { display: flex; flex-direction: column; gap: 8px; font-size: var(--text-small); font-weight: 600; }
+.preference-fields select { width: 100%; min-height: 44px; padding: 10px; background: white; border: 1px solid #ccd3df; border-radius: 8px; font: inherit; }
+.preference-help { font-size: var(--text-small); line-height: 1.8; color: var(--muted); max-width: 660px; }
+.preference-actions { display: flex; gap: 8px; }
+.preference-actions button:disabled { opacity: .65; cursor: wait; }
+.experience-context { padding: 12px 14px; border-radius: 8px; background: var(--accent-soft); font-size: var(--text-small); line-height: 1.7; }
+.experience-context strong, .experience-context span { display: block; }
+.experience-context span { color: var(--muted); font-size: var(--text-small); }
+.talent-summary { margin: 28px 0 32px; padding: 24px 0 0; scroll-margin-top: 90px; }
+.talent-heading h2 { font-size: var(--text-title); margin: 0 0 22px; }
+.talent-heading .reading-kicker { margin: 0 0 6px; }
+.talent-direction > p { font-size: var(--text-heading); line-height: 1.85; overflow-wrap: anywhere; margin: 0 0 16px; }
+.talent-direction > .research-caption { font-size: var(--text-small); color: var(--muted); line-height: 1.75; }
+.talent-requirements { padding-bottom: 24px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.talent-requirements h3 { font-size: var(--text-body); margin: 0 0 8px; }
+.talent-requirements > .research-caption { margin: 0 0 16px; font-size: var(--text-small); }
+.experience-distribution { list-style: none; padding: 0; margin: 0; }
+.experience-distribution li { display: grid; grid-template-columns: minmax(116px, auto) minmax(48px, 1fr) 32px; align-items: center; gap: 12px; padding: 8px 0; font-size: var(--text-small); }
+.experience-band-label { color: var(--ink); }
+.experience-bar-track { height: 8px; overflow: hidden; border-radius: 2px; background: var(--surface); }
+.experience-bar-fill { display: block; height: 100%; background: var(--blue); border-radius: 2px; }
+.experience-distribution strong { text-align: right; font-variant-numeric: tabular-nums; font-size: var(--text-small); }
+.experience-distribution strong span { font-size: var(--text-caption); font-weight: 400; margin-left: 2px; color: var(--muted); }
+.experience-distribution .experience-unspecified { color: var(--muted); }
+.experience-unspecified .experience-band-label { color: var(--muted); }
+.experience-unspecified .experience-bar-fill { background: var(--muted); opacity: .5; }
+.talent-summary a { color: var(--blue); font-size: var(--text-small); font-weight: 600; display: inline-flex; align-items: center; min-height: 44px; }
+.talent-job { padding: 0 0 12px; }
+.talent-job + .talent-job { border-top: 1px solid var(--line); padding-top: 12px; }
+.talent-job p { margin: 4px 0; font-size: var(--text-small); }
+.talent-job strong, .talent-job span { display: block; }
+.talent-job strong { font-size: var(--text-caption); color: var(--muted); }
+.talent-question { background: var(--surface); margin: 18px 0 0; padding: 14px 16px; font-size: var(--text-small); line-height: 1.8; }
+.talent-question strong { display: block; }
+.talent-overview-link { display: inline-block; color: var(--blue); font-size: var(--text-small); padding: 12px 0; margin-top: 8px; }
+@media (max-width: 800px) {
+  .preference-bar { margin-top: 12px; }
+  .preference-bar > summary { padding: 12px 14px; }
+  .preference-bar > summary > span:first-child { display: grid; gap: 3px; }
+  .preference-bar form { padding: 16px; }
+  .preference-fields { gap: 12px; }
+  .talent-direction > p { font-size: var(--text-body); }
+  .talent-direction > .research-caption { font-size: var(--text-small); }
+  .talent-heading h2 { font-size: var(--text-title); }
+  .talent-summary { margin: 24px 0 32px; padding: 20px 0 0; }
+}
+.active-role-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 0 0 18px; font-size: var(--text-small); line-height: 1.8; }
+.active-role-filter a { color: var(--blue); display: inline-flex; align-items: center; min-height: 44px; }
+/* New arrivals (2026-10-09): one quiet line of the day's new postings and companies.
+   /discover puts it above the heading with a hairline; /jobs puts it under the edition line. */
+.new-arrivals { display: flex; flex-wrap: wrap; align-items: center; column-gap: 10px; margin: -12px 0 24px; border-bottom: 1px solid var(--line); font-size: var(--text-small); line-height: 1.6; color: var(--muted); }
+.new-arrivals time { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.new-arrivals a { display: inline-flex; align-items: center; min-height: 44px; color: var(--blue); font-weight: 600; white-space: nowrap; }
+.new-arrivals-sep { color: #aeb5c2; }
+.new-arrivals.is-compact { margin: 0; border-bottom: 0; }
+@media (max-width: 800px) { .new-arrivals:not(.is-compact) { margin: -8px 0 16px; } }
+
+.company-hub > .talent-summary { border-top: 0; margin-top: 0; padding-top: 16px; }
+
+/* Keep the native select interaction with a consistent, inset indicator. */
+select:not([multiple]) {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-inline: 14px 44px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='m4 6 4 4 4-4' stroke='%23596579' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-position: right 16px center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+.story-card:is(:hover, :focus-visible) h3,
+.company-shortcuts a:is(:hover, :focus-visible),
+.discovery-directory:is(:hover, :focus-visible) {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (forced-colors: active) {
+  select:not([multiple]) {
+    appearance: auto;
+    -webkit-appearance: auto;
+    background-image: none;
+  }
+}
+
+/* Company identity comes before interpretation and onward reading. */
+.company-overview {
+  display: grid;
+  grid-template-columns: .8fr 1.4fr 1fr 1fr;
+  gap: 32px;
+  margin: 24px 0 20px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.company-overview-field { min-width: 0; }
+.company-overview dt { align-self: start; color: var(--muted); font-size: var(--text-small); margin-bottom: 12px; }
+.company-overview dd { margin: 0; }
+.company-overview-value {
+  display: block;
+  min-height: 30px;
+  font-size: var(--text-heading);
+  font-weight: 650;
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.company-overview-value.is-number { font-size: var(--text-title); line-height: 1.25; font-variant-numeric: tabular-nums; }
+.company-overview-value.is-unknown { color: var(--muted); font-size: var(--text-body); font-weight: 400; }
+.company-overview-date,
+.company-overview-caveat { font-size: var(--text-caption); line-height: 1.7; color: var(--muted); margin: 6px 0 0; }
+.company-overview-caveat { margin-top: 0; }
+.company-overview-detail { margin-top: 4px; }
+.company-overview-detail > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-height: 44px;
+  padding: 0 4px;
+  margin-left: -4px;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  cursor: pointer;
+  list-style: none;
+}
+.company-overview-detail > summary::-webkit-details-marker { display: none; }
+.company-overview-detail > summary::after { content: "+"; font-size: var(--text-body); }
+.company-overview-detail[open] > summary::after { content: "−"; }
+.company-overview-detail > summary:hover { color: var(--blue); }
+.company-overview-evidence { padding: 12px; background: var(--surface); border-radius: 8px; }
+.company-overview-note { font-size: var(--text-caption); line-height: 1.8; color: var(--muted); margin: 0 0 8px; word-break: keep-all; overflow-wrap: anywhere; }
+.company-overview-sources { font-size: var(--text-caption); line-height: 1.7; color: var(--muted); margin: 0; overflow-wrap: anywhere; }
+.company-overview-sources a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+.company-overview-sources span { display: block; }
+@media (max-width: 800px) {
+  .company-overview { grid-template-columns: 1fr; gap: 20px; padding: 24px 0 8px; margin: 20px 0 24px; }
+  .company-overview-field { position: relative; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; }
+  .company-overview-field:has(.company-overview-detail) { min-height: 68px; }
+  .company-overview-detail { margin: 0; }
+  .company-overview-detail > summary { position: absolute; top: 24px; left: 0; }
+  .company-overview-evidence { margin-top: 12px; }
+  .company-overview dt { margin: 3px 0 0; font-size: var(--text-caption); }
+  .company-overview-value { font-size: var(--text-body); min-height: 26px; }
+  .company-overview-value.is-number { font-size: var(--text-title); }
+  .company-overview-value.is-unknown { font-size: var(--text-small); }
+}
+@media (max-width: 360px) {
+  .company-overview-field { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }
+}
+
+/* Native anchor navigation; history restoration explicitly remains instant. */
+.story-contents h2 {
+  margin: 0 4px 8px;
+  font-size: var(--text-small);
+  font-weight: 700;
+  color: var(--ink);
+}
+.story-contents a[aria-current="location"] {
+  color: var(--blue);
+  background: var(--accent-soft);
+  box-shadow: inset 3px 0 var(--blue);
+}
+.story-contents a:hover { color: var(--blue); }
+.story-contents-sidebar { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Bookmarks reuse job cards without hiding saved items behind search filters. */
+.saved-page { max-width: 900px; margin: 0 auto; padding-bottom: 64px; }
+.saved-note { color: var(--muted); font-size: var(--text-small); margin: 8px 0 0; }
+.saved-unavailable { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); }
+.saved-unavailable h2 { font-size: var(--text-heading); }
+.saved-unavailable > p { color: var(--muted); font-size: var(--text-small); }
+.saved-unavailable-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; }
+@media (max-width: 680px) {
+  .header-inner nav { gap: 20px; font-size: var(--text-small); }
+}
+
+/* Original vacancy text stays escaped; structure makes long postings scannable. */
+.job-description > p { white-space: pre-line; margin: 16px 0; }
+.job-description > h3 { font-size: var(--text-heading); line-height: 1.5; color: var(--ink); margin: 32px 0 12px; }
+.job-description ul { margin: 12px 0 20px; padding-left: 24px; }
+.job-description li { margin: 8px 0; padding-left: 4px; }
+.job-description li > ul { margin: 8px 0 12px; }
+.job-research-answer { font-size: var(--text-heading); color: var(--ink); }
+.job-research-point { margin: 24px 0; }
+.job-research-point h3 { font-size: var(--text-body); line-height: 1.5; margin: 0 0 8px; }
+.job-research-point p { margin: 0; }
+.job-research > .research-note { margin: 20px 0 12px; }
+
+/* Touch targets on small screens (product audit 2026-10-04 P2-4). Desktop
+   layout is unchanged; the search input only grows its invisible hit area. */
+.search-input input { height: 44px; margin: -1px 0; }
+@media (max-width: 800px) {
+  .brand,
+  .back-link,
+  .filter-heading a { display: inline-flex; align-items: center; min-height: 44px; }
+  .story-contents a { min-height: 44px; }
+}
+
+/* browse density: detail (main) */
+/* Browsing criteria: a chip in the header, the form as a panel under it, so
+   no page spends its first screen on the criteria bar. */
+.site-header {
+  position: relative;
+}
+.header-inner > .preference-bar {
+  margin: 0 0 0 auto;
+  border: 0;
+  background: none;
+  border-radius: 0;
+  position: relative;
+}
+.header-inner > .preference-bar > summary {
+  min-height: 44px;
+  padding: 0 0 0 12px;
+  gap: 8px;
+  border: 0;
+}
+.header-inner > .preference-bar > summary .preference-value {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--blue);
+  font-size: var(--text-small);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.header-inner > .preference-bar[open] > summary {
+  border-bottom: 0;
+}
+.preference-panel {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 440px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 112px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 24px;
+  z-index: 30;
+  background: var(--base, #fff);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(23, 32, 51, 0.08);
+}
+.preference-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.preference-panel-heading h2 {
+  margin: 0;
+  font-size: var(--text-title);
+  line-height: 1.4;
+}
+.preference-close {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin: -12px -12px -12px 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--text-display);
+  cursor: pointer;
+}
+.preference-close:hover { background: var(--surface); }
+.preference-intro { margin: 12px 0 24px; color: var(--muted); font-size: var(--text-small); line-height: 1.7; }
+.preference-panel form { padding: 0; }
+.preference-panel .preference-fields { grid-template-columns: 1fr; gap: 20px; }
+.preference-panel select { font-size: var(--text-body); min-height: 48px; }
+.preference-panel .preference-help { margin: 12px 0 24px; line-height: 1.7; }
+.preference-sizes { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; margin: 0; padding: 0; border: 0; max-width: 620px; }
+.preference-sizes legend { margin-bottom: 8px; padding: 0; font-size: var(--text-small); font-weight: 600; }
+.preference-sizes label { display: flex; align-items: center; gap: 8px; min-height: 44px; font-size: var(--text-small); cursor: pointer; }
+.preference-sizes input { width: 20px; height: 20px; margin: 0; accent-color: var(--ink); }
+.research-size { margin: 4px 0 0; color: var(--muted); font-size: var(--text-small); font-variant-numeric: tabular-nums; }
+.preference-panel .preference-actions { align-items: center; justify-content: space-between; }
+.preference-actions .preference-reset { background: transparent; color: var(--muted); padding-left: 0; }
+.preference-actions .primary { min-width: 128px; }
+.preference-storage { margin: 16px 0 0; font-size: var(--text-caption); color: var(--muted); }
+@media (max-width: 680px) {
+  .header-inner > .preference-bar { position: static; }
+  .preference-panel { top: 100%; left: 16px; right: 16px; width: auto; max-height: calc(100dvh - 124px); padding: 20px; }
+}
+@media (max-width: 680px) {
+  /* Row 1: brand and the criteria chip; row 2: the section nav. */
+  .header-inner > .preference-bar {
+    order: 1;
+  }
+  .header-inner nav {
+    order: 2;
+  }
+  .header-inner > .preference-bar > summary .preference-value {
+    font-size: var(--text-caption);
+    padding: 0 10px;
+  }
+}
+
+/* Company basics: value + one wrapping meta line; unknowns named on one line. */
+.company-overview-block {
+  border-top: 1px solid var(--line);
+  margin: 20px 0 24px;
+  padding: 20px 0 0;
+}
+.company-overview-block > .company-overview {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.company-business-intro { margin: 24px 0 0; max-width: 72ch; }
+.company-business-intro h2 { margin: 0 0 8px; font-size: var(--text-small); font-weight: 500; color: var(--muted); }
+.company-business-intro > p { margin: 0; font-size: var(--text-body); line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.overview-sources { min-width: 0; }
+.overview-sources summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; color: var(--blue); }
+.overview-sources ul { margin: 0; padding: 0 0 8px 16px; }
+.company-overview-meta .overview-sources a { margin: 0; }
+
+/* Annual figures retain their exact published units. No prose wall or inferred risk score. */
+.company-financials { max-width: 760px; }
+.company-financials .financial-basis { margin: 4px 0 20px; font-size: var(--text-small); color: var(--muted); }
+.financial-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 0 0 24px; }
+.financial-metrics dt { margin-bottom: 8px; font-size: var(--text-small); color: var(--muted); }
+.financial-metrics dd { margin: 0; font-size: var(--text-title); font-weight: 650; line-height: 1.5; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.financial-equity { width: 100%; border-collapse: collapse; text-align: left; font-variant-numeric: tabular-nums; }
+.financial-equity caption { text-align: left; font-size: var(--text-body); font-weight: 600; padding-bottom: 8px; }
+.financial-equity th { width: 50%; font-size: var(--text-small); font-weight: 400; color: var(--muted); padding: 8px 16px 8px 0; border-bottom: 1px solid var(--line); }
+.financial-equity td { font-size: var(--text-heading); padding: 12px 16px 12px 0; }
+.company-financials .financial-caveat { font-size: var(--text-small); color: var(--muted); margin: 12px 0; }
+.company-financials .financial-precision { font-size: var(--text-caption); color: var(--muted); margin: 8px 0; }
+.financial-excerpt { font-size: var(--text-small); color: var(--muted); }
+.financial-excerpt summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; }
+.company-financials .financial-excerpt p { font-size: var(--text-small); line-height: 1.8; margin: 4px 0 12px; }
+.company-financials .financial-source { margin: 12px 0 0; font-size: var(--text-caption); color: var(--muted); }
+.financial-source > span { display: flex; flex-wrap: wrap; align-items: center; column-gap: 12px; }
+.financial-source a { display: inline-flex; align-items: center; min-height: 44px; }
+.headcount-event-sources .financial-metrics { gap: 16px; }
+.headcount-event-sources .financial-metrics dd { font-size: var(--text-heading); }
+@media (max-width: 680px) {
+  .financial-metrics { grid-template-columns: 1fr; gap: 12px; }
+  .financial-metrics > div { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: baseline; }
+  .financial-metrics dt { margin: 0; }
+  .financial-metrics dd { font-size: var(--text-heading); }
+  .financial-equity td { font-size: var(--text-body); }
+  .company-business-intro { margin-top: 20px; }
+}
+.company-overview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 0;
+  margin: 4px 0 0;
+  font-size: var(--text-caption);
+  line-height: 1.7;
+  color: var(--muted);
+  word-break: keep-all;
+}
+.company-overview-meta a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin: -12px 0;
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.company-overview-unknown {
+  margin: 12px 0 0;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+@media (max-width: 680px) {
+  .company-overview-block > .company-overview {
+    gap: 12px;
+  }
+  .company-overview-block .company-overview-field {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 12px;
+    min-height: 0;
+  }
+}
+/* Company jobs by role: every role and count in view, first rows inline. */
+.research-job-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 4px;
+  padding: 0;
+  list-style: none;
+}
+.research-job-roles a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: var(--text-small);
+  text-decoration: none;
+}
+.research-job-roles a strong {
+  font-variant-numeric: tabular-nums;
+  color: var(--blue);
+}
+.research-job-group {
+  scroll-margin-top: 90px;
+  margin-top: 18px;
+}
+.research-job-group h3 {
+  margin: 0;
+  font-size: var(--text-body);
+}
+.research-job-group h3 span {
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 500;
+}
+/* Company page on wide screens: the job list becomes a right column next to
+   the reading content instead of leaving the right half empty. */
+@media (min-width: 1200px) {
+  .company-hub {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    column-gap: 48px;
+    align-items: start;
+  }
+  .company-hub > * {
+    grid-column: 1;
+  }
+  .company-hub > .back-link,
+  .company-hub > .research-heading,
+  .company-hub > .company-overview-block,
+  .company-hub > .section-tabs-slot {
+    grid-column: 1 / -1;
+  }
+  .company-hub > .company-jobs-rail {
+    grid-column: 2;
+    grid-row: 5 / span 8;
+    border-top: 0;
+    margin-top: 28px;
+  }
+  .company-hub > .company-jobs-rail > summary {
+    padding-top: 0;
+  }
+  .company-hub > .company-jobs-rail .research-jobs a {
+    font-size: var(--text-small);
+  }
+}
+.research-job-group.research-jobs-more {
+  margin-top: 0;
+}
+.research-job-group.research-jobs-more > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.research-job-group.research-jobs-more > summary span {
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+/* /discover on phones: each topic is a swipeable row (the row scrolls, the
+   page does not), so all topics are within a few screens. */
+@media (max-width: 680px) {
+  .reading-shelf:not(.is-topic) .story-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 84%;
+    grid-template-columns: none;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    margin: 0 -20px;
+    padding: 0 20px 8px;
+  }
+  .reading-shelf:not(.is-topic) .story-grid > .story-card,
+  .reading-shelf:not(.is-topic) .story-grid > .shelf-more {
+    scroll-snap-align: start;
+  }
+  .reading-shelf:not(.is-topic) .shelf-heading > span::after {
+    content: "\00a0· 옆으로 넘겨 보기";
+  }
+  .reading-shelf.dense .shelf-heading > span::after {
+    content: "";
+  }
+}
+@media (max-width: 680px) {
+  /* Facts: sources keep 44px targets without each taking a 44px line. */
+  .fact-meta .research-citations a,
+  .fact-time a {
+    margin: -12px 0;
+  }
+  .research-fact {
+    padding: 14px 0;
+  }
+  .research-detail .research-fact h3 {
+    font-size: var(--text-body);
+    line-height: 1.6;
+  }
+}
+/* browse density: lists (8d) */
+/* /jobs: one heading line, a one-row search on phones, and a decision line
+   (experience · role · place) on every card so a list can be judged without
+   opening each posting. Separators are drawn in the units' left padding and
+   clipped at a line start, as in .research-job-meta. */
+.jobs-heading {
+  display: block;
+  padding: 40px 0 24px;
+}
+.jobs-heading h1 {
+  font-size: var(--text-display);
+}
+.jobs-edition {
+  margin: 6px 0 0;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.job-card-company {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+}
+.job-card-company .company-chips {
+  margin: 0;
+}
+.job-decision {
+  margin: 0;
+  font-size: var(--text-small);
+  line-height: 1.6;
+  color: var(--muted);
+  overflow: hidden;
+}
+.decision-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -14px;
+}
+.decision-unit {
+  position: relative;
+  padding-left: 14px;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.decision-unit::before {
+  content: "·";
+  position: absolute;
+  left: 4px;
+  color: #aeb5c2;
+}
+.decision-unit:last-child {
+  /* The last unit may wrap inside itself instead of running past a narrow card. */
+  white-space: normal;
+}
+.decision-experience {
+  color: var(--ink);
+  font-weight: 600;
+  white-space: normal;
+}
+.job-card-tags {
+  /* One row of whole tags: a tag that does not fit drops to a hidden second row. */
+  flex-wrap: wrap;
+  max-height: 30px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.job-card-tags > .tags-more {
+  background: none;
+  color: var(--muted);
+}
+@media (min-width: 1200px) {
+  .job-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+  }
+  .job-list .job-card h3 {
+    font-size: var(--text-heading);
+  }
+}
+@media (max-width: 680px) {
+  .jobs-heading {
+    padding: 16px 0 10px;
+  }
+  .jobs-heading h1 {
+    font-size: var(--text-title);
+    line-height: 1.4;
+  }
+  .filter-panel {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  .filter-heading {
+    margin: 0;
+    justify-content: flex-end;
+  }
+  .filter-heading h2,
+  .filter-panel label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .filter-panel form {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 8px;
+  }
+  .filter-panel label[for="q"],
+  .search-input,
+  .filter-submit {
+    grid-column: auto;
+  }
+  .filter-panel select {
+    grid-row: auto;
+    width: auto;
+    max-width: 118px;
+  }
+  .filter-submit {
+    margin-top: 0;
+    padding: 10px 14px;
+  }
+  .result-caption {
+    display: none;
+  }
+  .results-heading {
+    margin-bottom: 4px;
+  }
+  .job-card {
+    padding: 16px 0;
+  }
+  .job-card h3 {
+    margin: 4px 0 6px;
+  }
+  .job-card-tags {
+    display: none;
+  }
+}
+@media (max-width: 389px) {
+  /* Beside the area select and the button the search box cuts its placeholder; it takes its own row. */
+  .filter-panel form {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .search-input {
+    grid-column: 1 / -1;
+  }
+  .filter-panel select {
+    width: 100%;
+    max-width: none;
+  }
+}
+/* /companies: comparison rows (chips · what the company does · hiring mix),
+   two columns on wide screens. */
+.companies-index {
+  max-width: 1128px;
+}
+.companies-heading {
+  display: block;
+  padding: 40px 0 16px;
+}
+.companies-heading h1 {
+  font-size: var(--text-display);
+}
+.companies-count {
+  margin: 6px 0 0;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.companies-index .company-search {
+  margin: 0 0 20px;
+}
+.companies-index .research-business {
+  color: var(--ink);
+  word-break: keep-all;
+}
+.research-hiring-mix .decision-median {
+  /* The longest unit: may wrap inside itself rather than be clipped on narrow rows. */
+  white-space: normal;
+}
+.research-hiring-mix {
+  margin: 4px 0 0;
+  font-size: var(--text-small);
+  line-height: 1.6;
+  color: var(--muted);
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .companies-index .research-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 40px;
+  }
+}
+@media (max-width: 680px) {
+  .companies-heading {
+    padding: 16px 0 10px;
+  }
+  .companies-heading h1 {
+    font-size: var(--text-title);
+    line-height: 1.4;
+  }
+  .companies-index .company-search {
+    margin-bottom: 8px;
+  }
+  .companies-index .research-row {
+    padding: 14px 0;
+    gap: 12px;
+  }
+  .companies-index .research-row .company-monogram {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  .companies-index .research-row h2 {
+    font-size: var(--text-heading);
+  }
+  .companies-index .research-row p {
+    margin: 4px 0;
+  }
+  .companies-index .research-status {
+    margin: 6px 0 0;
+  }
+}
+.research-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+}
+.research-identity > .research-legal,
+.research-identity > .company-chips {
+  margin: 0;
+}
+@media (max-width: 680px) {
+  .results-heading.is-unfiltered {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .job-card {
+    padding: 14px 0;
+  }
+}
+@media (max-width: 680px) {
+  /* The logo sits beside the name so the row's text uses the full width. */
+  .companies-index .research-row {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 0 10px;
+    align-items: center;
+  }
+  .companies-index .research-row > div {
+    display: contents;
+  }
+  .companies-index .research-row > div > * {
+    grid-column: 1 / -1;
+  }
+  .companies-index .research-row .company-monogram {
+    grid-row: 1;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin: 0;
+  }
+  .companies-index .research-row > div > h2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .companies-index .research-business {
+    font-size: var(--text-small);
+    line-height: 1.6;
+  }
+}
+.companies-index .company-directory-entry {
+  display: block;
+  position: relative;
+  padding: 24px 0;
+}
+.companies-index .company-directory-entry > .company-monogram {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.companies-index .company-directory-entry h2 {
+  padding-left: 52px;
+  font-size: var(--text-heading);
+}
+.companies-index .company-directory-entry .research-identity {
+  margin: 8px 0;
+}
+.companies-index .directory-roles {
+  color: var(--muted);
+  font-size: var(--text-small);
+  line-height: 1.7;
+}
+.directory-story {
+  display: grid;
+  gap: 4px;
+  padding: 12px 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+.directory-story > span {
+  color: var(--blue);
+  font-size: var(--text-caption);
+}
+.directory-openings {
+  margin-top: 12px;
+}
+.companies-index .directory-hiring-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-small);
+  line-height: 1.7;
+  word-break: keep-all;
+}
+.companies-index .directory-hiring-label.has-openings {
+  color: var(--ink);
+  font-weight: 600;
+}
+.companies-index .directory-hiring-note {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: var(--text-caption);
+  line-height: 1.7;
+}
+.directory-job-preview {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.directory-job-preview a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 0;
+  color: var(--ink);
+  font-size: var(--text-small);
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.directory-job-preview a:hover,
+.directory-story:hover {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.directory-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 24px;
+  margin-top: 4px;
+  font-size: var(--text-small);
+}
+.directory-actions a {
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.directory-method {
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.directory-method summary {
+  min-height: 44px;
+  align-content: center;
+  cursor: pointer;
+}
+.directory-method p {
+  max-width: 72ch;
+}
+.companies-index .company-directory-entry > div {
+  display: block;
+}
+@media (max-width: 680px) {
+  .companies-heading h1 {
+    font-size: var(--text-display);
+  }
+}
+/* Density round 2 (review items). */
+/* Criteria chip: the whole chip is the 44px target. */
+.header-inner > .preference-bar > summary {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--accent-line);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--blue);
+}
+.header-inner > .preference-bar > summary .preference-value {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.header-inner > .preference-bar > summary .preference-edit {
+  font-size: var(--text-small);
+}
+.preference-short {
+  display: none;
+}
+@media (max-width: 680px) {
+  /* Keep brand and criteria together; navigation owns the second row. */
+  .site-header {
+    height: auto;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 20px;
+    gap: 0;
+    min-height: 0;
+  }
+  .brand {
+    min-width: 44px;
+    min-height: 44px;
+  }
+  /* The space between menu items is part of each link (44×44 minimum). */
+  .header-inner nav {
+    order: 2;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    font-size: var(--text-small);
+  }
+  .header-inner nav a {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0 5px;
+    justify-content: center;
+  }
+  .header-inner > .preference-bar {
+    order: 0;
+    margin-left: auto;
+  }
+  .header-inner > .preference-bar > summary {
+    padding: 0 10px;
+  }
+  .header-inner > .preference-bar > summary .preference-value,
+  .header-inner > .preference-bar > summary .preference-edit {
+    display: none;
+  }
+  .header-inner > .preference-bar > summary .preference-short {
+    display: inline;
+    font-size: var(--text-small);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}
+/* /discover: each shelf shows its first stories, then a link to the topic. */
+.shelf-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-height: 88px;
+  padding: 20px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  color: var(--blue);
+  text-decoration: none;
+}
+.shelf-more strong {
+  font-size: var(--text-body);
+}
+.shelf-more span {
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.story-list > .shelf-more {
+  min-height: 56px;
+  margin-top: 8px;
+}
+@media (max-width: 680px) {
+  .reading-shelf .shelf-heading {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .reading-shelf .shelf-heading > span {
+    display: block;
+  }
+  .reading-shelf:not(.is-topic) .story-grid {
+    align-items: start;
+  }
+  /* Company page sections in one row where it fits. */
+  .company-hub .reading-nav {
+    gap: 0 12px;
+  }
+  .company-hub .reading-nav a {
+    font-size: var(--text-small);
+  }
+}
+/* Company page: the jobs line under the basics (the wide layout has the rail). */
+.company-jobs-jump {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 12px;
+  margin: -8px 0 16px;
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.company-jobs-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--blue);
+  font-weight: 600;
+}
+@media (min-width: 1200px) {
+  .company-hub > .company-jobs-jump {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  /* Company questions stay a vertical list on phones (they are the page's
+     answers, not browsing shelves); each card is tightened instead. */
+  .company-guide-grid {
+    gap: 10px;
+  }
+  .company-guide-grid .story-card {
+    padding: 14px 16px;
+  }
+  .company-guide-grid .story-card > .story-topic {
+    text-align: left;
+    font-size: var(--text-caption);
+  }
+  .company-guide-grid .story-card.compact h3 {
+    margin-top: 2px;
+    font-size: var(--text-body);
+    line-height: 1.5;
+  }
+  .company-guide-grid .story-card .story-answer {
+    font-size: var(--text-small);
+    line-height: 1.65;
+  }
+  .company-guide-grid .story-card .story-limit {
+    font-size: var(--text-small);
+    line-height: 1.6;
+  }
+}
+@media (max-width: 379px) {
+  /* 360–379px (common Android, iPhone mini/SE): still one row, tighter. */
+  .header-inner {
+    padding: 6px 16px;
+  }
+  .header-inner nav {
+    font-size: var(--text-small);
+  }
+  .header-inner nav a {
+    padding: 0 4px;
+  }
+}
+@media (max-width: 339px) {
+  /* Too narrow for one row: mark and chip, then the section nav. */
+  .header-inner nav {
+    order: 2;
+    width: 100%;
+  }
+  .header-inner > .preference-bar {
+    order: 1;
+  }
+}
+/* Wide screens: "모두 보기" lives in the shelf heading, so the grid has no
+   orphan card; the swipe row on phones ends with the card instead. */
+.shelf-count {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-small);
+  font-weight: 600;
+  color: var(--blue);
+  white-space: nowrap;
+}
+@media (min-width: 681px) {
+  .story-grid > .shelf-more {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .reading-shelf .shelf-heading > .shelf-count {
+    margin: -12px 0;
+    font-size: var(--text-caption);
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .reading-shelf .shelf-heading > .shelf-count::after {
+    content: "\00a0· 옆으로 넘겨 보기";
+  }
+  .reading-shelf.dense .shelf-heading > .shelf-count::after {
+    content: "";
+  }
+}
+@media (max-width: 680px) {
+  /* /discover intro on phones: title, directory link and one swipeable row of
+     topic filters, so the first shelf starts on the first screen. */
+}
+
+/* Section tabs (DESIGN.md 긴 화면의 위치): the reading nav sticks to the top once scrolled past. */
+#main:focus {
+  outline: none;
+}
+.reading-nav.section-tabs {
+  display: block;
+}
+.section-tabs-inner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.section-tabs.is-stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  margin: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 var(--line);
+}
+.section-tabs.is-stuck .section-tabs-inner {
+  /* Same column as the page content. */
+  width: min(1128px, 100% - 32px);
+  margin: 0 auto;
+  padding: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.section-tabs.is-stuck .section-tabs-inner::-webkit-scrollbar {
+  display: none;
+}
+/* A label never breaks inside a word, stuck or not (on a phone the row scrolls sideways). */
+.section-tabs a {
+  flex: none;
+  white-space: nowrap;
+}
+.section-tabs a[aria-current="location"] {
+  color: var(--ink);
+  box-shadow: inset 0 -2px 0 var(--ink);
+}
+.company-hub [id],
+.detail-page [id] {
+  scroll-margin-top: 64px;
+}
+.back-to-top {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: var(--text-small);
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(23, 32, 51, 0.12);
+  cursor: pointer;
+}
+.back-to-top:hover {
+  color: var(--blue);
+}
+@media (max-width: 680px) {
+  .section-tabs-inner {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .section-tabs-inner::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Five menu items (제품 소개 added 2026-10-09): a label never breaks inside;
+   from 1024px the menu stays on the header row, narrower tablets give it its
+   own row the way phones do. A long saved criteria label wraps inside the
+   chip instead of widening the header (every chosen band stays written). */
+.header-inner nav a {
+  min-width: 44px;
+  justify-content: center;
+  white-space: nowrap;
+}
+.header-inner > .preference-bar {
+  min-width: 0;
+}
+.header-inner > .preference-bar > summary {
+  min-width: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.header-inner > .preference-bar > summary .preference-value {
+  min-width: 0;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-height: 1.4;
+}
+@media (min-width: 681px) and (max-width: 1023px) {
+  .site-header {
+    height: auto;
+  }
+  .header-inner {
+    flex-wrap: wrap;
+    row-gap: 0;
+    padding-top: 12px;
+    padding-bottom: 4px;
+  }
+  .header-inner nav {
+    order: 2;
+    width: 100%;
+  }
+}
+
+/* Navigation feedback stays outside the reading layout. */
+.route-pending {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 3px;
+  z-index: 1000;
+  pointer-events: none;
+  background: var(--blue);
+  animation: route-pending-pulse 1s ease-in-out infinite;
+}
+
+.route-pending-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@keyframes route-pending-pulse {
+  50% { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-pending { animation: none; }
+}
+
+/* New arrivals remain useful without scripts; each tile is one complete link. */
+.arrival-banner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 32px;
+}
+.arrival-banner-tile {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 44px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+}
+.arrival-banner-tile:only-child {
+  grid-column: 1 / -1;
+}
+.arrival-banner-companies {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+}
+.arrival-banner-tile:hover {
+  border-color: var(--blue);
+}
+.arrival-banner-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+.arrival-banner-meta time {
+  color: var(--blue);
+  white-space: nowrap;
+}
+.arrival-banner-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+  margin: 12px 0 8px;
+  font-size: var(--text-heading);
+  font-weight: 600;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+.arrival-banner-title strong {
+  font-size: var(--text-display);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.arrival-banner-description {
+  max-width: 42ch;
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: var(--text-small);
+  line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.arrival-banner-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: auto;
+}
+.arrival-banner-action {
+  color: var(--blue);
+  font-size: var(--text-small);
+  font-weight: 700;
+}
+.arrival-banner-tile:hover .arrival-banner-action {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.arrival-banner-marks {
+  display: flex;
+  gap: 8px;
+}
+.arrival-banner-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: var(--base);
+  font-size: var(--text-small);
+  font-weight: 700;
+}
+@media (max-width: 680px) {
+  .arrival-banner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .arrival-banner-tile {
+    padding: 20px;
+  }
+}
+
+/* Footer: 이용약관 and 개인정보처리방침 beside the copyright. The privacy policy is set apart
+   by weight and color, as the Korean privacy-policy guidance asks; 44px hit areas, caption size. */
+.footer-meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 0 20px; }
+.footer-legal { display: flex; flex-wrap: wrap; gap: 0 16px; }
+.footer-legal a { display: inline-flex; align-items: center; min-height: 44px; margin: -11px 0; color: var(--muted); font-size: var(--text-caption); line-height: 1.8; }
+.footer-legal a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.footer-legal .footer-privacy { color: var(--ink); font-weight: 700; }
+/* On a phone the floating 위로 button sits over the footer's last line; leave room under it. */
+@media (max-width: 680px) { .site-footer > div { padding-bottom: 80px; } }
+
+/* 개인정보처리방침·이용약관: one reading column; label/value rows instead of tables so a phone never scrolls sideways. */
+.legal-page { max-width: 760px; padding: 48px 0 24px; }
+.legal-page h1 { margin: 0 0 8px; font-size: var(--text-title); }
+.legal-effective { margin: 0 0 32px; color: var(--muted); font-size: var(--text-small); }
+.legal-page h2 { margin: 40px 0 12px; font-size: var(--text-heading); }
+.legal-page h3 { margin: 24px 0 8px; font-size: var(--text-body); }
+.legal-page p, .legal-page li { font-size: var(--text-body); line-height: 1.75; word-break: keep-all; overflow-wrap: anywhere; }
+.legal-page p { margin: 0 0 12px; }
+.legal-page ol, .legal-page ul { margin: 0 0 12px; padding-left: 22px; }
+.legal-page li + li { margin-top: 4px; }
+.legal-page a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.legal-facts { margin: 0 0 16px; border-top: 1px solid var(--line); }
+.legal-facts > div { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.legal-facts dt { color: var(--muted); font-size: var(--text-small); line-height: 1.75; }
+.legal-facts dd { margin: 0; font-size: var(--text-small); line-height: 1.75; word-break: keep-all; overflow-wrap: anywhere; }
+@media (max-width: 680px) {
+  .legal-page { padding-top: 32px; }
+  .legal-facts > div { grid-template-columns: 1fr; }
+}
+/* A research limitation names when its sources were confirmed (자료 확인), on
+   its own line, apart from the live job collection status (QA 2026-10-11 P3-6). */
+.research-asof {
+  display: block;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* A reviewed question is a reading choice, with its answer and scope visible. */
+.question-reading {
+  display: block;
+  padding: 20px;
+  margin: 12px 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+.question-reading:visited { color: var(--ink); }
+.question-reading:hover { background: var(--surface); border-color: var(--blue); }
+.question-reading-company { display: flex; align-items: center; gap: 10px; font-size: var(--text-small); }
+.question-reading h3, .reading-arrival h2 { margin: 16px 0 12px; font-size: var(--text-heading); line-height: 1.6; word-break: keep-all; }
+.question-reading-answer, .reading-arrival > p { margin: 12px 0; font-size: var(--text-body); line-height: 1.8; }
+.question-reading-limit, .reading-arrival > .question-reading-limit { font-size: var(--text-small); color: var(--muted); line-height: 1.8; margin: 12px 0; }
+.question-reading-action { display: block; color: var(--blue); font-size: var(--text-small); margin-top: 16px; }
+.story-question-connection { margin: 28px 0; }
+.story-question-connection > h2, .reader-company-stories h2 { font-size: var(--text-heading); margin: 0 0 12px; }
+.reading-arrival { padding: 20px 24px; background: var(--surface); border-left: 3px solid var(--blue); border-radius: 0 12px 12px 0; margin: 0 0 28px; }
+.reading-arrival > .reading-arrival-label { margin: 0; color: var(--blue); font-size: var(--text-small); font-weight: 700; }
+.reading-arrival h2 { margin-top: 8px; }
+.reading-arrival > a { display: inline-flex; align-items: center; min-height: 44px; color: var(--blue); font-size: var(--text-small); }
+
+/* Company-size choices are visible where a reader browses, not only in saved preferences. */
+.company-size-filter { margin: 20px 0; }
+.size-filter-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-size: var(--text-small); }
+.size-filter-heading span { color: var(--muted); font-size: var(--text-caption); }
+.size-filter-options { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 8px 0 0; padding: 0; }
+.size-filter-options a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); font-size: var(--text-small); line-height: 1.5; }
+.size-filter-options a:hover { border-color: var(--blue); }
+.size-filter-options a[aria-current="true"] { color: var(--blue); border-color: var(--blue); background: var(--surface); font-weight: 700; }
+.company-size-filter > p { margin: 8px 0 0; color: var(--muted); font-size: var(--text-caption); line-height: 1.7; }
+.filter-panel .company-size-filter { margin-bottom: 0; }
+
+.overview-sources summary, .financial-excerpt summary { gap: 8px; }
+.overview-sources summary::after, .financial-excerpt summary::after { content: "+"; }
+.overview-sources[open] > summary::after, .financial-excerpt[open] > summary::after { content: "−"; }
+
+/* Review-only context, outside the product's information hierarchy. */
+.review-edition-notice { display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem 1rem; padding: .7rem 1rem; background: #efeffc; color: #333354; font-size: var(--text-small); }
+.review-edition-notice a { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
