@@ -19,6 +19,7 @@ description: Choose and run the checks for a change in the Curvehop public revie
 
 3. `pnpm test:http` uses the production build. Run `pnpm build` first.
 4. In Korean text, keep punctuation outside emphasis when a particle follows: write `“**질문?**”를`, not `**“질문?”**를`. CommonMark cannot close the second form, so the asterisks show.
+   Do not use middle dots (`·`) or dashes (`—`, `–`) to join items or add asides in Korean prose. Join items with 와/과 or commas, or write separate sentences. Write Korean words in Korean sentences; keep English only for product names, commands, code identifiers, and file names.
 5. Report the commands that ran, pass or fail, and the failing output. Name anything you did not check.
 6. Do not weaken or delete a test to make it pass. If a test is wrong, fix it in a separate commit and explain why.
 
