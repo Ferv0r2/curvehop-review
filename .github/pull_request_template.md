@@ -13,7 +13,7 @@
 - [ ] `pnpm verify:source`
 - [ ] `pnpm typecheck`
 - [ ] `pnpm test`
-- [ ] `pnpm build` → `pnpm test:http`
+- [ ] `pnpm build`, then `pnpm test:http`
 - [ ] `pnpm test:sensitivity` (cache, preferences, revision, or JEV changes)
 - [ ] `node docs/architecture/build.mjs` and `capture.mjs` (diagram changes)
 

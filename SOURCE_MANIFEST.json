@@ -22,7 +22,7 @@
     {
       "path": ".github/pull_request_template.md",
       "kind": "generated",
-      "exportSha256": "4f3901d9b11622a9d7b6866f44226fead9671c328ebaa802ef99a74c893d9ae1"
+      "exportSha256": "0c014f643bc2f4b4f8ccd2077360f95ef54112b6311a3227527f0c68da7bfe45"
     },
     {
       "path": ".github/workflows/review.yml",
@@ -44,7 +44,7 @@
       "path": "AGENTS.md",
       "kind": "adapter",
       "sourceSha256": "5ec6f19de94749a7d7533031318b689a55a7ba4efe1bf8b6533e326f97fb0c7a",
-      "exportSha256": "e9acc3653145688bf8ce2dd23ea3ffa265a67e3052b0f3e5731df56871a35fd7"
+      "exportSha256": "3418d218a40f6c8aa6f462d0881acd5e4920f07470d7b5335a40cef7783b470a"
     },
     {
       "path": "CLAUDE.md",
@@ -604,53 +604,53 @@
     {
       "path": "docs/architecture.md",
       "kind": "generated",
-      "exportSha256": "c6936a7ee13b8d0b5a81fb0b38cab2d37b51ee1070352d382f6b62a4eb3acc52"
+      "exportSha256": "3c4d4066de660d8bf59fc89f97084dce8c0b6f55007b1b03ef40f5a83a3b5d9a"
     },
     {
       "path": "docs/architecture/architecture.html",
       "kind": "generated",
-      "exportSha256": "11f6575632aca4289e5d72c413dbff711dceba3671752c923bc61d2cf8adcd90"
+      "exportSha256": "aeac192230fdd67a7b8ecd533d7f4eb146da34be7fb1b55da55c1afc2ee0fb65"
     },
     {
       "path": "docs/architecture/build.mjs",
       "kind": "generated",
-      "exportSha256": "89bf61a127e2b216db4bedb3f5ca9f6ca28dd51b5f682c0ef3c23f5552553c0c"
+      "exportSha256": "c8c5bd2e8f15ce195c5aae6b138c85bf36e45c6bea3323d092e196523e59725d"
     },
     {
       "path": "docs/architecture/capture.mjs",
       "kind": "generated",
-      "exportSha256": "3ed0e79bd72408025788925d60648ff7306501ef3b63aab29c66e4f4d21ac3b6"
+      "exportSha256": "cea921096d665d19ffd67c70e9fee70b032c036c9fd73fc5be94117ac4bfeec0"
     },
     {
       "path": "docs/architecture/overview.png",
       "kind": "generated",
-      "exportSha256": "8a3fe9b2a2d6ca514fdb8146ea20744b6a8f35ca77e954b456bab976ac942e6c"
+      "exportSha256": "f2299cbe373739a40a11247795956587bf380446536775423451449338eae3d8"
     },
     {
       "path": "docs/architecture/request.png",
       "kind": "generated",
-      "exportSha256": "1f944d777f27094897ddd85fa00c8ff5d5a4734de2daf670552bc87b24f108a2"
+      "exportSha256": "de2f5dbb1a4a8313c49db503dfc00536e8d545b9d934fe15454e888e479ab8b7"
     },
     {
       "path": "docs/design-decisions.md",
       "kind": "generated",
-      "exportSha256": "6ea7528a743dba1f4c3993370dccc1c05450f28c515315ed245d8cc02d046931"
+      "exportSha256": "6d9db96c6ca60c8379896ba35e16abea328d3d5d9b2441ee808d98ca57f7ff23"
     },
     {
       "path": "docs/jev-shadow-evaluation.md",
       "kind": "adapter",
       "sourceSha256": "f2e475a120b6a226ddce6b033f2f988b879146c0670c1574b60a416dcfbb9d2f",
-      "exportSha256": "94be2c1b5036662204ac11739a019ae8e22e58a9957c6426285b15327fae4988"
+      "exportSha256": "9b020122a507c1e4053d290073e600b5441dbc71660b834eabd28d8d6e8c46a7"
     },
     {
       "path": "docs/review-guide.md",
       "kind": "generated",
-      "exportSha256": "44aaa2a171eb4549050f72916e243c98ab0b0ce8b0ed2f2f0b1ace1145b3855d"
+      "exportSha256": "010c5030590a9882de5839d6c14e0cc93a9c6efaf220f0682d91647b64a1d81d"
     },
     {
       "path": "docs/testing.md",
       "kind": "generated",
-      "exportSha256": "be8989729ee4762285af676c6a4c12afe84062fc13854713b3ecf0c29aca00fc"
+      "exportSha256": "31dfa446d5df52868ab143fb7ebfe1159a5fcc59263d75bb22045f3e9eee9b85"
     },
     {
       "path": "lib/about-mockup.ts",

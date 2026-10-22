@@ -300,35 +300,35 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 <main class="page">
 <header class="top">
   <div>
-    <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#6263F1"/><path d="M13 46V33C13 18 34 18 34 33V38C34 52 52 47 52 33V18" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/></svg>Curvehop · 아키텍처</div>
+    <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#6263F1"/><path d="M13 46V33C13 18 34 18 34 33V38C34 52 52 47 52 33V18" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/></svg>Curvehop 아키텍처</div>
     <h1>조사는 미리 끝내고, 요청에는<br>검증된 스냅샷만 내보낸다</h1>
-    <p class="lead">Curvehop은 공고 한 건에서 그 회사의 사업·조직·지원 조건까지 이어 읽게 하는 서비스다. 자료를 모으고 해석하는 일은 느리고 불확실하다. 그래서 그 일을 비공개 배치로 밀어내고, 발행 관문을 통과한 자료만 main을 거쳐 공개 런타임에 싣는다.</p>
+    <p class="lead">Curvehop은 공고 한 건에서 그 회사의 사업과 조직, 지원 조건까지 이어 읽게 하는 서비스다. 자료를 모으고 해석하는 일은 느리고 불확실하다. 그래서 그 일을 비공개 배치로 밀어내고, 발행 관문을 통과한 자료만 main을 거쳐 공개 런타임에 싣는다.</p>
   </div>
   <ul class="facts" aria-label="구조 요약">
-    <li><b>0</b><span>요청 처리 중 부르는 모델·수집기·Git</span></li>
+    <li><b>0</b><span>요청 처리 중 부르는 모델, 수집기, Git</span></li>
     <li><b>0</b><span>발행을 결정하는 모델 호출. 공개 여부는 스크립트가 정한다</span></li>
     <li><b>4</b><span>미니PC가 자동 머지할 수 있는 data 파일. 나머지는 코드 PR로만 바뀐다</span></li>
   </ul>
 </header>
 
 <section class="card" id="overview" aria-labelledby="overview-h">
-  <div class="kicker">01 · SYSTEM</div>
+  <div class="kicker">01 전체 구조</div>
   <h2 id="overview-h">자료는 왼쪽에서 오른쪽으로 한 방향, 요청은 오른쪽 상자 안에서 끝난다</h2>
-  <p class="sub">느린 일(수집·조사·검토)과 빠른 일(페이지 응답) 사이에는 main 머지 하나만 있다. 번호를 누르면 그 위치의 설계 판단으로 이동한다.</p>
+  <p class="sub">느린 일(수집, 조사, 검토)과 빠른 일(페이지 응답) 사이에는 main 머지 하나만 있다. 번호를 누르면 그 위치의 설계 판단으로 이동한다.</p>
   <p class="swipe">옆으로 밀어 전체 구성도를 볼 수 있다.</p>
   <div class="fig-scroll"><svg class="fig fig1" viewBox="0 0 1620 964" role="img" aria-labelledby="fig1-title fig1-desc">
 <title id="fig1-title">Curvehop 전체 구조</title>
-<desc id="fig1-desc">외부 원천을 미니PC가 정해진 시각에 수집·조사·검토하고, 발행 관문을 통과한 자료만 GitHub data PR로 main에 머지된다. main은 Cloudflare Workers Builds가 검증해 배포하고, 사용자 요청은 Worker 안에서 배포된 자료만 읽고 끝난다.</desc>
+<desc id="fig1-desc">외부 원천을 미니PC가 정해진 시각에 수집하고 조사와 검토를 거친다. 발행 관문을 통과한 자료만 GitHub의 자료 갱신 PR로 main에 머지된다. main은 Cloudflare Workers Builds가 검증해 배포하고, 사용자 요청은 Worker 안에서 배포된 자료만 읽고 끝난다.</desc>
 <defs><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol><symbol id="i-collect" viewBox="0 0 24 24"><path d="M12 3.5v11"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 19.5h15"/></symbol><symbol id="i-archive" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1"/><path d="M5 9v10.5h14V9"/><path d="M10 13h4"/></symbol><symbol id="i-searchDoc" viewBox="0 0 24 24"><path d="M13 3.5H6.5v17H11"/><path d="M13 3.5l5 5V11"/><path d="M13 3.5v5h5"/><circle cx="16" cy="16" r="3"/><path d="m18.2 18.2 2.3 2.3"/></symbol><symbol id="i-checkDoc" viewBox="0 0 24 24"><path d="M14 3.5H6.5v17h11V7z"/><path d="M14 3.5V7h3.5"/><path d="m9 13.5 2 2 4-4"/></symbol><symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M12 16l3.5-4.5"/><path d="M4 19.5h16"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5.5c0 4.6-3 7.8-7 9.5-4-1.7-7-4.9-7-9.5V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol><symbol id="i-pr" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2"/><circle cx="6" cy="18.5" r="2"/><circle cx="18" cy="18.5" r="2"/><path d="M6 7.5v9"/><path d="M18 16.5V10a3 3 0 0 0-3-3h-4"/><path d="m13 4.5-2.5 2.5 2.5 2.5"/></symbol><symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2"/><circle cx="6" cy="18.5" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7.5v9"/><path d="M6 7.5c0 3 3 4.5 10 4.5"/></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="m8.5 7-5 5 5 5"/><path d="m15.5 7 5 5-5 5"/><path d="m13.5 4.5-3 15"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.5 21 8l-9 4.5L3 8z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16 9 4.5 9-4.5"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.5 3 5 13.5h6.5L10.5 21 19 10.5h-6.5z"/></symbol><symbol id="i-browser" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.75h.01M9 6.75h.01"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m15.5 15.5 4.5 4.5"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-7"/><path d="M12 20V5"/><path d="M19 20v-10"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol><symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.5-6"/><path d="M3.5 4v4.5H8"/><path d="M12 8v4l3 2"/></symbol><symbol id="i-log" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol><symbol id="i-building" viewBox="0 0 24 24"><path d="M4 20.5V6l8-2.5v17"/><path d="M12 9h8v11.5"/><path d="M3 20.5h18"/><path d="M7.5 8.5h1.5M7.5 12h1.5M7.5 15.5h1.5M15.5 12.5h1.5M15.5 16h1.5"/></symbol><symbol id="i-gov" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5"/><path d="M5.5 10v7.5M10 10v7.5M14 10v7.5M18.5 10v7.5"/><path d="M3.5 20.5h17"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M7.5 8.5h9M7.5 12h9M7.5 15.5h5"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 19.5v-14a2 2 0 0 1 2-2h13v14h-13a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13v-4"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></symbol><symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 8v8"/><path d="M18 11c0 4-6 3-11.2 5.6"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 0 0 .4-8 6 6 0 0 0-11.6 1.6A3.3 3.3 0 0 0 7 18.5z"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H6.5v17h11V7z"/><path d="M14 3.5V7h3.5"/><path d="M9.5 12h5M9.5 15.5h5"/></symbol><marker id="a-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#172033"/></marker><marker id="a-primary" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#4f50cc"/></marker><marker id="a-faint" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#8a94a6"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#93472b"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#24523d"/></marker></defs>
 
 <!-- 두 개의 시계 -->
 <g class="ribbon">
   <rect x="24" y="16" width="822" height="40" rx="10" fill="#1b2438"/>
-  <text x="44" y="42" class="t-ribbon" fill="#fff"><tspan font-weight="700">느린 쪽 · 비공개 배치</tspan><tspan fill="#aeb6cb">  —  공고는 6시간마다, 조사·검토는 하루 한 번</tspan></text>
+  <text x="44" y="42" class="t-ribbon" fill="#fff"><tspan font-weight="700">느린 쪽 (비공개 배치)</tspan><tspan dx="14" fill="#aeb6cb">공고는 6시간마다, 조사와 검토는 하루 한 번</tspan></text>
   <rect x="862" y="16" width="230" height="40" rx="10" fill="#e6f0ea" stroke="#24523d" stroke-width="1.25"/>
   <text x="977" y="42" text-anchor="middle" class="t-ribbon" fill="#24523d" font-weight="700">발행 = main 머지</text>
   <rect x="1108" y="16" width="488" height="40" rx="10" fill="#eeeefc" stroke="#c9c9f3" stroke-width="1.25"/>
-  <text x="1128" y="42" class="t-ribbon" fill="#4f50cc"><tspan font-weight="700">빠른 쪽 · 공개 런타임</tspan><tspan fill="#596579">  —  요청마다, 배포된 자료만 읽는다</tspan></text>
+  <text x="1128" y="42" class="t-ribbon" fill="#4f50cc"><tspan font-weight="700">빠른 쪽 (공개 런타임)</tspan><tspan dx="14" fill="#596579">요청마다 배포된 자료만 읽는다</tspan></text>
 </g>
 
 <!-- 외부 원천 -->
@@ -344,12 +344,12 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <rect x="24" y="336" width="44" height="44" rx="11" fill="#fff" stroke="#c5cad6" stroke-width="1.5"/>
     <use href="#i-gov" x="34" y="346" width="24" height="24" class="ico" style="color:#7b8597"/>
     <text x="80" y="355" class="t-title" fill="#596579">공공 데이터</text>
-    <text x="80" y="374" class="t-sub">국민연금·DART·국세청</text>
+    <text x="80" y="374" class="t-sub">국민연금, DART, 국세청</text>
   </g>
 <g class="node ">
     <rect x="24" y="426" width="44" height="44" rx="11" fill="#fff" stroke="#c5cad6" stroke-width="1.5"/>
     <use href="#i-news" x="34" y="436" width="24" height="24" class="ico" style="color:#7b8597"/>
-    <text x="80" y="445" class="t-title" fill="#596579">기사·인터뷰·영상</text>
+    <text x="80" y="445" class="t-title" fill="#596579">기사, 인터뷰, 영상</text>
     <text x="80" y="464" class="t-sub">조사 중 웹 탐색</text>
   </g>
 </g>
@@ -359,31 +359,31 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <rect x="244" y="76" width="602" height="660" rx="16" fill="#f3f4f9" stroke="#c8cde0" stroke-width="1.25"/>
     <path d="M244 114V92a16 16 0 0 1 16-16H282V114z" fill="#1b2438"/>
     <use href="#i-lock" x="253" y="85" width="20" height="20" class="ico" style="color:#fff"/>
-    <text x="294" y="101" class="t-zone">미니PC · 비공개 운영</text>
-    <text x="830" y="101" text-anchor="end" class="t-mono">crontab → scripts/worker.ts</text>
+    <text x="294" y="101" class="t-zone">미니PC (비공개 운영)</text>
+    <text x="830" y="101" text-anchor="end" class="t-mono">crontab이 scripts/worker.ts 실행</text>
   </g>
 <g class="node ">
     <rect x="266" y="124" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-clock" x="276" y="134" width="24" height="24" class="ico" style="color:#fff"/>
     <text x="322" y="143" class="t-title" fill="#172033">cron (KST)</text>
-    <text x="322" y="162" class="t-mono">jobs 6h · research 10:00 · publish 11:30</text>
+    <text x="322" y="162" class="t-mono">jobs 6h, research 10:00, publish 11:30</text>
   </g>
 <g class="edge "><path d="M288 170V196" fill="none" stroke="#172033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-ink)"/></g>
 <rect x="262" y="202" width="418" height="452" rx="12" fill="none" stroke="#8a94a6" stroke-width="1.25" stroke-dasharray="6 4"/>
-<text x="278" y="226" class="t-mono">worker.ts run jobs · research · publish</text>
+<text x="278" y="226" class="t-mono">worker.ts run jobs | research | publish</text>
 
 <g class="hl hl2">
 <g class="node ">
     <rect x="280" y="246" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-collect" x="290" y="256" width="24" height="24" class="ico" style="color:#fff"/>
     <text x="336" y="265" class="t-title" fill="#172033">정형 수집</text>
-    <text x="336" y="284" class="t-sub">공고·공공 자료</text>
+    <text x="336" y="284" class="t-sub">공고와 공공 자료</text>
   </g>
 <g class="node ">
     <rect x="480" y="246" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-archive" x="490" y="256" width="24" height="24" class="ico" style="color:#fff"/>
-    <text x="536" y="265" class="t-title" fill="#172033">원본·실행 기록</text>
-    <text x="536" y="284" class="t-sub">보류·실패도 보관</text>
+    <text x="536" y="265" class="t-title" fill="#172033">원본과 실행 기록</text>
+    <text x="536" y="284" class="t-sub">보류와 실패도 보관</text>
   </g>
 </g>
 <g class="edge hl hl2"><path d="M440 268H474" fill="none" stroke="#172033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-ink)"/><path d="M440 268H474" class="flow flow-slow" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></g>
@@ -392,7 +392,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <rect x="280" y="426" width="44" height="44" rx="11" fill="#6263f1" stroke="#6263f1" stroke-width="1.5"/>
     <use href="#i-searchDoc" x="290" y="436" width="24" height="24" class="ico" style="color:#fff"/>
     <text x="336" y="445" class="t-title" fill="#172033">조사 후보</text>
-    <text x="336" y="464" class="t-sub">Codex · 읽기 전용</text>
+    <text x="336" y="464" class="t-sub">Codex, 읽기 전용</text>
   </g>
 <g class="node ">
     <rect x="480" y="426" width="44" height="44" rx="11" fill="#6263f1" stroke="#6263f1" stroke-width="1.5"/>
@@ -404,7 +404,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <rect x="480" y="566" width="44" height="44" rx="11" fill="#fff" stroke="#93472b" stroke-width="1.5" stroke-dasharray="4 3"/>
     <use href="#i-gauge" x="490" y="576" width="24" height="24" class="ico" style="color:#93472b"/>
     <text x="536" y="585" class="t-title" fill="#93472b">JEV 병행 평가</text>
-    <text x="536" y="604" class="t-sub">외부 API · 기록만</text>
+    <text x="536" y="604" class="t-sub">외부 API, 기록만</text>
   </g>
 </g>
 <g class="hl hl2">
@@ -421,7 +421,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 <g class="node ">
     <rect x="280" y="566" width="44" height="44" rx="11" fill="#fff" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="4 3"/>
     <use href="#i-book" x="290" y="576" width="24" height="24" class="ico" style="color:#596579"/>
-    <text x="336" y="585" class="t-title" fill="#172033">위키·근거 색인</text>
+    <text x="336" y="585" class="t-title" fill="#172033">위키와 근거 색인</text>
     <text x="336" y="604" class="t-sub">같은 자료의 파생본</text>
   </g>
 <g class="edge "><path d="M764 610V634H302V616" fill="none" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-faint)"/></g>
@@ -437,15 +437,15 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
   <rect x="696" y="236" width="136" height="374" rx="14" fill="#24523d"/>
   <use href="#i-shield" x="748" y="252" width="32" height="32" class="ico" style="color:#fff"/>
   <text x="764" y="308" text-anchor="middle" class="t-gate">발행 관문</text>
-  <text x="764" y="340" text-anchor="middle" class="t-gate-sub">깨진 문자·형식</text>
+  <text x="764" y="340" text-anchor="middle" class="t-gate-sub">깨진 문자와 형식</text>
   <text x="764" y="362" text-anchor="middle" class="t-gate-sub">공고 30% 급감 차단</text>
   <text x="764" y="384" text-anchor="middle" class="t-gate-sub">정상 출처 80% 이상</text>
-  <text x="764" y="406" text-anchor="middle" class="t-gate-sub">인용·영수증 재계산</text>
+  <text x="764" y="406" text-anchor="middle" class="t-gate-sub">인용과 영수증 재계산</text>
   <text x="764" y="428" text-anchor="middle" class="t-gate-sub">채용 플랫폼 근거 금지</text>
   <path d="M716 458H812" stroke="#ffffff" stroke-opacity=".22"/>
   <text x="764" y="482" text-anchor="middle" class="t-gate-sub" font-weight="700" fill="#fff">검사가 실패하면</text>
-  <text x="764" y="504" text-anchor="middle" class="t-gate-sub">공고·리서치: PR 보류</text>
-  <text x="764" y="524" text-anchor="middle" class="t-gate-sub">관계·출처: 그 파일만 제외</text>
+  <text x="764" y="504" text-anchor="middle" class="t-gate-sub">공고, 조사: PR 보류</text>
+  <text x="764" y="524" text-anchor="middle" class="t-gate-sub">관계, 출처: 그 파일 제외</text>
   <text x="764" y="546" text-anchor="middle" class="t-gate-sub">보류 기록은 남긴다</text>
   <text x="764" y="594" text-anchor="middle" class="t-gate-mono">lib/data-gate.ts</text>
 </g>
@@ -457,15 +457,15 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <rect x="862" y="76" width="230" height="660" rx="16" fill="#f6f7f9" stroke="#cfd3dc" stroke-width="1.25"/>
     <path d="M862 114V92a16 16 0 0 1 16-16H900V114z" fill="#172033"/>
     <use href="#i-git" x="871" y="85" width="20" height="20" class="ico" style="color:#fff"/>
-    <text x="912" y="101" class="t-zone">GitHub · 비공개 저장소</text>
+    <text x="912" y="101" class="t-zone">GitHub (비공개 저장소)</text>
     
   </g>
 <g class="hl hl3">
 <g class="node ">
     <rect x="882" y="336" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-pr" x="892" y="346" width="24" height="24" class="ico" style="color:#fff"/>
-    <text x="938" y="355" class="t-title" fill="#172033">data PR</text>
-    <text x="938" y="374" class="t-sub">data 파일 4개만</text>
+    <text x="938" y="355" class="t-title" fill="#172033">자료 갱신 PR</text>
+    <text x="938" y="374" class="t-sub">자료 파일 4개만</text>
   </g>
 <g class="node ">
     <rect x="882" y="462" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
@@ -478,13 +478,13 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <rect x="882" y="604" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-code" x="892" y="614" width="24" height="24" class="ico" style="color:#fff"/>
     <text x="938" y="623" class="t-title" fill="#172033">코드 PR</text>
-    <text x="938" y="642" class="t-sub">감리·테스트 통과</text>
+    <text x="938" y="642" class="t-sub">감리와 테스트 통과</text>
   </g>
 <g class="edge hl hl2 hl3"><path d="M832 358H876" fill="none" stroke="#24523d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-ok)"/><path d="M832 358H876" class="flow flow-slow" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></g>
 <g class="edge hl hl3"><path d="M904 384V456" fill="none" stroke="#172033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-ink)"/><path d="M904 384V456" class="flow flow-slow" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></g>
 <g class="hl hl3">
-<text x="918" y="406" class="t-sub">GitGuardian·CF 검증</text>
-<text x="918" y="424" class="t-sub">검증한 head 그대로</text>
+<text x="918" y="406" class="t-sub">GitGuardian과 CF 검증</text>
+<text x="918" y="424" class="t-sub">검증한 커밋 그대로</text>
 <text x="918" y="442" class="t-mono">--match-head-commit</text>
 </g>
 <g class="edge hl hl3"><path d="M904 602V512" fill="none" stroke="#172033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-ink)"/></g>
@@ -506,7 +506,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <text x="1182" y="188" class="t-sub">main 커밋마다</text>
   </g>
 <path d="M1148 202V316" stroke="#e7e7f0" stroke-width="2"/>
-<circle cx="1148" cy="214" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="218" class="t-step" fill="#172033">OpenNext 빌드</text><circle cx="1148" cy="238" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="242" class="t-step" fill="#172033">workerd·Chromium 검증</text><circle cx="1148" cy="262" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="266" class="t-step" fill="#172033">버전 업로드 → 배포</text><circle cx="1148" cy="286" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="290" class="t-step" fill="#172033">release SHA·자료 해시 대조</text><circle cx="1148" cy="310" r="4" fill="#fff" stroke="#93472b" stroke-width="1.75"/><text x="1162" y="314" class="t-step" fill="#93472b">실패 → rollback·후속 보류</text>
+<circle cx="1148" cy="214" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="218" class="t-step" fill="#172033">OpenNext 빌드</text><circle cx="1148" cy="238" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="242" class="t-step" fill="#172033">workerd와 Chromium 검증</text><circle cx="1148" cy="262" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="266" class="t-step" fill="#172033">버전 업로드 후 배포</text><circle cx="1148" cy="286" r="4" fill="#fff" stroke="#172033" stroke-width="1.75"/><text x="1162" y="290" class="t-step" fill="#172033">배포 커밋과 자료 해시 대조</text><circle cx="1148" cy="310" r="4" fill="#fff" stroke="#93472b" stroke-width="1.75"/><text x="1162" y="314" class="t-step" fill="#93472b">실패하면 되돌리고 후속 보류</text>
 </g>
 <g class="hl hl5">
 <g class="edge "><path d="M1148 326V408" fill="none" stroke="#172033" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-ink)"/><path d="M1148 326V408" class="flow flow-slow" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></g>
@@ -517,27 +517,27 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 <g class="hl hl1">
 <rect x="1116" y="396" width="490" height="318" rx="18" fill="#4f50cc" fill-opacity="0.045" stroke="#4f50cc" stroke-width="1.5" stroke-dasharray="6 5"/>
 <text x="1160" y="684" class="t-region" fill="#4f50cc">요청은 이 안에서 끝난다</text>
-<text x="1160" y="702" class="t-sub">처리 중 모델·수집·Git 호출 없음 · 자료는 배포에 포함</text>
+<text x="1160" y="702" class="t-sub">처리 중 모델, 수집, Git 호출 없음. 자료는 배포에 포함</text>
 </g>
 
 <rect class="keep" x="1124" y="414" width="236" height="236" rx="12" fill="#fff" stroke="#172033" stroke-width="1.5"/>
   <g class="node hl hl1 hl4 hl5">
     <rect x="1138" y="428" width="44" height="44" rx="11" fill="#172033" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-bolt" x="1148" y="438" width="24" height="24" class="ico" style="color:#fff"/>
-    <text x="1194" y="447" class="t-title" fill="#172033">Next.js on Worker</text>
-    <text x="1194" y="466" class="t-sub">App Router · SSR</text>
+    <text x="1194" y="447" class="t-title" fill="#172033">Next.js (Worker)</text>
+    <text x="1194" y="466" class="t-sub">App Router, SSR</text>
   </g>
   <g class="hl hl1 hl4">
   <rect x="1138" y="486" width="208" height="30" rx="8" fill="#eeeefc" stroke="#c9c9f3"/>
   <text x="1150" y="506" class="t-chip">번들된 JSON 스냅샷</text>
   <rect x="1138" y="522" width="208" height="30" rx="8" fill="#eeeefc" stroke="#c9c9f3"/>
-  <text x="1150" y="542" class="t-chip">revisionCache · 공개 자료</text>
+  <text x="1150" y="542" class="t-chip">revisionCache: 공개 자료</text>
   </g>
   <g class="hl hl4">
   <rect x="1138" y="558" width="208" height="30" rx="8" fill="#fff" stroke="#d3d6e2"/>
-  <text x="1150" y="578" class="t-chip">React cache · 렌더 1회</text>
+  <text x="1150" y="578" class="t-chip">React cache: 렌더 1회</text>
   <rect x="1138" y="594" width="208" height="30" rx="8" fill="#fff" stroke="#93472b" stroke-dasharray="4 3"/>
-  <text x="1150" y="614" class="t-chip">쿠키 조건 · 요청 1회</text>
+  <text x="1150" y="614" class="t-chip">쿠키 조건: 요청 1회</text>
   </g>
 
 <!-- 사용자 -->
@@ -560,7 +560,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 <g class="node ">
     <rect x="1420" y="560" width="44" height="44" rx="11" fill="#fff" stroke="#172033" stroke-width="1.5"/>
     <use href="#i-search" x="1430" y="570" width="24" height="24" class="ico" style="color:#172033"/>
-    <text x="1476" y="579" class="t-title" fill="#172033">검색·AI 검색</text>
+    <text x="1476" y="579" class="t-title" fill="#172033">검색과 AI 검색</text>
     <text x="1476" y="598" class="t-sub">같은 HTML을 읽음</text>
   </g>
 <g class="edge "><path d="M1414 452H1368" fill="none" stroke="#4f50cc" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-primary)"/><path d="M1414 452H1368" class="flow flow-fast" fill="none" stroke="#fff" stroke-width="2.25" stroke-linecap="round"/></g>
@@ -575,35 +575,35 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 
 <!-- 관측 · 보관 -->
 <path d="M24 752H1596" stroke="#e7e7f0" stroke-width="1.5"/>
-<text x="24" y="778" class="t-zone" fill="#596579">관측 · 보관 <tspan font-weight="500" fill="#8a94a6">— 요청 경로 밖</tspan></text>
+<text x="24" y="778" class="t-zone" fill="#596579">관측과 보관<tspan dx="8" font-weight="500" fill="#8a94a6">(요청 경로 밖)</tspan></text>
 <g class="edge "><path d="M288 736V784" fill="none" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-faint)"/></g>
 <g class="edge hl hl3"><path d="M568 736V784" fill="none" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-faint)"/></g>
 <g class="edge "><path d="M1138 650V784" fill="none" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-faint)"/></g>
 <g class="node ">
     <rect x="266" y="790" width="44" height="44" rx="11" fill="#fff" stroke="#c5cad6" stroke-width="1.5"/>
     <use href="#i-bell" x="276" y="800" width="24" height="24" class="ico" style="color:#596579"/>
-    <text x="322" y="809" class="t-title" fill="#596579">운영 알림 · Discord</text>
-    <text x="322" y="828" class="t-sub">health · watchdog 매시</text>
+    <text x="322" y="809" class="t-title" fill="#596579">운영 알림 (Discord)</text>
+    <text x="322" y="828" class="t-sub">health, watchdog 매시</text>
   </g>
 <g class="node hl hl3">
     <rect x="546" y="790" width="44" height="44" rx="11" fill="#fff" stroke="#c5cad6" stroke-width="1.5"/>
     <use href="#i-history" x="556" y="800" width="24" height="24" class="ico" style="color:#596579"/>
     <text x="602" y="809" class="t-title" fill="#596579">비공개 이력 저장소</text>
-    <text x="602" y="828" class="t-sub">원본·실행 기록 백업</text>
+    <text x="602" y="828" class="t-sub">원본과 실행 기록 백업</text>
   </g>
 <g class="node ">
     <rect x="1116" y="790" width="44" height="44" rx="11" fill="#fff" stroke="#c5cad6" stroke-width="1.5"/>
     <use href="#i-log" x="1126" y="800" width="24" height="24" class="ico" style="color:#596579"/>
     <text x="1172" y="809" class="t-title" fill="#596579">Workers 로그</text>
-    <text x="1172" y="828" class="t-sub">Cloudflare observability</text>
+    <text x="1172" y="828" class="t-sub">Cloudflare 관측 기능</text>
   </g>
 
 <!-- 공개 범위 -->
 <path d="M24 882V892H1092V882" fill="none" stroke="#8a94a6" stroke-width="1.5"/>
-<text x="24" y="918" class="t-scope"><tspan font-weight="700" fill="#172033">비공개 운영</tspan><tspan fill="#596579">  ·  공개 검토판에서 제외: worker 실행 진입점, 조사 프롬프트, 수집 원문, 실행 기록, 운영 설정</tspan></text>
+<text x="24" y="918" class="t-scope"><tspan font-weight="700" fill="#172033">비공개 운영</tspan><tspan dx="14" fill="#596579">공개판에서 뺀 것: 운영 작업 실행 진입점, 조사 프롬프트, 수집 원문, 실행 기록, 운영 설정</tspan></text>
 <path d="M1108 882V892H1596V882" fill="none" stroke="#4f50cc" stroke-width="1.5"/>
-<text x="1108" y="918" class="t-scope"><tspan font-weight="700" fill="#4f50cc">공개 검토판에서 실행</tspan></text>
-<text x="1108" y="940" class="t-sub">파란 점선 안의 Next.js 앱 코드 · 로컬은 Node · 가상 회사 3곳</text>
+<text x="1108" y="918" class="t-scope"><tspan font-weight="700" fill="#4f50cc">공개판에서 실행</tspan></text>
+<text x="1108" y="940" class="t-sub">파란 점선 안의 Next.js 앱 코드, 로컬은 Node, 가상 회사 3곳</text>
 
 <a href="#d1" class="callout c1" aria-label="판단 1로 이동">
     <circle cx="1116" cy="396" r="13" fill="#4f50cc" stroke="#fff" stroke-width="2.5"/>
@@ -633,14 +633,14 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <li><span class="sw" style="border:1.5px dashed #93472b"></span>발행 권한 없는 평가</li>
     <li><span class="sw" style="border:1.5px dashed #8a94a6"></span>파생본</li>
     <li><span class="ln" style="border-color:#172033"></span>자료 흐름</li>
-    <li><span class="ln" style="border-color:#4f50cc;border-top-width:3px"></span>요청 · 응답</li>
-    <li><span class="ln" style="border-color:#8a94a6;border-top-style:dashed"></span>보조 · 관측</li>
+    <li><span class="ln" style="border-color:#4f50cc;border-top-width:3px"></span>요청과 응답</li>
+    <li><span class="ln" style="border-color:#8a94a6;border-top-style:dashed"></span>보조와 관측</li>
   </ul>
 </section>
 
 <section class="card" id="decisions" aria-labelledby="decisions-h">
-  <div class="kicker">02 · DECISIONS</div>
-  <h2 id="decisions-h">다섯 가지 판단 — 의도, 선택, 감수한 비용, 확인할 코드</h2>
+  <div class="kicker">02 설계 판단</div>
+  <h2 id="decisions-h">다섯 가지 판단과 감수한 비용</h2>
   <p class="hint">항목에 마우스를 올리면 위 구성도에서 해당 부분만 남는다. 점선 테두리 경로는 운영 저장소에만 있다.</p>
   <ol class="decs">
   <li class="dec" id="d1" data-d="1" tabindex="0">
@@ -649,8 +649,8 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
       <h3>요청 경로에 모델과 수집을 두지 않는다</h3>
       <dl>
         <div><dt>의도</dt><dd>구직자가 읽는 속도와 화면의 정확도가 수집 실패나 모델 지연에 흔들리지 않아야 한다.</dd></div>
-        <div><dt>판단</dt><dd>미니PC가 정해진 시각에 수집·조사·검토를 끝내 두고, Worker는 배포에 포함된 JSON만 읽는다. KV·R2·D1 같은 저장소 바인딩도 두지 않았다.</dd></div>
-        <div><dt>감수한 비용</dt><dd>원문이 바뀌어도 다음 수집 → 발행 → 배포를 거쳐야 화면에 반영된다.</dd></div>
+        <div><dt>판단</dt><dd>미니PC가 정해진 시각에 수집과 조사, 검토를 끝내 두고 Worker는 배포에 포함된 JSON만 읽는다. KV, R2, D1 같은 저장소 바인딩도 두지 않았다.</dd></div>
+        <div><dt>감수한 비용</dt><dd>원문이 바뀌어도 다음 수집과 발행, 배포를 거쳐야 화면에 반영된다.</dd></div>
       </dl>
       <p class="dec-code"><a class="code" href="../../lib/store.ts"><code>lib/store.ts</code></a><code class="ops" title="운영 저장소에만 있음">wrangler.jsonc</code><a class="code" href="../../tests/ssr-reads-http.test.mjs"><code>tests/ssr-reads-http.test.mjs</code></a></p>
     </div>
@@ -661,7 +661,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
       <h3>모델의 정상 종료는 발행 승인이 아니다</h3>
       <dl>
         <div><dt>의도</dt><dd>그럴듯한 문장이 근거 없이 사실로 공개되는 일을 막는다.</dd></div>
-        <div><dt>판단</dt><dd>조사 후보와 원문 검토를 서로 다른 Codex 호출(읽기 전용, 하루 12회 상한)로 나누고, 공개 여부는 스크립트가 형식·인용·반영 영수증을 다시 계산해 정한다. JEV는 판정만 기록한다.</dd></div>
+        <div><dt>판단</dt><dd>조사 후보와 원문 검토를 서로 다른 Codex 호출(읽기 전용, 하루 12회 상한)로 나누고, 공개 여부는 스크립트가 형식과 인용, 반영 영수증을 다시 계산해 정한다. 외부 평가 모델 JEV는 판정만 기록한다.</dd></div>
         <div><dt>감수한 비용</dt><dd>호출과 지연이 늘고, 근거가 모자란 주제는 보류로 쌓인다. JEV의 0.75는 정확도가 아니다.</dd></div>
       </dl>
       <p class="dec-code"><code class="ops" title="운영 저장소에만 있음">lib/data-gate.ts</code><code class="ops" title="운영 저장소에만 있음">lib/research-publication.ts</code><a class="code" href="../../lib/jev-shadow.ts"><code>lib/jev-shadow.ts</code></a><code class="ops" title="운영 저장소에만 있음">tests/data-gate.test.ts</code><a class="code" href="../../tests/jev-shadow.test.ts"><code>tests/jev-shadow.test.ts</code></a></p>
@@ -673,7 +673,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
       <h3>데이터베이스 대신 Git의 JSON 파일</h3>
       <dl>
         <div><dt>의도</dt><dd>자료와 코드를 같은 커밋으로 묶어 비교하고, 되돌리고, 배포된 내용을 확인한다.</dd></div>
-        <div><dt>판단</dt><dd>미니PC가 자동 머지할 수 있는 파일은 공고·리서치·관계·등록 출처 4개뿐이고, data PR은 검증한 head 그대로만 머지한다. 나머지 data JSON은 코드 PR로만 바뀐다. 원본과 실행 기록은 비공개 이력 저장소에 따로 백업한다.</dd></div>
+        <div><dt>판단</dt><dd>미니PC가 자동 머지할 수 있는 파일은 공고, 회사 조사, 회사 관계, 등록 출처 4개뿐이고 자료 갱신 PR은 검증한 커밋 그대로만 머지한다. 나머지 자료 JSON은 코드 PR로만 바뀐다. 원본과 실행 기록은 비공개 이력 저장소에 따로 백업한다.</dd></div>
         <div><dt>감수한 비용</dt><dd>자료가 늘면 번들과 빌드가 커지고, 쓰기는 미니PC 한 곳에서만 한다. 자료 갱신이 곧 배포다. (2026-10-22 공고 1,647건)</dd></div>
       </dl>
       <p class="dec-code"><code class="ops" title="운영 저장소에만 있음">lib/deployment-data.ts</code><code class="ops" title="운영 저장소에만 있음">lib/worker.ts</code><code class="ops" title="운영 저장소에만 있음">scripts/cloudflare.mjs</code></p>
@@ -684,8 +684,8 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <div class="dec-body">
       <h3>공유 캐시에는 공개 자료만 넣는다</h3>
       <dl>
-        <div><dt>의도</dt><dd>다른 사람의 직무·경력 조건이 내 목록에 섞이거나, 늦게 끝난 이전 읽기가 새 자료를 덮지 않게 한다.</dd></div>
-        <div><dt>판단</dt><dd>revisionCache는 같은 revision의 공개 자료만 공유하고, 읽기 전후와 대기 뒤에 revision을 다시 확인한다. 쿠키 조건과 필터 결과는 요청마다 조합하고 북마크는 브라우저에 둔다.</dd></div>
+        <div><dt>의도</dt><dd>다른 사람의 직무나 경력 조건이 내 목록에 섞이거나, 늦게 끝난 이전 읽기가 새 자료를 덮지 않게 한다.</dd></div>
+        <div><dt>판단</dt><dd>revisionCache는 같은 자료 버전의 공개 자료만 공유하고, 읽기 전후와 대기 뒤에 버전을 다시 확인한다. 쿠키 조건과 필터 결과는 요청마다 조합하고 북마크는 브라우저에 둔다.</dd></div>
         <div><dt>감수한 비용</dt><dd>요청마다 조합 비용이 든다. isolate 단위 캐시라서 분산 일관성은 보장하지 않는다.</dd></div>
       </dl>
       <p class="dec-code"><a class="code" href="../../lib/revision-cache.ts"><code>lib/revision-cache.ts</code></a><a class="code" href="../../lib/render-data.ts"><code>lib/render-data.ts</code></a><a class="code" href="../../lib/preference-store.ts"><code>lib/preference-store.ts</code></a><a class="code" href="../../tests/revision-cache.test.ts"><code>tests/revision-cache.test.ts</code></a></p>
@@ -697,7 +697,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
       <h3>배포 성공은 실서비스가 그 커밋을 내보내는지로 판정한다</h3>
       <dl>
         <div><dt>의도</dt><dd>빌드가 통과해도 사용자 화면이 정상이라는 보장은 없다.</dd></div>
-        <div><dt>판단</dt><dd>workerd·Chromium 검증을 거쳐 업로드하고, 실서비스 /api/release의 git SHA·자료 해시를 기대값과 대조한다. 실패하면 rollback하고 다음 배포를 보류한다.</dd></div>
+        <div><dt>판단</dt><dd>workerd와 Chromium 검증을 거쳐 업로드하고, 실서비스 /api/release가 내보내는 커밋과 자료 해시를 기대값과 대조한다. 실패하면 이전 버전으로 되돌리고 다음 배포를 보류한다.</dd></div>
         <div><dt>감수한 비용</dt><dd>배포 시간과 스크립트 복잡도가 늘어난다. GA 실제 수신과 유입은 따로 관측한다.</dd></div>
       </dl>
       <p class="dec-code"><code class="ops" title="운영 저장소에만 있음">scripts/cloudflare-builds.mjs</code><code class="ops" title="운영 저장소에만 있음">scripts/cloudflare.mjs</code><code class="ops" title="운영 저장소에만 있음">app/api/release/route.ts</code><code class="ops" title="운영 저장소에만 있음">tests/analytics-deployment.test.ts</code></p>
@@ -707,9 +707,9 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 </section>
 
 <section class="card" id="request" aria-labelledby="request-h">
-  <div class="kicker">03 · REQUEST</div>
+  <div class="kicker">03 요청 흐름</div>
   <h2 id="request-h">같은 회사 자료를 읽어도, 두 사람의 조건은 섞이지 않는다</h2>
-  <p class="sub">판단 4를 펼친 그림이다. 공유하는 것은 불변 스냅샷과 그 revision의 공개 자료뿐이고, 사람마다 다른 값은 요청 안에서 만들고 버린다.</p>
+  <p class="sub">판단 4를 펼친 그림이다. 공유하는 것은 불변 스냅샷과 그 버전의 공개 자료뿐이고, 사람마다 다른 값은 요청 안에서 만들고 버린다.</p>
   <div class="pair">
     <figure>
       <h3>무엇을 공유하는가</h3>
@@ -719,14 +719,14 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 <defs><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol><symbol id="i-collect" viewBox="0 0 24 24"><path d="M12 3.5v11"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 19.5h15"/></symbol><symbol id="i-archive" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1"/><path d="M5 9v10.5h14V9"/><path d="M10 13h4"/></symbol><symbol id="i-searchDoc" viewBox="0 0 24 24"><path d="M13 3.5H6.5v17H11"/><path d="M13 3.5l5 5V11"/><path d="M13 3.5v5h5"/><circle cx="16" cy="16" r="3"/><path d="m18.2 18.2 2.3 2.3"/></symbol><symbol id="i-checkDoc" viewBox="0 0 24 24"><path d="M14 3.5H6.5v17h11V7z"/><path d="M14 3.5V7h3.5"/><path d="m9 13.5 2 2 4-4"/></symbol><symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M12 16l3.5-4.5"/><path d="M4 19.5h16"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5.5c0 4.6-3 7.8-7 9.5-4-1.7-7-4.9-7-9.5V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol><symbol id="i-pr" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2"/><circle cx="6" cy="18.5" r="2"/><circle cx="18" cy="18.5" r="2"/><path d="M6 7.5v9"/><path d="M18 16.5V10a3 3 0 0 0-3-3h-4"/><path d="m13 4.5-2.5 2.5 2.5 2.5"/></symbol><symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2"/><circle cx="6" cy="18.5" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7.5v9"/><path d="M6 7.5c0 3 3 4.5 10 4.5"/></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="m8.5 7-5 5 5 5"/><path d="m15.5 7 5 5-5 5"/><path d="m13.5 4.5-3 15"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.5 21 8l-9 4.5L3 8z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16 9 4.5 9-4.5"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.5 3 5 13.5h6.5L10.5 21 19 10.5h-6.5z"/></symbol><symbol id="i-browser" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.75h.01M9 6.75h.01"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m15.5 15.5 4.5 4.5"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-7"/><path d="M12 20V5"/><path d="M19 20v-10"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol><symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.5-6"/><path d="M3.5 4v4.5H8"/><path d="M12 8v4l3 2"/></symbol><symbol id="i-log" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol><symbol id="i-building" viewBox="0 0 24 24"><path d="M4 20.5V6l8-2.5v17"/><path d="M12 9h8v11.5"/><path d="M3 20.5h18"/><path d="M7.5 8.5h1.5M7.5 12h1.5M7.5 15.5h1.5M15.5 12.5h1.5M15.5 16h1.5"/></symbol><symbol id="i-gov" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5"/><path d="M5.5 10v7.5M10 10v7.5M14 10v7.5M18.5 10v7.5"/><path d="M3.5 20.5h17"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M7.5 8.5h9M7.5 12h9M7.5 15.5h5"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 19.5v-14a2 2 0 0 1 2-2h13v14h-13a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13v-4"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></symbol><symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 8v8"/><path d="M18 11c0 4-6 3-11.2 5.6"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 0 0 .4-8 6 6 0 0 0-11.6 1.6A3.3 3.3 0 0 0 7 18.5z"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H6.5v17h11V7z"/><path d="M14 3.5V7h3.5"/><path d="M9.5 12h5M9.5 15.5h5"/></symbol><marker id="a-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#172033"/></marker><marker id="a-primary" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#4f50cc"/></marker><marker id="a-faint" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#8a94a6"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#93472b"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#24523d"/></marker></defs>
 <rect x="8" y="8" width="704" height="504" rx="18" fill="#eeeefc" stroke="#c9c9f3"/>
 <text x="28" y="38" class="t-title">배포 1회</text>
-<text x="96" y="38" class="t-sub">번들된 JSON 스냅샷 · 운영에서는 새 배포 때 교체</text>
+<text x="96" y="38" class="t-sub">번들된 JSON 스냅샷. 운영에서는 새 배포 때 교체</text>
 <rect x="24" y="56" width="672" height="440" rx="14" fill="#f8f8fe" stroke="#c9c9f3"/>
 <text x="44" y="86" class="t-title">Worker isolate</text>
-<text x="160" y="86" class="t-sub">revisionCache — 같은 revision의 공개 자료만 공유</text>
+<text x="160" y="86" class="t-sub">revisionCache: 같은 자료 버전의 공개 자료만 공유</text>
 <rect x="44" y="104" width="632" height="52" rx="10" fill="#fff" stroke="#4f50cc" stroke-width="1.5"/>
 <use href="#i-doc" x="58" y="118" width="24" height="24" class="ico" style="color:#4f50cc"/>
-<text x="92" y="135" class="t-title">회사 · 공고 · 리서치</text>
-<text x="660" y="135" text-anchor="end" class="t-sub">revision r2 · 모든 요청이 같은 객체를 읽는다</text>
+<text x="92" y="135" class="t-title">회사, 공고, 조사</text>
+<text x="660" y="135" text-anchor="end" class="t-sub">자료 버전 r2, 모든 요청이 같은 객체를 읽는다</text>
 <g class="edge "><path d="M196 158V236" fill="none" stroke="#4f50cc" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-primary)"/></g>
 <g class="edge "><path d="M524 158V236" fill="none" stroke="#4f50cc" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-primary)"/></g>
 <text x="208" y="204" class="t-sub">읽기만</text>
@@ -738,11 +738,11 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <text x="332" y="274" text-anchor="end" class="t-sub" fill="#93472b">다른 요청과 공유 안 함</text>
     <text x="60" y="306" class="t-sub">쿠키 조건</text>
     <rect x="60" y="314" width="272" height="32" rx="8" fill="#fbf4f0" stroke="#e6cdc1"/>
-    <text x="74" y="335" class="t-chip">프론트엔드 · 경력 3년</text>
-    <text x="60" y="374" class="t-sub">React cache — 한 렌더 안에서 같은 읽기는 1번</text>
+    <text x="74" y="335" class="t-chip">프론트엔드, 경력 3년</text>
+    <text x="60" y="374" class="t-sub">React cache: 한 렌더 안에서 같은 읽기는 1번</text>
     <rect x="60" y="396" width="272" height="64" rx="10" fill="#172033"/>
     <text x="76" y="424" class="t-title" fill="#fff">A에게 맞춘 공고 목록</text>
-    <text x="76" y="444" class="t-sub" fill="#c3c9d8">HTML · RSC로 응답</text>
+    <text x="76" y="444" class="t-sub" fill="#c3c9d8">HTML과 RSC로 응답</text>
   </g>
 <g>
     <rect x="372" y="244" width="304" height="236" rx="12" fill="#fff" stroke="#93472b" stroke-width="1.5" stroke-dasharray="5 4"/>
@@ -751,20 +751,20 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <text x="660" y="274" text-anchor="end" class="t-sub" fill="#93472b">다른 요청과 공유 안 함</text>
     <text x="388" y="306" class="t-sub">쿠키 조건</text>
     <rect x="388" y="314" width="272" height="32" rx="8" fill="#fbf4f0" stroke="#e6cdc1"/>
-    <text x="402" y="335" class="t-chip">백엔드 · 신입</text>
-    <text x="388" y="374" class="t-sub">React cache — 한 렌더 안에서 같은 읽기는 1번</text>
+    <text x="402" y="335" class="t-chip">백엔드, 신입</text>
+    <text x="388" y="374" class="t-sub">React cache: 한 렌더 안에서 같은 읽기는 1번</text>
     <rect x="388" y="396" width="272" height="64" rx="10" fill="#172033"/>
     <text x="404" y="424" class="t-title" fill="#fff">B에게 맞춘 공고 목록</text>
-    <text x="404" y="444" class="t-sub" fill="#c3c9d8">HTML · RSC로 응답</text>
+    <text x="404" y="444" class="t-sub" fill="#c3c9d8">HTML과 RSC로 응답</text>
   </g>
 </svg>
       <figcaption><a class="code" href="../../lib/published-data.ts"><code>lib/published-data.ts</code></a><a class="code" href="../../lib/render-data.ts"><code>lib/render-data.ts</code></a><a class="code" href="../../lib/preference-store.ts"><code>lib/preference-store.ts</code></a><a class="code" href="../../tests/ssr-reads-http.test.mjs"><code>tests/ssr-reads-http.test.mjs</code></a></figcaption>
     </figure>
     <figure>
       <h3>늦게 끝난 이전 읽기를 버린다</h3>
-      <p>읽기 A가 r1을 읽는 동안 revision이 r2로 바뀌었다(로컬 파일 교체, 리서치의 날짜 경계). A는 늦게 끝나도 r1을 돌려주거나 캐시에 넣지 않고, B가 넣은 r2 항목을 추가 읽기 없이 돌려준다.</p>
+      <p>읽기 A가 r1을 읽는 동안 자료 버전이 r2로 바뀌었다(로컬 파일 교체, 조사 자료의 날짜 경계). A는 늦게 끝나도 r1을 돌려주거나 캐시에 넣지 않고, B가 넣은 r2 항목을 추가 읽기 없이 돌려준다.</p>
       <svg class="fig fig2" viewBox="0 0 720 520" role="img" aria-labelledby="fig2b-title">
-<title id="fig2b-title">늦게 끝난 이전 revision 읽기를 버리는 순서</title>
+<title id="fig2b-title">늦게 끝난 이전 버전 읽기를 버리는 순서</title>
 <defs><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol><symbol id="i-collect" viewBox="0 0 24 24"><path d="M12 3.5v11"/><path d="M7.5 10.5 12 15l4.5-4.5"/><path d="M4.5 19.5h15"/></symbol><symbol id="i-archive" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="4.5" rx="1"/><path d="M5 9v10.5h14V9"/><path d="M10 13h4"/></symbol><symbol id="i-searchDoc" viewBox="0 0 24 24"><path d="M13 3.5H6.5v17H11"/><path d="M13 3.5l5 5V11"/><path d="M13 3.5v5h5"/><circle cx="16" cy="16" r="3"/><path d="m18.2 18.2 2.3 2.3"/></symbol><symbol id="i-checkDoc" viewBox="0 0 24 24"><path d="M14 3.5H6.5v17h11V7z"/><path d="M14 3.5V7h3.5"/><path d="m9 13.5 2 2 4-4"/></symbol><symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M12 16l3.5-4.5"/><path d="M4 19.5h16"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5.5c0 4.6-3 7.8-7 9.5-4-1.7-7-4.9-7-9.5V6z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol><symbol id="i-pr" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2"/><circle cx="6" cy="18.5" r="2"/><circle cx="18" cy="18.5" r="2"/><path d="M6 7.5v9"/><path d="M18 16.5V10a3 3 0 0 0-3-3h-4"/><path d="m13 4.5-2.5 2.5 2.5 2.5"/></symbol><symbol id="i-merge" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2"/><circle cx="6" cy="18.5" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 7.5v9"/><path d="M6 7.5c0 3 3 4.5 10 4.5"/></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="m8.5 7-5 5 5 5"/><path d="m15.5 7 5 5-5 5"/><path d="m13.5 4.5-3 15"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.5 21 8l-9 4.5L3 8z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16 9 4.5 9-4.5"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.5 3 5 13.5h6.5L10.5 21 19 10.5h-6.5z"/></symbol><symbol id="i-browser" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.75h.01M9 6.75h.01"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m15.5 15.5 4.5 4.5"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 20v-7"/><path d="M12 20V5"/><path d="M19 20v-10"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 1.5h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol><symbol id="i-history" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.5-6"/><path d="M3.5 4v4.5H8"/><path d="M12 8v4l3 2"/></symbol><symbol id="i-log" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol><symbol id="i-building" viewBox="0 0 24 24"><path d="M4 20.5V6l8-2.5v17"/><path d="M12 9h8v11.5"/><path d="M3 20.5h18"/><path d="M7.5 8.5h1.5M7.5 12h1.5M7.5 15.5h1.5M15.5 12.5h1.5M15.5 16h1.5"/></symbol><symbol id="i-gov" viewBox="0 0 24 24"><path d="M3 9 12 4l9 5"/><path d="M5.5 10v7.5M10 10v7.5M14 10v7.5M18.5 10v7.5"/><path d="M3.5 20.5h17"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2"/><path d="M7.5 8.5h9M7.5 12h9M7.5 15.5h5"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 19.5v-14a2 2 0 0 1 2-2h13v14h-13a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13v-4"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></symbol><symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="9" r="2"/><path d="M6 8v8"/><path d="M18 11c0 4-6 3-11.2 5.6"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 0 0 .4-8 6 6 0 0 0-11.6 1.6A3.3 3.3 0 0 0 7 18.5z"/></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3.5H6.5v17h11V7z"/><path d="M14 3.5V7h3.5"/><path d="M9.5 12h5M9.5 15.5h5"/></symbol><marker id="a-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#172033"/></marker><marker id="a-primary" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#4f50cc"/></marker><marker id="a-faint" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#8a94a6"/></marker><marker id="a-warn" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#93472b"/></marker><marker id="a-ok" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1.2 9 5 1 8.8z" fill="#24523d"/></marker></defs>
 <text x="16" y="75" class="t-title">자료</text><path d="M110 70H704" stroke="#e7e7f0" stroke-width="1.5"/><text x="16" y="175" class="t-title">읽기 A</text><path d="M110 170H704" stroke="#e7e7f0" stroke-width="1.5"/><text x="16" y="295" class="t-title">읽기 B</text><path d="M110 290H704" stroke="#e7e7f0" stroke-width="1.5"/><text x="16" y="395" class="t-title">캐시 항목</text><path d="M110 390H704" stroke="#e7e7f0" stroke-width="1.5"/>
 <rect x="120" y="55" width="230" height="30" rx="6" fill="#e7e7f0"/>
@@ -775,12 +775,12 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 <path d="M350 50V90" stroke="#172033" stroke-width="1.5"/>
 
 <rect x="140" y="155" width="316" height="30" rx="6" fill="#fff" stroke="#8a94a6" stroke-width="1.5"/>
-<text x="152" y="175" class="t-chip">r1에서 읽기 시작 · 느리게 끝남</text>
+<text x="152" y="175" class="t-chip">r1에서 읽기 시작, 느리게 끝남</text>
 <circle cx="476" cy="170" r="13" fill="#93472b"/>
 <path d="M471 165l10 10M481 165l-10 10" stroke="#fff" stroke-width="2.25" stroke-linecap="round"/>
 <rect x="500" y="155" width="150" height="30" rx="6" fill="#eeeefc" stroke="#4f50cc" stroke-width="1.25"/>
 <text x="512" y="175" class="t-chip" fill="#4f50cc">B의 r2 항목 반환</text>
-<text x="476" y="214" text-anchor="middle" class="t-sub" fill="#93472b">끝난 뒤 revision 재확인: r1 ≠ r2</text>
+<text x="476" y="214" text-anchor="middle" class="t-sub" fill="#93472b">끝난 뒤 버전 재확인: r1 ≠ r2</text>
 <text x="476" y="232" text-anchor="middle" class="t-sub" fill="#93472b">r1은 반환하지도, 캐시에 넣지도 않는다</text>
 
 <rect x="368" y="275" width="74" height="30" rx="6" fill="#eeeefc" stroke="#4f50cc" stroke-width="1.25"/>
@@ -796,7 +796,7 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
 
 <g class="edge "><path d="M110 456H700" fill="none" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#a-faint)"/></g>
 <text x="700" y="478" text-anchor="end" class="t-sub">시간</text>
-<text x="16" y="506" class="t-sub">계속 바뀌면 3번 시도 후 오류 · 오류가 나면 자기가 만든 항목만 지운다 · isolate 하나의 범위</text>
+<text x="16" y="506" class="t-sub">계속 바뀌면 3번 시도 후 오류. 오류가 나면 자기가 만든 항목만 지운다. 보장 범위는 isolate 하나.</text>
 </svg>
       <figcaption><a class="code" href="../../lib/revision-cache.ts"><code>lib/revision-cache.ts</code></a><a class="code" href="../../tests/revision-cache.test.ts"><code>tests/revision-cache.test.ts</code></a></figcaption>
     </figure>
@@ -808,16 +808,16 @@ body:has(.dec[data-d="5"]:is(:hover,:focus-visible)) .fig1 > :not(defs,title,des
     <summary id="scope-h">이 그림의 범위와 확인 근거</summary>
     <p>아래 경로는 모두 운영 저장소 기준이며, 공개 검토판에는 없는 파일이 포함된다.</p>
     <ul>
-      <li>운영 소스 <code>ecbbdf8</code>(2026-10-22) 기준. 공개 검토판은 고정 소스 <code>d0e5519</code>와 가상 자료를 쓰며, 운영 main과 같다고 주장하지 않는다.</li>
+      <li>2026년 10월 22일 오후의 운영 코드를 기준으로 그렸다. 공개판은 같은 날 오전 시점의 코드와 가상 자료를 쓰며, 지금의 운영 코드와 같다고 주장하지 않는다.</li>
       <li>스케줄은 <code>scripts/minipc/install-cron</code>: jobs 6시간마다(:17), research 10:00, publish 11:30, discover 일요일 13:30, watchdog 매시 :47.</li>
-      <li>모델 호출은 <code>codex exec --sandbox read-only</code>(조사·검토 각 1회, 하루 12회 상한 <code>lib/model-call-budget.ts</code>). JEV는 별도 외부 평가 API이며 <code>publicationAuthority: false</code>.</li>
-      <li>data PR 머지 조건: GitGuardian, 정확한 head의 Cloudflare verify, 검증 뒤 main 불변, 중지 파일 없음(<code>lib/worker.ts</code>).</li>
-      <li>Worker는 <code>data/*.json</code>을 번들 모듈로 읽고 <code>/data/*</code>는 404로 검사한다. KV·R2·D1·Durable Object·Queue 바인딩은 없다.</li>
+      <li>모델 호출은 <code>codex exec --sandbox read-only</code>(조사와 검토 각 1회, 하루 12회 상한 <code>lib/model-call-budget.ts</code>). JEV는 별도 외부 평가 API이며 <code>publicationAuthority: false</code>.</li>
+      <li>자료 갱신 PR 머지 조건: GitGuardian 통과, 같은 커밋의 Cloudflare 검증 통과, 검증 뒤 main이 바뀌지 않음, 중지 파일 없음(<code>lib/worker.ts</code>).</li>
+      <li>Worker는 <code>data/*.json</code>을 번들 모듈로 읽고 <code>/data/*</code>는 404로 검사한다. KV, R2, D1, Durable Object, Queue 바인딩은 없다.</li>
       <li>그리지 않은 것: 남아 있는 <code>vercel.json</code>(종료됨), 대기 상태의 Actions 배포 job, 회사 발굴(discover)의 세부 증명 경로.</li>
       <li>위키는 미니PC가 같은 자료로 만드는 파생본이며 웹(<code>app/</code>)은 <code>lib/wiki.ts</code>를 읽지 않는다.</li>
     </ul>
   </details>
-  <p class="meta">원본 <code>build.mjs</code> → <code>architecture.html</code> · 이미지는 같은 HTML의 headless 캡처</p>
+  <p class="meta"><code>build.mjs</code>가 <code>architecture.html</code>을 만든다. 이미지는 같은 HTML을 화면 없이 캡처한 것이다.</p>
 </section>
 </main>
 </body>

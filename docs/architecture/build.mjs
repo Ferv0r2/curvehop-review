@@ -121,43 +121,43 @@ const defs = `<defs>${symbols}${markers}</defs>`;
 const W1 = 1620, H1 = 964;
 const fig1 = `<svg class="fig fig1" viewBox="0 0 ${W1} ${H1}" role="img" aria-labelledby="fig1-title fig1-desc">
 <title id="fig1-title">Curvehop 전체 구조</title>
-<desc id="fig1-desc">외부 원천을 미니PC가 정해진 시각에 수집·조사·검토하고, 발행 관문을 통과한 자료만 GitHub data PR로 main에 머지된다. main은 Cloudflare Workers Builds가 검증해 배포하고, 사용자 요청은 Worker 안에서 배포된 자료만 읽고 끝난다.</desc>
+<desc id="fig1-desc">외부 원천을 미니PC가 정해진 시각에 수집하고 조사와 검토를 거친다. 발행 관문을 통과한 자료만 GitHub의 자료 갱신 PR로 main에 머지된다. main은 Cloudflare Workers Builds가 검증해 배포하고, 사용자 요청은 Worker 안에서 배포된 자료만 읽고 끝난다.</desc>
 ${defs}
 
 <!-- 두 개의 시계 -->
 <g class="ribbon">
   <rect x="24" y="16" width="822" height="40" rx="10" fill="${C.night}"/>
-  <text x="44" y="42" class="t-ribbon" fill="#fff"><tspan font-weight="700">느린 쪽 · 비공개 배치</tspan><tspan fill="#aeb6cb">  —  공고는 6시간마다, 조사·검토는 하루 한 번</tspan></text>
+  <text x="44" y="42" class="t-ribbon" fill="#fff"><tspan font-weight="700">느린 쪽 (비공개 배치)</tspan><tspan dx="14" fill="#aeb6cb">공고는 6시간마다, 조사와 검토는 하루 한 번</tspan></text>
   <rect x="862" y="16" width="230" height="40" rx="10" fill="#e6f0ea" stroke="${C.ok}" stroke-width="1.25"/>
   <text x="977" y="42" text-anchor="middle" class="t-ribbon" fill="${C.ok}" font-weight="700">발행 = main 머지</text>
   <rect x="1108" y="16" width="488" height="40" rx="10" fill="${C.primaryTint}" stroke="${C.primaryLine}" stroke-width="1.25"/>
-  <text x="1128" y="42" class="t-ribbon" fill="${C.primary}"><tspan font-weight="700">빠른 쪽 · 공개 런타임</tspan><tspan fill="${C.muted}">  —  요청마다, 배포된 자료만 읽는다</tspan></text>
+  <text x="1128" y="42" class="t-ribbon" fill="${C.primary}"><tspan font-weight="700">빠른 쪽 (공개 런타임)</tspan><tspan dx="14" fill="${C.muted}">요청마다 배포된 자료만 읽는다</tspan></text>
 </g>
 
 <!-- 외부 원천 -->
 <text x="24" y="101" class="t-zone" fill="${C.muted}">외부 원천</text>
 <g class="ext">
 ${node({ x: 24, y: 246, icon: "building", title: "회사 채용 사이트", sub: "공식 ATS 4종", kind: "external" })}
-${node({ x: 24, y: 336, icon: "gov", title: "공공 데이터", sub: "국민연금·DART·국세청", kind: "external" })}
-${node({ x: 24, y: 426, icon: "news", title: "기사·인터뷰·영상", sub: "조사 중 웹 탐색", kind: "external" })}
+${node({ x: 24, y: 336, icon: "gov", title: "공공 데이터", sub: "국민연금, DART, 국세청", kind: "external" })}
+${node({ x: 24, y: 426, icon: "news", title: "기사, 인터뷰, 영상", sub: "조사 중 웹 탐색", kind: "external" })}
 </g>
 
 <!-- 미니PC -->
-${zone({ x: 244, y: 76, w: 602, h: 660, fill: "#f3f4f9", stroke: "#c8cde0", badge: "lock", badgeFill: C.night, label: "미니PC · 비공개 운영", right: "crontab → scripts/worker.ts" })}
-${node({ x: 266, y: 124, icon: "clock", title: "cron (KST)", sub: "jobs 6h · research 10:00 · publish 11:30", monoSub: true })}
+${zone({ x: 244, y: 76, w: 602, h: 660, fill: "#f3f4f9", stroke: "#c8cde0", badge: "lock", badgeFill: C.night, label: "미니PC (비공개 운영)", right: "crontab이 scripts/worker.ts 실행" })}
+${node({ x: 266, y: 124, icon: "clock", title: "cron (KST)", sub: "jobs 6h, research 10:00, publish 11:30", monoSub: true })}
 ${edge("M288 170V196", "data")}
 <rect x="262" y="202" width="418" height="452" rx="12" fill="none" stroke="${C.faint}" stroke-width="1.25" stroke-dasharray="6 4"/>
-<text x="278" y="226" class="t-mono">worker.ts run jobs · research · publish</text>
+<text x="278" y="226" class="t-mono">worker.ts run jobs | research | publish</text>
 
 <g class="hl hl2">
-${node({ x: 280, y: 246, icon: "collect", title: "정형 수집", sub: "공고·공공 자료" })}
-${node({ x: 480, y: 246, icon: "archive", title: "원본·실행 기록", sub: "보류·실패도 보관" })}
+${node({ x: 280, y: 246, icon: "collect", title: "정형 수집", sub: "공고와 공공 자료" })}
+${node({ x: 480, y: 246, icon: "archive", title: "원본과 실행 기록", sub: "보류와 실패도 보관" })}
 </g>
 ${edge("M440 268H474", "data", { cls: "hl hl2", flow: "slow" })}
 <g class="hl hl2">
-${node({ x: 280, y: 426, icon: "searchDoc", title: "조사 후보", sub: "Codex · 읽기 전용", kind: "model" })}
+${node({ x: 280, y: 426, icon: "searchDoc", title: "조사 후보", sub: "Codex, 읽기 전용", kind: "model" })}
 ${node({ x: 480, y: 426, icon: "checkDoc", title: "원문 검토", sub: "별도 호출로 대조", kind: "model" })}
-${node({ x: 480, y: 566, icon: "gauge", title: "JEV 병행 평가", sub: "외부 API · 기록만", kind: "advisory", titleColor: C.warn })}
+${node({ x: 480, y: 566, icon: "gauge", title: "JEV 병행 평가", sub: "외부 API, 기록만", kind: "advisory", titleColor: C.warn })}
 </g>
 <g class="hl hl2">
 ${edge("M444 448H474", "data", { flow: "slow" })}
@@ -170,7 +170,7 @@ ${edge("M502 474V560", "noauth")}
 <path d="M688 578V598" stroke="${C.warn}" stroke-width="2.5" stroke-linecap="round"/>
 </g>
 
-${node({ x: 280, y: 566, icon: "book", title: "위키·근거 색인", sub: "같은 자료의 파생본", kind: "derived" })}
+${node({ x: 280, y: 566, icon: "book", title: "위키와 근거 색인", sub: "같은 자료의 파생본", kind: "derived" })}
 ${edge("M764 610V634H302V616", "aux")}
 
 <!-- 외부 → 수집·조사 -->
@@ -184,15 +184,15 @@ ${edge("M222 448H274", "data", { flow: "slow" })}
   <rect x="696" y="236" width="136" height="374" rx="14" fill="${C.ok}"/>
   ${icon("shield", 748, 252, 32, "#fff")}
   <text x="764" y="308" text-anchor="middle" class="t-gate">발행 관문</text>
-  <text x="764" y="340" text-anchor="middle" class="t-gate-sub">깨진 문자·형식</text>
+  <text x="764" y="340" text-anchor="middle" class="t-gate-sub">깨진 문자와 형식</text>
   <text x="764" y="362" text-anchor="middle" class="t-gate-sub">공고 30% 급감 차단</text>
   <text x="764" y="384" text-anchor="middle" class="t-gate-sub">정상 출처 80% 이상</text>
-  <text x="764" y="406" text-anchor="middle" class="t-gate-sub">인용·영수증 재계산</text>
+  <text x="764" y="406" text-anchor="middle" class="t-gate-sub">인용과 영수증 재계산</text>
   <text x="764" y="428" text-anchor="middle" class="t-gate-sub">채용 플랫폼 근거 금지</text>
   <path d="M716 458H812" stroke="#ffffff" stroke-opacity=".22"/>
   <text x="764" y="482" text-anchor="middle" class="t-gate-sub" font-weight="700" fill="#fff">검사가 실패하면</text>
-  <text x="764" y="504" text-anchor="middle" class="t-gate-sub">공고·리서치: PR 보류</text>
-  <text x="764" y="524" text-anchor="middle" class="t-gate-sub">관계·출처: 그 파일만 제외</text>
+  <text x="764" y="504" text-anchor="middle" class="t-gate-sub">공고, 조사: PR 보류</text>
+  <text x="764" y="524" text-anchor="middle" class="t-gate-sub">관계, 출처: 그 파일 제외</text>
   <text x="764" y="546" text-anchor="middle" class="t-gate-sub">보류 기록은 남긴다</text>
   <text x="764" y="594" text-anchor="middle" class="t-gate-mono">lib/data-gate.ts</text>
 </g>
@@ -200,17 +200,17 @@ ${edge("M640 268H690", "data", { cls: "hl hl2", flow: "slow" })}
 ${edge("M640 448H690", "data", { cls: "hl hl2", flow: "slow" })}
 
 <!-- GitHub -->
-${zone({ x: 862, y: 76, w: 230, h: 660, fill: "#f6f7f9", stroke: "#cfd3dc", badge: "git", badgeFill: C.ink, label: "GitHub · 비공개 저장소" })}
+${zone({ x: 862, y: 76, w: 230, h: 660, fill: "#f6f7f9", stroke: "#cfd3dc", badge: "git", badgeFill: C.ink, label: "GitHub (비공개 저장소)" })}
 <g class="hl hl3">
-${node({ x: 882, y: 336, icon: "pr", title: "data PR", sub: "data 파일 4개만" })}
+${node({ x: 882, y: 336, icon: "pr", title: "자료 갱신 PR", sub: "자료 파일 4개만" })}
 ${node({ x: 882, y: 462, icon: "merge", title: "main", sub: "코드 + data/*.json" })}
 </g>
-${node({ x: 882, y: 604, icon: "code", title: "코드 PR", sub: "감리·테스트 통과", cls: "hl hl3" })}
+${node({ x: 882, y: 604, icon: "code", title: "코드 PR", sub: "감리와 테스트 통과", cls: "hl hl3" })}
 ${edge("M832 358H876", "green", { cls: "hl hl2 hl3", flow: "slow" })}
 ${edge("M904 384V456", "data", { cls: "hl hl3", flow: "slow" })}
 <g class="hl hl3">
-<text x="918" y="406" class="t-sub">GitGuardian·CF 검증</text>
-<text x="918" y="424" class="t-sub">검증한 head 그대로</text>
+<text x="918" y="406" class="t-sub">GitGuardian과 CF 검증</text>
+<text x="918" y="424" class="t-sub">검증한 커밋 그대로</text>
 <text x="918" y="442" class="t-mono">--match-head-commit</text>
 </g>
 ${edge("M904 602V512", "data", { cls: "hl hl3" })}
@@ -221,7 +221,7 @@ ${edge("M1074 484H1096V172H1120", "data", { cls: "hl hl3 hl5", flow: "slow" })}
 <g class="hl hl5">
 ${node({ x: 1126, y: 150, icon: "layers", title: "Workers Builds", sub: "main 커밋마다" })}
 <path d="M1148 202V316" stroke="${C.line}" stroke-width="2"/>
-${[["OpenNext 빌드", C.ink], ["workerd·Chromium 검증", C.ink], ["버전 업로드 → 배포", C.ink], ["release SHA·자료 해시 대조", C.ink], ["실패 → rollback·후속 보류", C.warn]]
+${[["OpenNext 빌드", C.ink], ["workerd와 Chromium 검증", C.ink], ["버전 업로드 후 배포", C.ink], ["배포 커밋과 자료 해시 대조", C.ink], ["실패하면 되돌리고 후속 보류", C.warn]]
   .map(([t, col], i) => `<circle cx="1148" cy="${214 + i * 24}" r="4" fill="#fff" stroke="${col}" stroke-width="1.75"/><text x="1162" y="${218 + i * 24}" class="t-step" fill="${col}">${esc(t)}</text>`)
   .join("")}
 </g>
@@ -234,22 +234,22 @@ ${edge("M1148 326V408", "data", { flow: "slow" })}
 <g class="hl hl1">
 <rect x="1116" y="396" width="490" height="318" rx="18" fill="${C.primary}" fill-opacity="0.045" stroke="${C.primary}" stroke-width="1.5" stroke-dasharray="6 5"/>
 <text x="1160" y="684" class="t-region" fill="${C.primary}">요청은 이 안에서 끝난다</text>
-<text x="1160" y="702" class="t-sub">처리 중 모델·수집·Git 호출 없음 · 자료는 배포에 포함</text>
+<text x="1160" y="702" class="t-sub">처리 중 모델, 수집, Git 호출 없음. 자료는 배포에 포함</text>
 </g>
 
 <rect class="keep" x="1124" y="414" width="236" height="236" rx="12" fill="#fff" stroke="${C.ink}" stroke-width="1.5"/>
-  ${node({ x: 1138, y: 428, icon: "bolt", title: "Next.js on Worker", sub: "App Router · SSR", cls: "hl hl1 hl4 hl5" })}
+  ${node({ x: 1138, y: 428, icon: "bolt", title: "Next.js (Worker)", sub: "App Router, SSR", cls: "hl hl1 hl4 hl5" })}
   <g class="hl hl1 hl4">
   <rect x="1138" y="486" width="208" height="30" rx="8" fill="${C.primaryTint}" stroke="${C.primaryLine}"/>
   <text x="1150" y="506" class="t-chip">번들된 JSON 스냅샷</text>
   <rect x="1138" y="522" width="208" height="30" rx="8" fill="${C.primaryTint}" stroke="${C.primaryLine}"/>
-  <text x="1150" y="542" class="t-chip">revisionCache · 공개 자료</text>
+  <text x="1150" y="542" class="t-chip">revisionCache: 공개 자료</text>
   </g>
   <g class="hl hl4">
   <rect x="1138" y="558" width="208" height="30" rx="8" fill="#fff" stroke="#d3d6e2"/>
-  <text x="1150" y="578" class="t-chip">React cache · 렌더 1회</text>
+  <text x="1150" y="578" class="t-chip">React cache: 렌더 1회</text>
   <rect x="1138" y="594" width="208" height="30" rx="8" fill="#fff" stroke="${C.warn}" stroke-dasharray="4 3"/>
-  <text x="1150" y="614" class="t-chip">쿠키 조건 · 요청 1회</text>
+  <text x="1150" y="614" class="t-chip">쿠키 조건: 요청 1회</text>
   </g>
 
 <!-- 사용자 -->
@@ -259,7 +259,7 @@ ${node({ x: 1420, y: 300, icon: "chart", title: "GA4 제품 계측", sub: "사�
 ${node({ x: 1420, y: 440, icon: "browser", title: "구직자 브라우저", sub: "북마크: localStorage", kind: "user" })}
 </g>
 <g class="hl hl1">
-${node({ x: 1420, y: 560, icon: "search", title: "검색·AI 검색", sub: "같은 HTML을 읽음", kind: "user" })}
+${node({ x: 1420, y: 560, icon: "search", title: "검색과 AI 검색", sub: "같은 HTML을 읽음", kind: "user" })}
 ${edge("M1414 452H1368", "req", { flow: "fast" })}
 ${edge("M1366 474H1412", "req", { flow: "fast" })}
 ${edge("M1414 582H1368", "req2", { flow: "fast" })}
@@ -272,20 +272,20 @@ ${edge("M1442 436V350", "aux")}
 
 <!-- 관측 · 보관 -->
 <path d="M24 752H1596" stroke="${C.line}" stroke-width="1.5"/>
-<text x="24" y="778" class="t-zone" fill="${C.muted}">관측 · 보관 <tspan font-weight="500" fill="${C.faint}">— 요청 경로 밖</tspan></text>
+<text x="24" y="778" class="t-zone" fill="${C.muted}">관측과 보관<tspan dx="8" font-weight="500" fill="${C.faint}">(요청 경로 밖)</tspan></text>
 ${edge("M288 736V784", "aux")}
 ${edge("M568 736V784", "aux", { cls: "hl hl3" })}
 ${edge("M1138 650V784", "aux")}
-${node({ x: 266, y: 790, icon: "bell", title: "운영 알림 · Discord", sub: "health · watchdog 매시", kind: "ops" })}
-${node({ x: 546, y: 790, icon: "history", title: "비공개 이력 저장소", sub: "원본·실행 기록 백업", kind: "ops", cls: "hl hl3" })}
-${node({ x: 1116, y: 790, icon: "log", title: "Workers 로그", sub: "Cloudflare observability", kind: "ops" })}
+${node({ x: 266, y: 790, icon: "bell", title: "운영 알림 (Discord)", sub: "health, watchdog 매시", kind: "ops" })}
+${node({ x: 546, y: 790, icon: "history", title: "비공개 이력 저장소", sub: "원본과 실행 기록 백업", kind: "ops", cls: "hl hl3" })}
+${node({ x: 1116, y: 790, icon: "log", title: "Workers 로그", sub: "Cloudflare 관측 기능", kind: "ops" })}
 
 <!-- 공개 범위 -->
 <path d="M24 882V892H1092V882" fill="none" stroke="${C.faint}" stroke-width="1.5"/>
-<text x="24" y="918" class="t-scope"><tspan font-weight="700" fill="${C.ink}">비공개 운영</tspan><tspan fill="${C.muted}">  ·  공개 검토판에서 제외: worker 실행 진입점, 조사 프롬프트, 수집 원문, 실행 기록, 운영 설정</tspan></text>
+<text x="24" y="918" class="t-scope"><tspan font-weight="700" fill="${C.ink}">비공개 운영</tspan><tspan dx="14" fill="${C.muted}">공개판에서 뺀 것: 운영 작업 실행 진입점, 조사 프롬프트, 수집 원문, 실행 기록, 운영 설정</tspan></text>
 <path d="M1108 882V892H1596V882" fill="none" stroke="${C.primary}" stroke-width="1.5"/>
-<text x="1108" y="918" class="t-scope"><tspan font-weight="700" fill="${C.primary}">공개 검토판에서 실행</tspan></text>
-<text x="1108" y="940" class="t-sub">파란 점선 안의 Next.js 앱 코드 · 로컬은 Node · 가상 회사 3곳</text>
+<text x="1108" y="918" class="t-scope"><tspan font-weight="700" fill="${C.primary}">공개판에서 실행</tspan></text>
+<text x="1108" y="940" class="t-sub">파란 점선 안의 Next.js 앱 코드, 로컬은 Node, 가상 회사 3곳</text>
 
 ${callout(1, 1116, 396)}
 ${callout(2, 832, 236)}
@@ -304,10 +304,10 @@ function reqBox(x, label, cond, result) {
     <text x="${x + 16}" y="306" class="t-sub">쿠키 조건</text>
     <rect x="${x + 16}" y="314" width="272" height="32" rx="8" fill="#fbf4f0" stroke="#e6cdc1"/>
     <text x="${x + 30}" y="335" class="t-chip">${esc(cond)}</text>
-    <text x="${x + 16}" y="374" class="t-sub">React cache — 한 렌더 안에서 같은 읽기는 1번</text>
+    <text x="${x + 16}" y="374" class="t-sub">React cache: 한 렌더 안에서 같은 읽기는 1번</text>
     <rect x="${x + 16}" y="396" width="272" height="64" rx="10" fill="${C.ink}"/>
     <text x="${x + 32}" y="424" class="t-title" fill="#fff">${esc(result)}</text>
-    <text x="${x + 32}" y="444" class="t-sub" fill="#c3c9d8">HTML · RSC로 응답</text>
+    <text x="${x + 32}" y="444" class="t-sub" fill="#c3c9d8">HTML과 RSC로 응답</text>
   </g>`;
 }
 
@@ -316,26 +316,26 @@ const fig2a = `<svg class="fig fig2" viewBox="0 0 720 520" role="img" aria-label
 ${defs}
 <rect x="8" y="8" width="704" height="504" rx="18" fill="${C.primaryTint}" stroke="${C.primaryLine}"/>
 <text x="28" y="38" class="t-title">배포 1회</text>
-<text x="96" y="38" class="t-sub">번들된 JSON 스냅샷 · 운영에서는 새 배포 때 교체</text>
+<text x="96" y="38" class="t-sub">번들된 JSON 스냅샷. 운영에서는 새 배포 때 교체</text>
 <rect x="24" y="56" width="672" height="440" rx="14" fill="#f8f8fe" stroke="${C.primaryLine}"/>
 <text x="44" y="86" class="t-title">Worker isolate</text>
-<text x="160" y="86" class="t-sub">revisionCache — 같은 revision의 공개 자료만 공유</text>
+<text x="160" y="86" class="t-sub">revisionCache: 같은 자료 버전의 공개 자료만 공유</text>
 <rect x="44" y="104" width="632" height="52" rx="10" fill="#fff" stroke="${C.primary}" stroke-width="1.5"/>
 ${icon("doc", 58, 118, 24, C.primary)}
-<text x="92" y="135" class="t-title">회사 · 공고 · 리서치</text>
-<text x="660" y="135" text-anchor="end" class="t-sub">revision r2 · 모든 요청이 같은 객체를 읽는다</text>
+<text x="92" y="135" class="t-title">회사, 공고, 조사</text>
+<text x="660" y="135" text-anchor="end" class="t-sub">자료 버전 r2, 모든 요청이 같은 객체를 읽는다</text>
 ${edge("M196 158V236", "req")}
 ${edge("M524 158V236", "req")}
 <text x="208" y="204" class="t-sub">읽기만</text>
 <text x="536" y="204" class="t-sub">읽기만</text>
-${reqBox(44, "요청 A", "프론트엔드 · 경력 3년", "A에게 맞춘 공고 목록")}
-${reqBox(372, "요청 B", "백엔드 · 신입", "B에게 맞춘 공고 목록")}
+${reqBox(44, "요청 A", "프론트엔드, 경력 3년", "A에게 맞춘 공고 목록")}
+${reqBox(372, "요청 B", "백엔드, 신입", "B에게 맞춘 공고 목록")}
 </svg>`;
 
 // ───────────────────────── 그림 2b: 늦게 끝난 이전 읽기 ─────────────────────────
 const lanes = [["자료", 70], ["읽기 A", 170], ["읽기 B", 290], ["캐시 항목", 390]];
 const fig2b = `<svg class="fig fig2" viewBox="0 0 720 520" role="img" aria-labelledby="fig2b-title">
-<title id="fig2b-title">늦게 끝난 이전 revision 읽기를 버리는 순서</title>
+<title id="fig2b-title">늦게 끝난 이전 버전 읽기를 버리는 순서</title>
 ${defs}
 ${lanes.map(([l, y]) => `<text x="16" y="${y + 5}" class="t-title">${l}</text><path d="M110 ${y}H704" stroke="${C.line}" stroke-width="1.5"/>`).join("")}
 <rect x="120" y="55" width="230" height="30" rx="6" fill="${C.line}"/>
@@ -346,12 +346,12 @@ ${lanes.map(([l, y]) => `<text x="16" y="${y + 5}" class="t-title">${l}</text><p
 <path d="M350 50V90" stroke="${C.ink}" stroke-width="1.5"/>
 
 <rect x="140" y="155" width="316" height="30" rx="6" fill="#fff" stroke="${C.faint}" stroke-width="1.5"/>
-<text x="152" y="175" class="t-chip">r1에서 읽기 시작 · 느리게 끝남</text>
+<text x="152" y="175" class="t-chip">r1에서 읽기 시작, 느리게 끝남</text>
 <circle cx="476" cy="170" r="13" fill="${C.warn}"/>
 <path d="M471 165l10 10M481 165l-10 10" stroke="#fff" stroke-width="2.25" stroke-linecap="round"/>
 <rect x="500" y="155" width="150" height="30" rx="6" fill="${C.primaryTint}" stroke="${C.primary}" stroke-width="1.25"/>
 <text x="512" y="175" class="t-chip" fill="${C.primary}">B의 r2 항목 반환</text>
-<text x="476" y="214" text-anchor="middle" class="t-sub" fill="${C.warn}">끝난 뒤 revision 재확인: r1 ≠ r2</text>
+<text x="476" y="214" text-anchor="middle" class="t-sub" fill="${C.warn}">끝난 뒤 버전 재확인: r1 ≠ r2</text>
 <text x="476" y="232" text-anchor="middle" class="t-sub" fill="${C.warn}">r1은 반환하지도, 캐시에 넣지도 않는다</text>
 
 <rect x="368" y="275" width="74" height="30" rx="6" fill="${C.primaryTint}" stroke="${C.primary}" stroke-width="1.25"/>
@@ -367,7 +367,7 @@ ${edge("M432 307V372", "req")}
 
 ${edge("M110 456H700", "aux")}
 <text x="700" y="478" text-anchor="end" class="t-sub">시간</text>
-<text x="16" y="506" class="t-sub">계속 바뀌면 3번 시도 후 오류 · 오류가 나면 자기가 만든 항목만 지운다 · isolate 하나의 범위</text>
+<text x="16" y="506" class="t-sub">계속 바뀌면 3번 시도 후 오류. 오류가 나면 자기가 만든 항목만 지운다. 보장 범위는 isolate 하나.</text>
 </svg>`;
 
 // ───────────────────────── 판단 목록 ─────────────────────────
@@ -375,35 +375,35 @@ const DECISIONS = [
   {
     head: "요청 경로에 모델과 수집을 두지 않는다",
     why: "구직자가 읽는 속도와 화면의 정확도가 수집 실패나 모델 지연에 흔들리지 않아야 한다.",
-    pick: "미니PC가 정해진 시각에 수집·조사·검토를 끝내 두고, Worker는 배포에 포함된 JSON만 읽는다. KV·R2·D1 같은 저장소 바인딩도 두지 않았다.",
-    cost: "원문이 바뀌어도 다음 수집 → 발행 → 배포를 거쳐야 화면에 반영된다.",
+    pick: "미니PC가 정해진 시각에 수집과 조사, 검토를 끝내 두고 Worker는 배포에 포함된 JSON만 읽는다. KV, R2, D1 같은 저장소 바인딩도 두지 않았다.",
+    cost: "원문이 바뀌어도 다음 수집과 발행, 배포를 거쳐야 화면에 반영된다.",
     code: ["lib/store.ts", "ops:wrangler.jsonc", "tests/ssr-reads-http.test.mjs"],
   },
   {
     head: "모델의 정상 종료는 발행 승인이 아니다",
     why: "그럴듯한 문장이 근거 없이 사실로 공개되는 일을 막는다.",
-    pick: "조사 후보와 원문 검토를 서로 다른 Codex 호출(읽기 전용, 하루 12회 상한)로 나누고, 공개 여부는 스크립트가 형식·인용·반영 영수증을 다시 계산해 정한다. JEV는 판정만 기록한다.",
+    pick: "조사 후보와 원문 검토를 서로 다른 Codex 호출(읽기 전용, 하루 12회 상한)로 나누고, 공개 여부는 스크립트가 형식과 인용, 반영 영수증을 다시 계산해 정한다. 외부 평가 모델 JEV는 판정만 기록한다.",
     cost: "호출과 지연이 늘고, 근거가 모자란 주제는 보류로 쌓인다. JEV의 0.75는 정확도가 아니다.",
     code: ["ops:lib/data-gate.ts", "ops:lib/research-publication.ts", "lib/jev-shadow.ts", "ops:tests/data-gate.test.ts", "tests/jev-shadow.test.ts"],
   },
   {
     head: "데이터베이스 대신 Git의 JSON 파일",
     why: "자료와 코드를 같은 커밋으로 묶어 비교하고, 되돌리고, 배포된 내용을 확인한다.",
-    pick: "미니PC가 자동 머지할 수 있는 파일은 공고·리서치·관계·등록 출처 4개뿐이고, data PR은 검증한 head 그대로만 머지한다. 나머지 data JSON은 코드 PR로만 바뀐다. 원본과 실행 기록은 비공개 이력 저장소에 따로 백업한다.",
+    pick: "미니PC가 자동 머지할 수 있는 파일은 공고, 회사 조사, 회사 관계, 등록 출처 4개뿐이고 자료 갱신 PR은 검증한 커밋 그대로만 머지한다. 나머지 자료 JSON은 코드 PR로만 바뀐다. 원본과 실행 기록은 비공개 이력 저장소에 따로 백업한다.",
     cost: "자료가 늘면 번들과 빌드가 커지고, 쓰기는 미니PC 한 곳에서만 한다. 자료 갱신이 곧 배포다. (2026-10-22 공고 1,647건)",
     code: ["ops:lib/deployment-data.ts", "ops:lib/worker.ts", "ops:scripts/cloudflare.mjs"],
   },
   {
     head: "공유 캐시에는 공개 자료만 넣는다",
-    why: "다른 사람의 직무·경력 조건이 내 목록에 섞이거나, 늦게 끝난 이전 읽기가 새 자료를 덮지 않게 한다.",
-    pick: "revisionCache는 같은 revision의 공개 자료만 공유하고, 읽기 전후와 대기 뒤에 revision을 다시 확인한다. 쿠키 조건과 필터 결과는 요청마다 조합하고 북마크는 브라우저에 둔다.",
+    why: "다른 사람의 직무나 경력 조건이 내 목록에 섞이거나, 늦게 끝난 이전 읽기가 새 자료를 덮지 않게 한다.",
+    pick: "revisionCache는 같은 자료 버전의 공개 자료만 공유하고, 읽기 전후와 대기 뒤에 버전을 다시 확인한다. 쿠키 조건과 필터 결과는 요청마다 조합하고 북마크는 브라우저에 둔다.",
     cost: "요청마다 조합 비용이 든다. isolate 단위 캐시라서 분산 일관성은 보장하지 않는다.",
     code: ["lib/revision-cache.ts", "lib/render-data.ts", "lib/preference-store.ts", "tests/revision-cache.test.ts"],
   },
   {
     head: "배포 성공은 실서비스가 그 커밋을 내보내는지로 판정한다",
     why: "빌드가 통과해도 사용자 화면이 정상이라는 보장은 없다.",
-    pick: "workerd·Chromium 검증을 거쳐 업로드하고, 실서비스 /api/release의 git SHA·자료 해시를 기대값과 대조한다. 실패하면 rollback하고 다음 배포를 보류한다.",
+    pick: "workerd와 Chromium 검증을 거쳐 업로드하고, 실서비스 /api/release가 내보내는 커밋과 자료 해시를 기대값과 대조한다. 실패하면 이전 버전으로 되돌리고 다음 배포를 보류한다.",
     cost: "배포 시간과 스크립트 복잡도가 늘어난다. GA 실제 수신과 유입은 따로 관측한다.",
     code: ["ops:scripts/cloudflare-builds.mjs", "ops:scripts/cloudflare.mjs", "ops:app/api/release/route.ts", "ops:tests/analytics-deployment.test.ts"],
   },
@@ -534,21 +534,21 @@ ${hlRules}
 <main class="page">
 <header class="top">
   <div>
-    <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#6263F1"/><path d="M13 46V33C13 18 34 18 34 33V38C34 52 52 47 52 33V18" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/></svg>Curvehop · 아키텍처</div>
+    <div class="brand"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="17" fill="#6263F1"/><path d="M13 46V33C13 18 34 18 34 33V38C34 52 52 47 52 33V18" stroke="#fff" stroke-width="8" stroke-linecap="round" fill="none"/></svg>Curvehop 아키텍처</div>
     <h1>조사는 미리 끝내고, 요청에는<br>검증된 스냅샷만 내보낸다</h1>
-    <p class="lead">Curvehop은 공고 한 건에서 그 회사의 사업·조직·지원 조건까지 이어 읽게 하는 서비스다. 자료를 모으고 해석하는 일은 느리고 불확실하다. 그래서 그 일을 비공개 배치로 밀어내고, 발행 관문을 통과한 자료만 main을 거쳐 공개 런타임에 싣는다.</p>
+    <p class="lead">Curvehop은 공고 한 건에서 그 회사의 사업과 조직, 지원 조건까지 이어 읽게 하는 서비스다. 자료를 모으고 해석하는 일은 느리고 불확실하다. 그래서 그 일을 비공개 배치로 밀어내고, 발행 관문을 통과한 자료만 main을 거쳐 공개 런타임에 싣는다.</p>
   </div>
   <ul class="facts" aria-label="구조 요약">
-    <li><b>0</b><span>요청 처리 중 부르는 모델·수집기·Git</span></li>
+    <li><b>0</b><span>요청 처리 중 부르는 모델, 수집기, Git</span></li>
     <li><b>0</b><span>발행을 결정하는 모델 호출. 공개 여부는 스크립트가 정한다</span></li>
     <li><b>4</b><span>미니PC가 자동 머지할 수 있는 data 파일. 나머지는 코드 PR로만 바뀐다</span></li>
   </ul>
 </header>
 
 <section class="card" id="overview" aria-labelledby="overview-h">
-  <div class="kicker">01 · SYSTEM</div>
+  <div class="kicker">01 전체 구조</div>
   <h2 id="overview-h">자료는 왼쪽에서 오른쪽으로 한 방향, 요청은 오른쪽 상자 안에서 끝난다</h2>
-  <p class="sub">느린 일(수집·조사·검토)과 빠른 일(페이지 응답) 사이에는 main 머지 하나만 있다. 번호를 누르면 그 위치의 설계 판단으로 이동한다.</p>
+  <p class="sub">느린 일(수집, 조사, 검토)과 빠른 일(페이지 응답) 사이에는 main 머지 하나만 있다. 번호를 누르면 그 위치의 설계 판단으로 이동한다.</p>
   <p class="swipe">옆으로 밀어 전체 구성도를 볼 수 있다.</p>
   <div class="fig-scroll">${fig1}</div>
   <ul class="legend" aria-label="범례">
@@ -558,23 +558,23 @@ ${hlRules}
     <li><span class="sw" style="border:1.5px dashed ${C.warn}"></span>발행 권한 없는 평가</li>
     <li><span class="sw" style="border:1.5px dashed ${C.faint}"></span>파생본</li>
     <li><span class="ln" style="border-color:${C.ink}"></span>자료 흐름</li>
-    <li><span class="ln" style="border-color:${C.primary};border-top-width:3px"></span>요청 · 응답</li>
-    <li><span class="ln" style="border-color:${C.faint};border-top-style:dashed"></span>보조 · 관측</li>
+    <li><span class="ln" style="border-color:${C.primary};border-top-width:3px"></span>요청과 응답</li>
+    <li><span class="ln" style="border-color:${C.faint};border-top-style:dashed"></span>보조와 관측</li>
   </ul>
 </section>
 
 <section class="card" id="decisions" aria-labelledby="decisions-h">
-  <div class="kicker">02 · DECISIONS</div>
-  <h2 id="decisions-h">다섯 가지 판단 — 의도, 선택, 감수한 비용, 확인할 코드</h2>
+  <div class="kicker">02 설계 판단</div>
+  <h2 id="decisions-h">다섯 가지 판단과 감수한 비용</h2>
   <p class="hint">항목에 마우스를 올리면 위 구성도에서 해당 부분만 남는다. 점선 테두리 경로는 운영 저장소에만 있다.</p>
   <ol class="decs">${decisions}
   </ol>
 </section>
 
 <section class="card" id="request" aria-labelledby="request-h">
-  <div class="kicker">03 · REQUEST</div>
+  <div class="kicker">03 요청 흐름</div>
   <h2 id="request-h">같은 회사 자료를 읽어도, 두 사람의 조건은 섞이지 않는다</h2>
-  <p class="sub">판단 4를 펼친 그림이다. 공유하는 것은 불변 스냅샷과 그 revision의 공개 자료뿐이고, 사람마다 다른 값은 요청 안에서 만들고 버린다.</p>
+  <p class="sub">판단 4를 펼친 그림이다. 공유하는 것은 불변 스냅샷과 그 버전의 공개 자료뿐이고, 사람마다 다른 값은 요청 안에서 만들고 버린다.</p>
   <div class="pair">
     <figure>
       <h3>무엇을 공유하는가</h3>
@@ -584,7 +584,7 @@ ${hlRules}
     </figure>
     <figure>
       <h3>늦게 끝난 이전 읽기를 버린다</h3>
-      <p>읽기 A가 r1을 읽는 동안 revision이 r2로 바뀌었다(로컬 파일 교체, 리서치의 날짜 경계). A는 늦게 끝나도 r1을 돌려주거나 캐시에 넣지 않고, B가 넣은 r2 항목을 추가 읽기 없이 돌려준다.</p>
+      <p>읽기 A가 r1을 읽는 동안 자료 버전이 r2로 바뀌었다(로컬 파일 교체, 조사 자료의 날짜 경계). A는 늦게 끝나도 r1을 돌려주거나 캐시에 넣지 않고, B가 넣은 r2 항목을 추가 읽기 없이 돌려준다.</p>
       ${fig2b}
       <figcaption>${chips(["lib/revision-cache.ts", "tests/revision-cache.test.ts"])}</figcaption>
     </figure>
@@ -596,16 +596,16 @@ ${hlRules}
     <summary id="scope-h">이 그림의 범위와 확인 근거</summary>
     <p>아래 경로는 모두 운영 저장소 기준이며, 공개 검토판에는 없는 파일이 포함된다.</p>
     <ul>
-      <li>운영 소스 <code>ecbbdf8</code>(2026-10-22) 기준. 공개 검토판은 고정 소스 <code>d0e5519</code>와 가상 자료를 쓰며, 운영 main과 같다고 주장하지 않는다.</li>
+      <li>2026년 10월 22일 오후의 운영 코드를 기준으로 그렸다. 공개판은 같은 날 오전 시점의 코드와 가상 자료를 쓰며, 지금의 운영 코드와 같다고 주장하지 않는다.</li>
       <li>스케줄은 <code>scripts/minipc/install-cron</code>: jobs 6시간마다(:17), research 10:00, publish 11:30, discover 일요일 13:30, watchdog 매시 :47.</li>
-      <li>모델 호출은 <code>codex exec --sandbox read-only</code>(조사·검토 각 1회, 하루 12회 상한 <code>lib/model-call-budget.ts</code>). JEV는 별도 외부 평가 API이며 <code>publicationAuthority: false</code>.</li>
-      <li>data PR 머지 조건: GitGuardian, 정확한 head의 Cloudflare verify, 검증 뒤 main 불변, 중지 파일 없음(<code>lib/worker.ts</code>).</li>
-      <li>Worker는 <code>data/*.json</code>을 번들 모듈로 읽고 <code>/data/*</code>는 404로 검사한다. KV·R2·D1·Durable Object·Queue 바인딩은 없다.</li>
+      <li>모델 호출은 <code>codex exec --sandbox read-only</code>(조사와 검토 각 1회, 하루 12회 상한 <code>lib/model-call-budget.ts</code>). JEV는 별도 외부 평가 API이며 <code>publicationAuthority: false</code>.</li>
+      <li>자료 갱신 PR 머지 조건: GitGuardian 통과, 같은 커밋의 Cloudflare 검증 통과, 검증 뒤 main이 바뀌지 않음, 중지 파일 없음(<code>lib/worker.ts</code>).</li>
+      <li>Worker는 <code>data/*.json</code>을 번들 모듈로 읽고 <code>/data/*</code>는 404로 검사한다. KV, R2, D1, Durable Object, Queue 바인딩은 없다.</li>
       <li>그리지 않은 것: 남아 있는 <code>vercel.json</code>(종료됨), 대기 상태의 Actions 배포 job, 회사 발굴(discover)의 세부 증명 경로.</li>
       <li>위키는 미니PC가 같은 자료로 만드는 파생본이며 웹(<code>app/</code>)은 <code>lib/wiki.ts</code>를 읽지 않는다.</li>
     </ul>
   </details>
-  <p class="meta">원본 <code>build.mjs</code> → <code>architecture.html</code> · 이미지는 같은 HTML의 headless 캡처</p>
+  <p class="meta"><code>build.mjs</code>가 <code>architecture.html</code>을 만든다. 이미지는 같은 HTML을 화면 없이 캡처한 것이다.</p>
 </section>
 </main>
 </body>

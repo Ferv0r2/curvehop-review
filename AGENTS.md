@@ -1,4 +1,4 @@
-# Agent instructions — Curvehop public review edition
+# Agent instructions for the Curvehop public review edition
 
 This repository is an executable review snapshot of Curvehop with fictional data. Read README.md, docs/architecture.md, and SOURCE_MANIFEST.json before changing it.
 
